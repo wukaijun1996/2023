@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 
 
 # Create your views here.
@@ -43,6 +43,32 @@ def news(request):
 def something(request):
     # request是一个对象，封装了 用户发送过来的所有请求相关数据
 
+    # 1.获取请求方式
     print(request.method)
+    # 2.在URL上传递值
+    print(request.GET)
+    # 3.在请求体中提交数据
+    print(request.POST)
+    # 4.HttpResponse（‘返回内容'）
+    #   return HttpResponse("返回内容")
+    # 5.读取HTML的内容  + 渲染（替换） ->字符串，返回给用户浏览器
+    # return render(request, "user_list.html")
+    # 6.让浏览器重定向到其他的页面
+    return redirect("https://www.baidu.com")
 
-    return HttpResponse("返回内容")
+
+def login(request):
+    if request.method == 'GET':
+        return render(request, "login.html")
+    else:
+        print(request.POST.get('user'))
+        print(request.POST.get('pwd'))
+        username = request.POST.get('user')
+        password = request.POST.get('pwd')
+        if username == 'root' and password == "123456":
+            return HttpResponse("登陆成功")
+        else:
+            # return HttpResponse("登录失败")
+            return render(request, "login.html", {"error_msg": "用户名或密码错误"})
+
+    # return render(request, 'login.html')
