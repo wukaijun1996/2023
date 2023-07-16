@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>模板语法</h1>
+    <div>{{ n1 }}</div>
+    <div>{{ n2 }}</div>
+    {% for foo in n2 %}
+        <ul>
+            <li>{{ foo }}</li>
+        </ul>
+    {% endfor %}
+    {{ n1.3 }}<br>
+    {% for item in n3 %}
+        {% for x,y in item.items %}
+            <span>{{ x }} and {{ y }}</span><br>
+        {% endfor %}
+
+
+    {% endfor %}
+
+
+
+</body>
+</html>
