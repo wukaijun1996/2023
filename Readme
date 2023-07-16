@@ -1,0 +1,5 @@
+django-admin  startproject mysite
+
+python  manage.py startapp app01
+
+python manage.py  runserver 8080
