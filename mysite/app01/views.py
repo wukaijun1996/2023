@@ -35,9 +35,16 @@ def news(request):
     res = requests.get("http://www.chinaunicom.com.cn/api/article/NewsByIndex/2/2023/07/news",
                        headers=headers)
     data_list = res.json()
-    print(data_list)
-
-    return render(request, "news.html", {"news_list": data_list})
+    # print(data_list)
+    # 获取ip信息
+    if "HTTP_X_FORWARDED_FOR" in request.META:
+        ip = request.META.get('HTTP_X_FORWARDED_FOR')
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    print('来访者的IP是' + str(ip))
+    print(request.META)
+    return HttpResponse('您的ip是' + str(ip))
+    # return render(request, "news.html", {"news_list": data_list})
 
 
 def something(request):
@@ -60,15 +67,48 @@ def something(request):
 def login(request):
     if request.method == 'GET':
         return render(request, "login.html")
-    else:
-        print(request.POST.get('user'))
-        print(request.POST.get('pwd'))
-        username = request.POST.get('user')
-        password = request.POST.get('pwd')
-        if username == 'root' and password == "123456":
-            return HttpResponse("登陆成功")
-        else:
-            # return HttpResponse("登录失败")
-            return render(request, "login.html", {"error_msg": "用户名或密码错误"})
 
-    # return render(request, 'login.html')
+    print(request.POST.get('user'))
+    print(request.POST.get('pwd'))
+    username = request.POST.get('user')
+    password = request.POST.get('pwd')
+    if username == 'root' and password == "123456":
+        # return HttpResponse("登陆成功")
+        return redirect(
+            "http                                                                                                                                                                                                             ://www.chinaunicom.com.cn/")
+
+    # return HttpResponse("登录失败")
+    return render(request, "login.html", {"error_msg": "用户名或密码错误"})
+
+
+from app01.models import Department, UserInfo
+
+
+def orm(request):
+    """
+    测试ORM操作表中的数据
+    :param request:
+    :return:
+    """
+    # 新建
+    # Department.objects.create(title="销售部")
+    # Department.objects.create(title="人事部")
+    # Department.objects.create(title="干饭二部")
+    # UserInfo.objects.create(name="wupeiqi", password="123", age=18)
+    # UserInfo.objects.create(name="zhangsan", password="456")
+
+    # 删除
+    # Department.objects.filter(id=3).delete()
+    # Department.objects.all().delete()
+
+    # 获取数据
+    # data_list = UserInfo.objects.all()
+    # for obj in data_list:
+    #     print(obj.id, obj.name, obj.password, obj.age)
+    # row_list = UserInfo.objects.filter(id=1).first()
+    # print(row_list.id, row_list.name, row_list.password, row_list.age)
+    # 更新数据
+    UserInfo.objects.filter(id=1).update(age=999)
+
+
+    return HttpResponse("创建成功")

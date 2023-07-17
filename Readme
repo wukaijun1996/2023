@@ -1,9 +1,22 @@
 django-admin  startproject mysite
 
 python  manage.py startapp app01
-
-python manage.py  runserver 8080
+python manage.py  runserver 0.0.0.0:8080
 
 http://www.chinaunicom.com.cn/api/article/NewsByIndex/2/2023/07/news
 User-Agent:
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+
+create  database shanghai01 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+pip install mysqlclient
+
+python manage.py makemigrations
+python manage.py migrate
+
+
+
+
+
+
+
+

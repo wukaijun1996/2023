@@ -30,4 +30,5 @@ urlpatterns = [
     path('something/', views.something),
 
     path('login/', views.login),
+    path('orm/', views.orm),
 ]
