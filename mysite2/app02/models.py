@@ -33,7 +33,6 @@ class UserInfo(models.Model):
     """
     depart = models.ForeignKey(to="Department", to_field="id", on_delete=models.CASCADE)
 
-
     # 在Django 中做约束
     gender_choice = (
         (1, '男'),

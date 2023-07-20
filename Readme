@@ -8,10 +8,24 @@ User-Agent:
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
 
 create  database shanghai01 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+insert into  app02_userinfo(name,password,age,account,create_time,gender,depart_id)
+values("李四","123",21,4000.01,"2022-05-07",1,2);
+
+
+
 pip install mysqlclient
 
 python manage.py makemigrations
 python manage.py migrate
+
+# 模板的继承
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>首页</h1>
+{% endblock %}
+
+
+
 
 
 
