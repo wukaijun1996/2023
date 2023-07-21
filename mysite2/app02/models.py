@@ -7,6 +7,10 @@ class Department(models.Model):
     """部门表"""
     title = models.CharField(verbose_name="标题", max_length=32)
 
+    # 适配ModelForm组件，在前端显示对象title
+    def __str__(self):
+        return self.title
+
 
 class UserInfo(models.Model):
     """员工表"""
@@ -31,11 +35,11 @@ class UserInfo(models.Model):
     2.置空
     depart = models.ForeignKey(to="Department", to_field="id", on_delete=models.SET_NULL)
     """
-    depart = models.ForeignKey(to="Department", to_field="id", on_delete=models.CASCADE)
+    depart = models.ForeignKey(verbose_name="部门", to="Department", to_field="id", on_delete=models.CASCADE)
 
     # 在Django 中做约束
     gender_choice = (
         (1, '男'),
-        (1, '女'),
+        (2, '女'),
     )
     gender = models.SmallIntegerField(verbose_name="性别", choices=gender_choice)

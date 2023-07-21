@@ -55,7 +55,7 @@ def user_add(request):
             "depart_list": Department.objects.all(),
         }
         return render(request, "user_add.html", context)
-
+    # 获取用户提交的数据
     name = request.POST.get("user")
     password = request.POST.get("pwd")
     age = request.POST.get("age")
@@ -67,3 +67,48 @@ def user_add(request):
                             gender=gender, depart_id=depart_id)
     return redirect("/user/list")
 
+
+# ModelForm示例 #############################
+from django import forms
+
+
+class UserModelForm(forms.ModelForm):
+    # 校验规则重写数据库的字段属性
+    name = forms.CharField(min_length=3, label="用户名")
+
+    class Meta:
+        model = UserInfo
+        fields = ["name", "password", "age", "account", "create_time", "gender", "depart"]
+        # widgets = {
+        #     "name": forms.TextInput(attrs={"class": "form-control"}),
+        #     "password": forms.TextInput(attrs={"class": "form-control"}),
+        #     "age": forms.TextInput(attrs={"class": "form-control"}),
+        # }
+        # 上述方法麻烦，重写初始化方法(为了给输入框加样式)
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for name, field in self.fields.items():
+            # print(name, name == "password")
+            # 当name为字段password,不设置样式
+            # if str(name) == "password":
+            #     continue
+            field.widget.attrs = {"class": "form-control", "placeholder": field.label}
+
+
+def user_modelform_add(request):
+    """添加用户 基于(ModelForm版本)"""
+    if request.method == "GET":
+        form = UserModelForm()
+        return render(request, "user_modelform_add.html", {"form": form})
+
+    # 用户post提交数据
+    form = UserModelForm(data=request.POST)
+    if form.is_valid():
+        # 如果数据合法，保存到数据库
+        # print(form.cleaned_data)
+        form.save()
+        return redirect("/user/list/")
+
+    # print(form.errors)
+    return render(request, "user_modelform_add.html", {"form": form})
