@@ -45,3 +45,25 @@ def user_list(request):
     # obj.depart # 根据id自动去关联的表中获取那一行数据depart的对象
 
     return render(request, "user_list.html", {"queryset": queryset})
+
+
+def user_add(request):
+    """添加用户"""
+    if request.method == "GET":
+        context = {
+            "gender_choice": UserInfo.gender_choice,
+            "depart_list": Department.objects.all(),
+        }
+        return render(request, "user_add.html", context)
+
+    name = request.POST.get("user")
+    password = request.POST.get("pwd")
+    age = request.POST.get("age")
+    account = request.POST.get("ac")
+    create_time = request.POST.get("ctime")
+    gender = request.POST.get("gender")
+    depart_id = request.POST.get("dp")
+    UserInfo.objects.create(name=name, password=password, age=age, account=account, create_time=create_time,
+                            gender=gender, depart_id=depart_id)
+    return redirect("/user/list")
+
