@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
-from app02.models import Department, UserInfo
+from app02.models import Department, UserInfo, PrettyNum
 
 
 # Create your views here.
@@ -122,6 +122,7 @@ def user_modelform_add(request):
 def user_edit(request, nid):
     """编辑用户"""
     row_object = UserInfo.objects.filter(id=nid).first()
+    print(row_object)
     if request.method == "GET":
         # 根据ID去数据库获取要编辑的那一行数据（对象）
         form = UserModelForm(instance=row_object)
@@ -140,3 +141,107 @@ def user_edit(request, nid):
 def user_delete(request, nid):
     UserInfo.objects.filter(id=nid).delete()
     return redirect("/user/list")
+
+
+def pretty_list(request):
+    # 靓号列表
+    queryset = PrettyNum.objects.all().order_by("-level")
+    return render(request, "pretty_list.html", {"queryset": queryset})
+
+
+# ##############################################
+from django.core.validators import RegexValidator
+from django.core.exceptions import ValidationError
+
+
+class PrettyModelForm(forms.ModelForm):
+    # 校验手机号格式，必须按下面格式提交，不然不能提交
+    # mobile = forms.CharField(
+    #     label="手机号码",
+    #     validators=[RegexValidator(r'^1[3-9]\d{9}$', '手机号格式错误')]
+    # )
+
+    class Meta:
+        model = PrettyNum
+        # fields = ["mobile", "price", "level", "status"]
+        # 要显示全部字段是也可以直接 add  "__all__"
+        # 如果是除XX字段
+        # exclude = ["level"]
+        fields = "__all__"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for name, field in self.fields.items():
+            field.widget.attrs = {"class": "form-control", "placeholder": field.label}
+
+    # 钩子方法 校验手机号格式，必须按下面要求提交，不然不能提交
+    def clean_mobile(self):
+        # 当前编辑的哪一行的ID
+        print(self.instance.pk, "嘿嘿")
+        # 获取用户传入的数据
+        input_mobile = self.cleaned_data["mobile"]
+        # 判断用户输入的手机号在数据库中是否已存在
+        if PrettyNum.objects.filter(mobile=input_mobile).exists():
+            raise ValidationError("手机号已存在1")
+        if len(input_mobile) != 11:
+            raise ValidationError("格式错误")
+        return input_mobile
+
+
+def pretty_add(request):
+    """添加靓号"""
+    if request.method == "GET":
+        form = PrettyModelForm()
+        return render(request, "pretty_add.html", {"form": form})
+    form = PrettyModelForm(data=request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect("/pretty/list")
+    return render(request, "pretty_add.html", {"form": form})
+
+
+class PrettyEditModelForm(forms.ModelForm):
+    # mobile = forms.CharField(disabled=True)
+
+    class Meta:
+        model = PrettyNum
+        fields = ["mobile", "price", "level", "status"]
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for name, field in self.fields.items():
+            field.widget.attrs = {"class": "form-control", "placeholder": field.label}
+
+    # 钩子方法 校验手机号格式，必须按下面要求提交，不然不能提交
+    def clean_mobile(self):
+        # 当前编辑的哪一行的ID
+        print(self.instance.pk)
+        # 获取用户传入的数据
+        input_mobile = self.cleaned_data["mobile"]
+        # 当编辑模式下校验号码是否存在 （exclude(id=self.instance.pk) 过滤掉自己）
+        exists = PrettyNum.objects.exclude(id=self.instance.pk).filter(mobile=input_mobile).exists()
+        print(exists)
+        if exists:
+            raise ValidationError("手机号已存在")
+        if len(input_mobile) != 11:
+            raise ValidationError("格式错误")
+        return input_mobile
+
+
+def pretty_edit(request, nid):
+    """编辑靓号"""
+    row_object = PrettyNum.objects.filter(id=nid).first()
+    # print(row_object)
+    if request.method == "GET":
+        form = PrettyEditModelForm(instance=row_object)
+        return render(request, "pretty_edit.html", {"form": form})
+    form = PrettyEditModelForm(data=request.POST, instance=row_object)
+    if form.is_valid():
+        form.save()
+        return redirect("/pretty/list")
+    return render(request, "pretty_edit.html", {"form": form})
+
+
+def pretty_delete(request, nid):
+    PrettyNum.objects.filter(id=nid).delete()
+    return redirect("/pretty/list")

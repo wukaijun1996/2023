@@ -11,6 +11,8 @@ create  database shanghai01 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
 insert into  app02_userinfo(name,password,age,account,create_time,gender,depart_id)
 values("李四","123",21,4000.01,"2022-05-07",1,2);
 
+insert into  app02_prettynum(mobile,price,level,status)values("13188888888",200,1,1);
+
 
 
 pip install mysqlclient
