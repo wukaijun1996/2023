@@ -144,9 +144,14 @@ def user_delete(request, nid):
 
 
 def pretty_list(request):
-    # 靓号列表
-    queryset = PrettyNum.objects.all().order_by("-level")
-    return render(request, "pretty_list.html", {"queryset": queryset})
+    """靓号列表"""
+
+    data_dict = {}
+    search_data = request.GET.get('q', "")
+    if search_data:
+        data_dict["mobile__contains"] = search_data
+    queryset = PrettyNum.objects.filter(**data_dict).order_by("-level")
+    return render(request, "pretty_list.html", {"queryset": queryset, "search_data": search_data})
 
 
 # ##############################################

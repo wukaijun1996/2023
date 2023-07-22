@@ -26,11 +26,24 @@ python manage.py migrate
     <h1>首页</h1>
 {% endblock %}
 
+# 数据库操作
+PrettyNum.objects.exclude(id=self.instance.pk).filter(mobile=input_mobile).exists()
+exclude  # 除字段属性 id=self.instance.pk的数据
+exists # 是否存在
+PrettyNum.objects.all().order_by("-level")
+order_by # 排序
 
-
-
-
-
+filter for Int
+PrettyNum.objects.filter(id__gt=12) #  大于12
+PrettyNum.objects.filter(id__gte=12) #大于等于12
+id__lte=12  # 小于12
+id__lte=12 # 小于等于12
+filter for Str
+PrettyNum.objects.filter(mobile__startwith = "1999") #  字段mobile以xxx开头
+PrettyNum.objects.filter(mobile__endwith = "1999") #  字段mobile以xxx结尾
+PrettyNum.objects.filter(mobile__contains = "1999") #  字段mobile包含 xxx
+data_dict = {"mobile__contains" : "1999"}
+PrettyNum.objects.filter(**data_dict)
 
 
 
