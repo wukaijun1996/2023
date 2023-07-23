@@ -45,7 +45,7 @@ PrettyNum.objects.filter(mobile__contains = "1999") #  字段mobile包含 xxx
 data_dict = {"mobile__contains" : "1999"}
 PrettyNum.objects.filter(**data_dict)
 
-
-
+PrettyNum.objects.filter(**data_dict).order_by("-level")[10:20] # 显示过滤后第10-20的数据
+PrettyNum.objects.filter(**data_dict).order_by("-level").count() # 符合条件数据条数
 
 
