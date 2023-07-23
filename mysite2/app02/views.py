@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse, redirect
 from app02.models import Department, UserInfo, PrettyNum
 from django.utils.safestring import mark_safe
-
+from app02.utils.pagination import Pagination
 
 # Create your views here.
 
@@ -39,13 +39,18 @@ def depart_edit(request, nid):
 def user_list(request):
     """用户列表"""
     queryset = UserInfo.objects.all()
+    page_object = Pagination(request, queryset, page_size=3)
+    context = {
+        "queryset": page_object.page_queryset,
+        "page_string": page_object.html(),
+    }
     # for obj in queryset:
     # print(obj.id, obj.name, obj.account, obj.create_time.strftime("%Y-%m-%d"), obj.gender, obj.get_gender_display())
     # print(obj.name, obj.depart_id, obj.depart.title)
     # obj.depart_id # 获取数据库中存储的那个字段值
     # obj.depart # 根据id自动去关联的表中获取那一行数据depart的对象
 
-    return render(request, "user_list.html", {"queryset": queryset})
+    return render(request, "user_list.html", context)
 
 
 def user_add(request):
@@ -153,7 +158,7 @@ def pretty_list(request):
     if search_data:
         data_dict["mobile__contains"] = search_data
 
-    from app02.utils.pagination import Pagination
+
     queryset = PrettyNum.objects.filter(**data_dict).order_by("-level")
 
     page_object = Pagination(request, queryset)
