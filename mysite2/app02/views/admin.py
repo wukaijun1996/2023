@@ -45,9 +45,9 @@ class AdminModelForm(BootStrapModelForm):
         widgets = {
             "password": forms.PasswordInput(render_value=True)
         }
+
     def clean_password(self):
         return md5(self.cleaned_data.get("password"))
-
 
     def clean_confirm_password(self):
         if self.cleaned_data.get("password") == md5(self.cleaned_data.get("confirm_password")):
@@ -71,4 +71,26 @@ def admin_add(request):
         form.save()
         return redirect("/admin/list")
 
+    return render(request, "change.html", {"title": title, "form": form})
+
+
+class AdminEditModelForm(BootStrapModelForm):
+    class Meta:
+        model = Admin
+        fields = ["username"]
+
+
+def admin_edit(request, nid):
+    """编辑管理员"""
+    row_object = Admin.objects.filter(id=nid).first()
+    if not row_object:
+        redirect("/admin/list")
+    title = "新建管理员"
+    if request.method == "GET":
+        form = AdminEditModelForm(instance=row_object)
+        return render(request, "change.html", {"title": title, "form": form})
+    form = AdminEditModelForm(data=request.POST, instance=row_object)
+    if form.is_valid():
+        form.save()
+        return redirect("/admin/list")
     return render(request, "change.html", {"title": title, "form": form})
