@@ -3,6 +3,7 @@ from app02.models import Department, UserInfo, PrettyNum
 from app02.utils.pagination import Pagination
 from app02.utils.form import UserModelForm, PrettyModelForm, PrettyEditModelForm
 
+
 def user_list(request):
     """用户列表"""
     queryset = UserInfo.objects.all()
