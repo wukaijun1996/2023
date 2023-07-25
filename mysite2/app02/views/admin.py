@@ -80,12 +80,14 @@ class AdminResetModelForm(BootStrapModelForm):
     def clean_password(self):
         pwd = self.cleaned_data.get("password")
         md5_pwd = md5(pwd)
-
-        # 去校验
-
-        return md5(self.cleaned_data.get("password"))
+        # 去数据库校验当前密码和新输入的密码是否一致
+        exists = Admin.objects.filter(id=self.instance.pk, password=md5_pwd).exists()
+        if exists:
+            raise ValidationError("密码不能与之前相同")
+        return md5_pwd
 
     def clean_confirm_password(self):
+        # 钩子方法由上到下执行，此时password已加密
         if self.cleaned_data.get("password") == md5(self.cleaned_data.get("confirm_password")):
             # 返回什么 此字段以后保存到数据库就是什么
             return md5(self.cleaned_data.get("confirm_password"))
@@ -115,7 +117,7 @@ def admin_edit(request, nid):
     row_object = Admin.objects.filter(id=nid).first()
     if not row_object:
         redirect("/admin/list")
-    title = "新建管理员"
+    title = "编辑管理员"
     if request.method == "GET":
         form = AdminEditModelForm(instance=row_object)
         return render(request, "change.html", {"title": title, "form": form})
