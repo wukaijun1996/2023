@@ -47,4 +47,5 @@ urlpatterns = [
     path('admin/<int:nid>/reset/', admin.admin_reset),
 
     path('login/', account.login),
+    path('loginout/', account.loginout),
 ]
