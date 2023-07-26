@@ -5,7 +5,8 @@ from app02.models import Admin
 from app02.utils.bootstrap import BootStrapForm
 from django.core.exceptions import ValidationError
 from app02.utils.encrypt import md5
-
+from app02.utils.code import check_code
+from io import BytesIO
 
 class LoginForm(BootStrapForm):
     username = forms.CharField(
@@ -45,6 +46,19 @@ def login(request):
         return redirect("/admin/list")
 
     return render(request, "login.html", {"form": form})
+
+
+def image_code(request):
+    """生成图片验证码"""
+    # 调用pillow函数，生成图片
+    img, code_string = check_code()
+    print(code_string)
+
+    stream = BytesIO()
+    img.save(stream, "png")
+
+    return HttpResponse(stream.getvalue())
+
 
 def loginout(request):
     """注销"""
