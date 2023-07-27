@@ -52,6 +52,10 @@ def image_code(request):
     """生成图片验证码"""
     # 调用pillow函数，生成图片
     img, code_string = check_code()
+    # 写入到自己的session中（以便后续获取验证码再进行校验）
+    request.session["image_code"] = code_string
+    # 给session设置60s超时
+    request.session.set_expiry(60)
     print(code_string)
 
     stream = BytesIO()
