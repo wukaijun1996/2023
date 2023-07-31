@@ -144,7 +144,8 @@ def admin_reset(request, nid):
     if request.method == "GET":
         form = AdminResetModelForm()
         return render(request, "change.html", {"form": form, "title": title})
-    form = AdminResetModelForm(data=request.POST, instance=row_object)
+    form = Admin
+    ResetModelForm(data=request.POST, instance=row_object)
     if form.is_valid():
         form.save()
         return redirect("/admin/list")
