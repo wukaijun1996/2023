@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from app02.models import Order
 from app02.utils.bootstrap import BootStrapModelForm
-
+from app02.utils.pagination import Pagination
 
 class OrderModelForm(BootStrapModelForm):
     class Meta:
@@ -16,8 +16,15 @@ class OrderModelForm(BootStrapModelForm):
 
 
 def order_list(request):
+    queryset = Order.objects.all().order_by("-id")
+    page_object = Pagination(request, queryset, page_size=10)
     form = OrderModelForm()
-    return render(request, "order_list.html", {"form": form})
+    context = {
+        "form": form,
+        "queryset": page_object.page_queryset,
+        "page_string": page_object.html(),
+    }
+    return render(request, "order_list.html", context)
 
 
 @csrf_exempt
