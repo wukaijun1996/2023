@@ -8,6 +8,7 @@ from app02.models import Order
 from app02.utils.bootstrap import BootStrapModelForm
 from app02.utils.pagination import Pagination
 
+
 class OrderModelForm(BootStrapModelForm):
     class Meta:
         model = Order
@@ -40,3 +41,13 @@ def order_add(request):
         return JsonResponse({"status": True})
 
     return JsonResponse({"status": False, "error": form.errors})
+
+
+def order_delete(request):
+    """删除订单"""
+    uid = request.GET.get("uid")
+    exists = Order.objects.filter(id=uid).exists()
+    if not exists:
+        return JsonResponse({"status": False, "error": "删除失败,数据不存在"})
+    Order.objects.filter(id=uid).delete()
+    return JsonResponse({"status": True})
