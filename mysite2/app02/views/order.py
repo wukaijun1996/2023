@@ -51,3 +51,34 @@ def order_delete(request):
         return JsonResponse({"status": False, "error": "删除失败,数据不存在"})
     Order.objects.filter(id=uid).delete()
     return JsonResponse({"status": True})
+
+
+def order_detail(request):
+    """根据id获取订单信息"""
+    uid = request.GET.get("uid")
+    # .values("title", "price", "status")  从数据库中筛选找到对应数据 返回字典 {“title":1, "price":21}
+    row_dict = Order.objects.filter(id=uid).values("title", "price", "status").first()
+    if not row_dict:
+        return JsonResponse({"status": False, "error": "数据不存在"})
+
+    # 从数据库中获取到一个对象 row_object
+    result = {
+        "status": True,
+        "data": row_dict
+    }
+    return JsonResponse(result)
+
+
+@csrf_exempt
+def order_edit(request):
+    """编辑订单"""
+    uid = request.GET.get("uid")
+    print(uid)
+    row_object = Order.objects.filter(id=uid).first()
+    if not row_object:
+        return JsonResponse({"status": False, "tips": "数据不存在,刷新请重试"})
+    form = OrderModelForm(data=request.POST, instance=row_object)
+    if form.is_valid():
+        form.save()
+        return JsonResponse({"status": True})
+    return JsonResponse({"status": False, "error": form.errors})
