@@ -244,6 +244,8 @@
 
         function bindBtnEditEvent() {
             $(".btn-edit").click(function () {
+                //清楚错误信息
+                $(".error-msg").empty()
                 // 清空对话框的数据
                 $("#formAdd")[0].reset();
                 var uid = $(this).attr("uid");

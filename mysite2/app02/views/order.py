@@ -66,6 +66,8 @@ def order_detail(request):
         "status": True,
         "data": row_dict
     }
+    # print(row_dict) #{'title': '3443', 'price': 4444, 'status': 2}
+
     return JsonResponse(result)
 
 
