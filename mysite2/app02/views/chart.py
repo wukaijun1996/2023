@@ -33,3 +33,19 @@ def chart_bar(request):
         }
     }
     return JsonResponse(result)
+
+
+def chart_pie(request):
+    """构造饼图的数据"""
+    db_data_list = [
+        {"value": 1048, "name": 'IT部门'},
+        {"value": 735, "name": '运营部'},
+        {"value": 580, "name": '干饭部'},
+        {"value": 484, "name": '总办部'},
+    ]
+
+    result = {
+        "status": True,
+        "data": db_data_list
+    }
+    return JsonResponse(result)
