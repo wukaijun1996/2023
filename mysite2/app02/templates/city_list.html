@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+
+
+        <div style="margin-bottom: 10px">
+            <a href="/city/add/" class="btn btn-success">
+                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                新建城市
+            </a>
+        </div>
+
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                城市列表
+            </div>
+
+            <!-- Table -->
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Logo</th>
+                    <th>名称</th>
+                    <th>人口</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for query in queryset %}
+                    <tr>
+                        <th>{{ query.id }}</th>
+                        <td>
+                            <img src="/media/{{ query.img }}" style="height: 60px">
+
+                        </td>
+                        <td>{{ query.name }}</td>
+                        <td>{{ query.count }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+{% endblock %}
+

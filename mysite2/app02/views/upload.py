@@ -73,8 +73,7 @@ class UpModelform(BootStrapModelForm):
 
 
 def upload_modelform(request):
-    """上传文件和数据（modelForm）"""
-    title = "Modelform上传文件"
+    title = "新建城市"
     if request.method == "GET":
         form = UpModelform()
         return render(request, "upload_form.html", {"form": form, "title": title})
