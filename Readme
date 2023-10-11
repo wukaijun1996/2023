@@ -12,8 +12,9 @@ insert into  app02_userinfo(name,password,age,account,create_time,gender,depart_
 values("李四","123",21,4000.01,"2022-05-07",1,2);
 
 insert into  app02_prettynum(mobile,price,level,status)values("13188888888",200,1,1);
+insert into  app02_admin(username,password)values("root","57d875bef6214a87a9bf0ce3fee02610);
 
-
+57d875bef6214a87a9bf0ce3fee02610
 
 pip install mysqlclient
 
