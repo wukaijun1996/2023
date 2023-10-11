@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d505b1-3b80-4f25-838f-0545cea9862f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Readme" beforeDir="false" afterPath="$PROJECT_DIR$/../Readme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app02/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0002_auto_20230722_0027.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0003_alter_userinfo_create_time.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0004_prettynum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0005_admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0006_task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0007_order.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0008_boss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/migrations/0009_city.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app02/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app02/views/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app02/views/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Bigapple.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drfdemo/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drfdemo/app01/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drfdemo/app01/ser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drfdemo/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drfdemo/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drfdemo/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drfdemo/app01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drfdemo/drfdemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drfdemo/drfdemo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +24,13 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="mysite2" type="Python.DjangoServer" factoryName="Django server">
@@ -68,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1689692273297</updated>
       <workItem from="1689692275254" duration="33000" />
-      <workItem from="1697032853202" duration="329000" />
+      <workItem from="1697032853202" duration="1446000" />
+      <workItem from="1697038265314" duration="699000" />
     </task>
     <servers />
   </component>
@@ -85,5 +84,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
