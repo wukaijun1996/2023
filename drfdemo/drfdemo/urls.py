@@ -20,6 +20,8 @@ from rest_framework.routers import DefaultRouter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('books1/', views.Books.as_view()),  # 函数内存地址
+    path('booksapiview/', views.BooksAPIView.as_view()),  # 函数内存地址
 ]
 router = DefaultRouter()  # 可以处理视图的路由器
 router.register('books', views.BooksViewSet)
