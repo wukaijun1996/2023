@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
+from app01.models import Book
 
 
 def check_author(data):
@@ -8,9 +9,9 @@ def check_author(data):
 
 
 class BookSerializer(serializers.Serializer):
-    id = serializers.CharField(read_only=True)
+    id = serializers.CharField()
     name = serializers.CharField(max_length=16, min_length=4, required=True, error_messages={"required": "是的"})
-    price = serializers.CharField(write_only=True, required=True)
+    price = serializers.CharField(required=True)
     author = serializers.CharField(validators=[check_author])  # validators=[] 列表中写函数内存地址
     publish = serializers.CharField()
 
@@ -40,4 +41,8 @@ class BookSerializer(serializers.Serializer):
         instance.author = validated_data.get('author')
         instance.publish = validated_data.get('publish')
         instance.save()
+        return instance
+
+    def create(self, validated_data):
+        instance = Book.objects.create(**validated_data)
         return instance

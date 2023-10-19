@@ -8,6 +8,8 @@ from app01.models import Book
 from app01.ser import BookSerializer
 from rest_framework.response import Response
 
+from app01.utils import MyResponse
+
 
 class BookView(APIView):
     def get(self, request, pk):
@@ -31,4 +33,32 @@ class BookView(APIView):
             response_msg["msg"] = "数据校验失败"
             response_msg["data"] = book_ser.errors
 
+        return Response(response_msg)
+
+    def delete(self, request, pk):
+        response = MyResponse()
+        ret = Book.objects.filter(pk=pk).delete()
+        return Response(response.get_dict)
+
+
+class BooksView(APIView):
+    def get(self, request):
+        response = MyResponse()
+        books = Book.objects.all()
+        books_ser = BookSerializer(books, many=True)  # 序列化多条,如果序列化一条，不需要写
+        response.data = books_ser.data
+        return Response(response.get_dict)
+
+    # 新增
+    def post(self, request):
+        response_msg = {"status": 100, "msg": "成功"}
+        # 修改才有instance 新增没有instance 只有data
+        book_ser = BookSerializer(data=request.data)
+        if book_ser.is_valid():
+            book_ser.save()
+            response_msg["data"] = book_ser.data
+        else:
+            response_msg["status"] = 102
+            response_msg["msg"] = "数据校验失败"
+            response_msg["data"] = book_ser.errors
         return Response(response_msg)
