@@ -5,7 +5,7 @@ from django.http import JsonResponse
 
 from rest_framework.views import APIView
 from app01.models import Book
-from app01.ser import BookSerializer
+from app01.ser import BookSerializer, BookModelSerializer
 from rest_framework.response import Response
 
 from app01.utils import MyResponse
@@ -62,3 +62,12 @@ class BooksView(APIView):
             response_msg["msg"] = "数据校验失败"
             response_msg["data"] = book_ser.errors
         return Response(response_msg)
+
+
+class BooksView2(APIView):
+    def get(self, request):
+        response = MyResponse()
+        books = Book.objects.all()
+        books_ser = BookModelSerializer(books, many=True)  # 序列化多条,如果序列化一条，不需要写
+        response.data = books_ser.data
+        return Response(response.get_dict)

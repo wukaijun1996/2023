@@ -46,3 +46,14 @@ class BookSerializer(serializers.Serializer):
     def create(self, validated_data):
         instance = Book.objects.create(**validated_data)
         return instance
+
+
+class BookModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book  # 对应models.py中的模型
+        fields = "__all__"
+        # fields = ['name', 'price'] # 只序列化指定的字段
+        # exclude = ['name']  # 除...之外的都show
+        extra_kwargs = {
+            'id': {'write_only': True}
+        }

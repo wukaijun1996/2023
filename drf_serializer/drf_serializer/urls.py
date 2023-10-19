@@ -20,5 +20,6 @@ from app01 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'books/(?P<pk>\d+)', views.BookView.as_view()),
-    path('books/', views.BooksView.as_view())
+    path('books/', views.BooksView.as_view()),
+    path('books2/', views.BooksView2.as_view())
 ]
