@@ -68,6 +68,10 @@ class BooksView2(APIView):
     def get(self, request):
         response = MyResponse()
         books = Book.objects.all()
+        book = Book.objects.all().first()
         books_ser = BookModelSerializer(books, many=True)  # 序列化多条,如果序列化一条，不需要写
-        response.data = books_ser.data
+        book_one_ser = BookModelSerializer(book)  # 序列化多条,如果序列化一条，不需要写
+        print(type(books_ser))
+        print(type(book_one_ser))
+        response.data = books_ser.data  # 自定义字典增加键值对
         return Response(response.get_dict)

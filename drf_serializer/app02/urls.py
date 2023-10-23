@@ -15,16 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
-from app01 import views
-from app02 import urls
+from app02 import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # re_path(r'books/(?P<pk>\d+)', views.BookView.as_view()),
-    path('books/', views.BooksView.as_view()),
-    path('books2/', views.BooksView2.as_view()),
-
-    # 使用include
-    path('app02/', include(urls)),
+    re_path(r'books/(?P<pk>\d+)', views.APP02BookView.as_view()),
 
 ]
