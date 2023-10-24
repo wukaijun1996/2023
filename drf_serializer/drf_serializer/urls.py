@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from app01 import views
 from app02 import urls
+from app03 import urls_app03
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +27,6 @@ urlpatterns = [
 
     # 使用include
     path('app02/', include(urls)),
+    path('app03/', include(urls_app03)),
 
 ]
