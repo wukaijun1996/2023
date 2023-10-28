@@ -32,6 +32,14 @@ urlpatterns = [
     re_path(r'books3/(?P<pk>\d+)', views.Book3DetailView.as_view()),
 
     # 使用GenericAPIView的视图子类(9个) 重写
-    path(r'books4/', views.Book3View.as_view()),
-    re_path(r'books4/(?P<pk>\d+)', views.Book3DetailView.as_view()),
+    path(r'books4/', views.Book4View.as_view()),
+    re_path(r'books4/(?P<pk>\d+)', views.Book4DetailView.as_view()),
+
+    # 使用ModelViewSet编写5个接口
+    # 当路径匹配，又是get请求，会执行Book5View的list方法
+    path(r'books5/', views.Book5View.as_view(actions={'get': 'list', 'post': 'create'})),
+    re_path(r'books5/(?P<pk>\d+)',
+            views.Book5View.as_view(actions={'get': 'retrieve', 'put': 'update', 'delete': 'destroy'})),
+    # 直接继承ViewSetMixin， 配置路由执行自定义get_all_book方法
+    path(r'books6/', views.Book6View.as_view(actions={'get': 'get_all_book'})),
 ]

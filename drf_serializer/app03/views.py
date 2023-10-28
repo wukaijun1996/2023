@@ -155,3 +155,24 @@ class Book4View(ListAPIView, CreateAPIView):
 class Book4DetailView(UpdateAPIView, RetrieveAPIView, DestroyAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+
+
+# 使用ModelViewSet 编写5个接口
+from rest_framework.viewsets import ModelViewSet
+
+
+class Book5View(ModelViewSet):  # 5个接口都有，但是路由有点问题
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+
+
+# 直接继承ViewSetMixin， 配置路由执行自定义get_all_book方法
+from rest_framework.viewsets import ViewSetMixin
+
+
+class Book6View(ViewSetMixin, APIView):
+    def get_all_book(self, request):
+        book_list = Book.objects.all()
+        book_ser = BookSerializer(book_list, many=True)
+
+        return Response(book_ser.data)
