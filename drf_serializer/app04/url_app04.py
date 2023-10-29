@@ -38,6 +38,7 @@ urlpatterns = [
     # 登录LoginView
     path(r'login/', views.LoginView.as_view()),
     path(r'test/', views.TestView.as_view()),
+    path(r'test1/', views.Test1View.as_view()),
 
 ]
 

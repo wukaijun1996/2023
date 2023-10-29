@@ -50,3 +50,4 @@ PrettyNum.objects.filter(**data_dict).order_by("-level")[10:20] # 显示过滤�
 PrettyNum.objects.filter(**data_dict).order_by("-level").count() # 符合条件数据条数
 
 
+createsuperuser 创建django后台管理员

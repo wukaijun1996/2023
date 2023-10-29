@@ -17,3 +17,18 @@ class MyAuthentication(BaseAuthentication):
                 raise AuthenticationFailed("认证失败")
         else:
             raise AuthenticationFailed("请求地址中需要携带token")
+
+
+from rest_framework.permissions import BasePermission
+
+
+class UserPermission(BasePermission):
+    def has_permission(self, request, view):
+        # 不是超级用户，不能访问
+        # 由于认证已经过了 request内就有user对象了，当前登录用户
+        user = request.user  # 当前登录用户
+        print(user.get_user_type_display())
+        if user.user_type == 2:
+            return True
+        else:
+            return False

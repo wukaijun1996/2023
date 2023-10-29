@@ -10,7 +10,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from app04 import models
 
-from app04.app_auth import MyAuthentication
+from app04.app_auth import MyAuthentication, UserPermission
 
 
 class BookViewSet(ModelViewSet):
@@ -31,14 +31,33 @@ class BookViewSet(ModelViewSet):
 
 
 class TestView(APIView):
+    authentication_classes = [MyAuthentication, ]
+
+    # permission_classes = [UserPermission, ]
+
     def get(self, request):
         print(request.user)
         print(request.auth)
         return Response({'msg': '我是测试'})
 
 
+from rest_framework.permissions import IsAdminUser
+from rest_framework.authentication import SessionAuthentication
+
+
+class Test1View(APIView):
+    authentication_classes = [SessionAuthentication]
+    permission_classes = [IsAdminUser, ]
+
+    def get(self, request):
+        print(request.user)
+        print(request.auth)
+        return Response({'msg': '超级管理有能看'})
+
+
 class LoginView(APIView):
     authentication_classes = []
+    permission_classes = []
 
     def post(self, request):
         username = request.data.get('username')
