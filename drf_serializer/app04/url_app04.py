@@ -35,6 +35,10 @@ urlpatterns = [
     re_path(r'books/(?P<pk>\d+)',
             views.BookViewSet.as_view(actions={'get': 'retrieve', 'put': 'update', 'delete': 'destroy'})),
 
+    # 登录LoginView
+    path(r'login/', views.LoginView.as_view()),
+    path(r'test/', views.TestView.as_view()),
+
 ]
 
 urlpatterns += router.urls
