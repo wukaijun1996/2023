@@ -30,6 +30,9 @@ class BookViewSet(ModelViewSet):
         return Response(ser.data)
 
 
+from app04.app_auth import APIResponse
+
+
 class TestView(APIView):
     from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
     # authentication_classes = [MyAuthentication, ]
@@ -37,10 +40,10 @@ class TestView(APIView):
     # throttle_classes = [AnonRateThrottle, ]
 
     def get(self, request):
-        1/0
         print(request.user)
         print(request.auth)
-        return Response({'msg': '我是测试'})
+        # return Response({'msg': '我是测试'})
+        return APIResponse(data={'giao': 123}, token='abcdefg', aa='状态')
 
 
 from rest_framework.permissions import IsAdminUser

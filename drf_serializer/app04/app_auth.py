@@ -40,7 +40,6 @@ from rest_framework.response import Response
 
 # 自定义异常处理的方法
 def my_exception_handler(exc, context):
-
     response = exception_handler(exc, context)
     print(exc)
     print(context)
@@ -50,3 +49,15 @@ def my_exception_handler(exc, context):
         # res = Response({'code': 10002, 'msg': '服务器内部错误'})
         res = Response({'code': 10002, 'msg': str(exc)})
     return res
+
+
+# 自封装Response对象
+
+class APIResponse(Response):
+    def __init__(self, code=100, msg='成功', data=None, status=None, headers=None
+                 , **kwargs):
+        dic = {'code': code, 'msg': msg}
+        if data:
+            dic = {'code': code, 'msg': msg, 'data': data}
+        dic.update(kwargs)
+        super().__init__(data=dic, status=status, headers=headers)
