@@ -16,8 +16,6 @@ from pathlib import Path
 import django_filters.rest_framework
 import rest_framework
 
-import app01.apps
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -157,7 +155,7 @@ REST_FRAMEWORK = {
         # 'user': '10/m',
         # 'anon': '3/m',
     # },
-    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
+    # 'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
+    'EXCEPTION_HANDLER': 'app04.app_auth.my_exception_handler',
 
 }
-django_filters.rest_framework.DjangoFilterBackend

@@ -32,3 +32,21 @@ class UserPermission(BasePermission):
             return True
         else:
             return False
+
+
+from rest_framework.views import exception_handler
+from rest_framework.response import Response
+
+
+# 自定义异常处理的方法
+def my_exception_handler(exc, context):
+
+    response = exception_handler(exc, context)
+    print(exc)
+    print(context)
+    if response:
+        res = Response(data={'code': 10001, 'msg': response.data.get('detail')})
+    else:
+        # res = Response({'code': 10002, 'msg': '服务器内部错误'})
+        res = Response({'code': 10002, 'msg': str(exc)})
+    return res

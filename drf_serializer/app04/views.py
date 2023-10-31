@@ -37,6 +37,7 @@ class TestView(APIView):
     # throttle_classes = [AnonRateThrottle, ]
 
     def get(self, request):
+        1/0
         print(request.user)
         print(request.auth)
         return Response({'msg': '我是测试'})
@@ -110,4 +111,7 @@ class LoginView(APIView):
 # 频率限制
 from rest_framework.throttling import BaseThrottle
 
-# 认证 权限 频率 过滤 排序都在这
+# 认证 权限 频率 过滤 排序都在上面
+
+# 全局异常处理
+from rest_framework.views import exception_handler
