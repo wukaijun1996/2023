@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import django_filters.rest_framework
 import rest_framework
 
 import app01.apps
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'app03.apps.App03Config',
     'app04.apps.App04Config',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -146,6 +148,16 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
     ],
     # 'DEFAULT_AUTHENTICATION_CLASSES': ['app04.app_auth.MyAuthentication', ]
-    'DEFAULT_PERMISSION_CLASSES': ['app04.app_auth.UserPermission', ],
+    # 'DEFAULT_PERMISSION_CLASSES': ['app04.app_auth.UserPermission', ],
+    # 'DEFAULT_THROTTLE_CLASSES': [
+        # 'rest_framework.throttling.AnonRateThrottle',  # 配置未登录用户访问频次
+        # 'rest_framework.throttling.UserRateThrottle',  # 配置登录用户访问频次
+    # ],
+    # 'DEFAULT_THROTTLE_RATES': {
+        # 'user': '10/m',
+        # 'anon': '3/m',
+    # },
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
 
 }
+django_filters.rest_framework.DjangoFilterBackend

@@ -7,6 +7,9 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     publish = models.CharField(max_length=32)
 
+    def __str__(self):
+        return self.name
+
 
 class User(models.Model):
     username = models.CharField(max_length=32)

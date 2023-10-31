@@ -28,7 +28,7 @@ class UserPermission(BasePermission):
         # 由于认证已经过了 request内就有user对象了，当前登录用户
         user = request.user  # 当前登录用户
         print(user.get_user_type_display())
-        if user.user_type == 2:
+        if user.user_type == 1:
             return True
         else:
             return False

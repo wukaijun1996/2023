@@ -31,9 +31,10 @@ class BookViewSet(ModelViewSet):
 
 
 class TestView(APIView):
-    authentication_classes = [MyAuthentication, ]
-
+    from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
+    # authentication_classes = [MyAuthentication, ]
     # permission_classes = [UserPermission, ]
+    # throttle_classes = [AnonRateThrottle, ]
 
     def get(self, request):
         print(request.user)
@@ -53,6 +54,31 @@ class Test1View(APIView):
         print(request.user)
         print(request.auth)
         return Response({'msg': '超级管理有能看'})
+
+
+from rest_framework.generics import ListAPIView
+from django_filters.rest_framework import DjangoFilterBackend
+
+
+# 过滤组件的使用
+class BookView(ListAPIView):
+    queryset = Book.objects
+    serializer_class = BookSerializer
+    filter_backends = [DjangoFilterBackend, ]
+    # 过滤某个字段
+    filterset_fields = ['name', 'price', ]
+
+
+from rest_framework.filters import OrderingFilter
+
+
+# 排序组件的使用  (使用时用 ordering=-price&&ordering=-id)
+class Book2View(ListAPIView):
+    queryset = Book.objects
+    serializer_class = BookSerializer
+    filter_backends = [OrderingFilter, ]
+    # 排序某个字段
+    ordering_fields = ['id', 'price', ]
 
 
 class LoginView(APIView):
@@ -79,3 +105,9 @@ class LoginView(APIView):
             return Response({'status': 100, 'msg': '登陆成功', 'token': token})
         else:
             return Response({'status': 101, 'msg': '用户名或密码错误'})
+
+
+# 频率限制
+from rest_framework.throttling import BaseThrottle
+
+# 认证 权限 频率 过滤 排序都在这

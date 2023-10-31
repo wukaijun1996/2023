@@ -39,6 +39,8 @@ urlpatterns = [
     path(r'login/', views.LoginView.as_view()),
     path(r'test/', views.TestView.as_view()),
     path(r'test1/', views.Test1View.as_view()),
+    path(r'books1/', views.BookView.as_view()),
+    path(r'books2/', views.Book2View.as_view()),
 
 ]
 
