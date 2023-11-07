@@ -35,6 +35,19 @@ class Book(BaseModel):
     def __str__(self):
         return self.name
 
+    @property
+    def publish_name(self):
+        return self.publish.name
+
+    @property
+    def author_list(self):
+        author_list = self.authors.all()
+        # ll = []
+        # for author in author_list:
+        #     ll.append({'name': author.name, 'sex': author.get_sex_display()})
+        # return ll
+        return [{'name': author.name, 'sex': author.get_sex_display()} for author in author_list]
+
 
 class Publish(BaseModel):
     name = models.CharField(max_length=32)
