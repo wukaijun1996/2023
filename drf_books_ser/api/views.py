@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from api import models
 from api.ser import BookModelSerializer
 from rest_framework.views import APIView
+from rest_framework.generics import ListAPIView
 
 
 class BookAPIView(APIView):
@@ -96,3 +97,29 @@ class BookAPIView(APIView):
             return Response(data={'msg': '删除成功'})
         else:
             return Response(data={'msg': '没有要删除的数据'})
+
+
+# 查所有 才需要分页
+# 内置三种分页方式
+from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination, CursorPagination
+from utils.throttling import MyThrottle
+
+"""
+PageNumberPagination
+    page_size:每页显示的页数
+"""
+
+
+class MyPageNumberPagination(PageNumberPagination):
+    page_size = 3  # 每页条数  http://127.0.0.1:8080/api/books2/?aaa=1&size=6
+    page_query_param = 'aaa'  # 查询第几页的key
+    page_size_query_param = 'size'  # 每一页显示的条数
+    max_page_size = 5  # 每页最大显示条数
+
+
+class BookView(ListAPIView):
+    throttle_classes = [MyThrottle, ]
+    queryset = models.Book.objects.filter()
+    serializer_class = BookModelSerializer
+    # 配置分页
+    pagination_class = MyPageNumberPagination
