@@ -123,3 +123,26 @@ class BookView(ListAPIView):
     serializer_class = BookModelSerializer
     # 配置分页
     pagination_class = MyPageNumberPagination
+
+
+# 自定制的频率限制类
+class MtThrottle():
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
