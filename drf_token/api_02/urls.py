@@ -14,18 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include, re_path
+from django.urls import path
+from api_02 import views
+from rest_framework.routers import SimpleRouter
 
-from rest_framework_jwt.views import ObtainJSONWebToken, VerifyJSONWebToken, RefreshJSONWebToken, obtain_jwt_token
-from api import views
-from django.views.static import serve  # django内置给你的视图函数
-from django.conf import settings
+router = SimpleRouter()
+router.register('register', views.RegisterView, 'register')
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path('login/', obtain_jwt_token),
-    # path('books/', views.BookView.as_view()),
-    path('api_02/', include('api_02.urls')),
-    # 开放media文件夹
-    re_path(r"^media/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT}, name="media"),
+    # path('register/', views.RegisterView.as_view({'post': 'create'})),
 
 ]
+
+urlpatterns += router.urls
