@@ -15,8 +15,8 @@ class MyToken(JSONWebTokenAuthentication):
         try:
             payload = jwt_decode_handler(jwt_value)
             user = self.authenticate_credentials(payload)
-            print(user.username, "giao")
+            print(user.mobile, "giao")
         except Exception:
             raise exceptions.AuthenticationFailed('认证失败')
 
-        return payload, None
+        return user, jwt_value

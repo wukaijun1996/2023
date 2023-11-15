@@ -31,3 +31,18 @@ class UserModelserializer(serializers.ModelSerializer):
         # models.User.objects.create(**validated_data) 这个密码不会加密
         user = models.User.objects.create_user(**validated_data)  # 这个会加密
         return user
+
+
+class UserReadOnlyModelserializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.User
+        fields = ['username', 'icon']
+
+
+class UserImageModelserializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.User
+        fields = ['icon']
+        extra_kwargs = {
+            'icon': {'required': True},
+        }

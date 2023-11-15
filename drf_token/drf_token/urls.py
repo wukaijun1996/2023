@@ -22,8 +22,11 @@ from django.views.static import serve  # django内置给你的视图函数
 from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('login/', obtain_jwt_token),
-    # path('books/', views.BookView.as_view()),
+    path('login/', obtain_jwt_token),
+    path('books/', views.BookView.as_view()),
+    path('order/', views.OrderAPIView.as_view()),
+    path('userinfo/', views.UserInfoAPIView.as_view()),
+
     path('api_02/', include('api_02.urls')),
     # 开放media文件夹
     re_path(r"^media/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT}, name="media"),
