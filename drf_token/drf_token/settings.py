@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import datetime
 import os.path
 from pathlib import Path
 
@@ -142,6 +143,6 @@ AUTH_USER_MODEL = 'api_02.user'  # app名.表名
 
 # JWT的配置
 JWT_AUTH = {
-    'JWT_RESPONSE_PAYLOAD_HANDLER':
-        'api.utils.my_jwt_response_payload_handler',
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'api.utils.my_jwt_response_payload_handler',
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),  # 过期时间， 手动配置
 }

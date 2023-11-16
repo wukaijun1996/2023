@@ -42,7 +42,7 @@ class UserInfoAPIView(APIView):
         return Response('UserInfoAPIView')
 
 
-# 手动签发token 完成多方式登录
+# 自动签发token 完成多方式登录
 from rest_framework.views import APIView
 from rest_framework.viewsets import ViewSetMixin, ViewSet
 from api.ser import LoginModelSerializer
