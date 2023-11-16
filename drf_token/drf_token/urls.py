@@ -20,12 +20,16 @@ from rest_framework_jwt.views import ObtainJSONWebToken, VerifyJSONWebToken, Ref
 from api import views
 from django.views.static import serve  # django内置给你的视图函数
 from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', obtain_jwt_token),
     path('books/', views.BookView.as_view()),
     path('order/', views.OrderAPIView.as_view()),
     path('userinfo/', views.UserInfoAPIView.as_view()),
+
+    # 多方式登录签发token
+    path('login2/', views.Login2View.as_view(actions={'post': 'login'})),
 
     path('api_02/', include('api_02.urls')),
     # 开放media文件夹

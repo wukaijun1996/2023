@@ -35,9 +35,25 @@ class OrderAPIView(APIView):
 
 class UserInfoAPIView(APIView):
     authentication_classes = [JSONWebTokenAuthentication, ]
-    # permission_classes = [IsAuthenticated, ] # 不加游客可以登录往下走
+
+    # permission_classes = [IsAuthenticated, ] # 不加 游客可以登录往下走
 
     def get(self, request, *args, **kwargs):
         return Response('UserInfoAPIView')
 
-from rest_framework_jwt.utils import jwt_response_payload_handler
+
+# 手动签发token 完成多方式登录
+from rest_framework.views import APIView
+from rest_framework.viewsets import ViewSetMixin, ViewSet
+from api.ser import LoginModelSerializer
+
+
+# class Login2View(ViewSetMixin,APIView):
+class Login2View(ViewSet):
+    def login(self, request, *args, **kwargs):
+        login_ser = LoginModelSerializer(data=request.data, context={'request': request})
+
+        login_ser.is_valid(raise_exception=True)
+        token = login_ser.context.get('token')
+
+        return Response({'status': 100, 'msg': '登录成功', 'token': token, 'username': login_ser.context.get('username')})
