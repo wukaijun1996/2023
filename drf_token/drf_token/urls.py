@@ -28,6 +28,10 @@ urlpatterns = [
     path('order/', views.OrderAPIView.as_view()),
     path('userinfo/', views.UserInfoAPIView.as_view()),
 
+    # 缓存
+    path('test/', views.test_cache1),
+    path('test2/', views.test_cache2),
+
     # 多方式登录签发token
     path('login2/', views.Login2View.as_view(actions={'post': 'login'})),
 

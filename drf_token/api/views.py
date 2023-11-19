@@ -57,3 +57,32 @@ class Login2View(ViewSet):
         token = login_ser.context.get('token')
 
         return Response({'status': 100, 'msg': '登录成功', 'token': token, 'username': login_ser.context.get('username')})
+
+
+# 缓存
+from django.core.cache import cache as cache
+
+
+class Person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+def test_cache1(request):
+    p = Person('root', 12345678)
+    cache.set('name', p)
+    import time
+    ctime = time.time()
+
+    return render(request, 'index.html', locals())
+
+
+def test_cache2(request):
+    p = cache.get('name')
+    print(type(p))
+    print(p.name)
+    print(p.age)
+    import time
+    ctime = time.time()
+    return render(request, 'index.html', locals())
