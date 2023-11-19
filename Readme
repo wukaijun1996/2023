@@ -51,3 +51,7 @@ PrettyNum.objects.filter(**data_dict).order_by("-level").count() # 符合条件�
 
 
 createsuperuser 创建django后台管理员
+
+
+
+
