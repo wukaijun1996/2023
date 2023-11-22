@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+
     'user',  # apps目录已经加到环境变量
 ]
 
@@ -129,3 +131,52 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'user.user'
+
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'luffyapi.utils.exceptions.common_exception_handler',
+}
+
+# 日志的配置
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {module} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs", "luffy.log"),
+            'maxBytes': 300 * 1024 * 1024,
+            'backupCount': 10,
+            'formatter': 'verbose',
+            'encoding': 'utf-8'
+        }
+    },
+    # 日志对象
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'propagate': True,  # 是否让日志信息继续冒泡给其他的日志处理系统
+        },
+    }
+}
