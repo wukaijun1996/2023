@@ -19,6 +19,14 @@ grant all privileges on luffyapi.* to 'luffyapi'@'%' identified by '123456';
 
 flush privileges;
 
+跨域问题解决（同源策略）:
+CORS:跨域资源共享
+csrf: 跨站请求伪造
+xss: 跨站请求攻击
+pip install django-cors-headers
+
+
+
 
 
 vue环境搭建:
@@ -42,3 +50,6 @@ cnpm install -g @vue/cli
 vue create luffycity
 cd luffycity
 npm run serve
+
+
+cnpm install axios

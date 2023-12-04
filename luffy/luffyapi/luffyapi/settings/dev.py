@@ -4,6 +4,10 @@ from pathlib import Path
 import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import corsheaders.middleware
+
+import luffyapi.utils.middle
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 # 把BASE_DIR 加入到环境变量
 sys.path.insert(0, BASE_DIR)
@@ -33,18 +37,21 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-
+    'corsheaders',
     'user',  # apps目录已经加到环境变量
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 自定义处理跨域
+    # 'luffyapi.utils.middle.MyMiddle',
 ]
 
 ROOT_URLCONF = 'luffyapi.urls'
@@ -157,7 +164,7 @@ LOGGING = {
     },
     'handlers': {
         'console': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
@@ -180,3 +187,18 @@ LOGGING = {
         },
     }
 }
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'VIEW',
+)
+CORS_ALLOW_HEADERS = (
+    "Content-Type",
+    "authorization"
+)

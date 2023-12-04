@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d505b1-3b80-4f25-838f-0545cea9862f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Bigapple.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../drfdemo/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../drfdemo/app01/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../drfdemo/app01/ser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drfdemo/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drfdemo/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drfdemo/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drfdemo/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drfdemo/drfdemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../drfdemo/drfdemo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Bigapple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Bigapple.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffyapi/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="mysite2" type="Python.DjangoServer" factoryName="Django server">
@@ -68,6 +64,8 @@
       <workItem from="1689692275254" duration="33000" />
       <workItem from="1697032853202" duration="1446000" />
       <workItem from="1697038265314" duration="699000" />
+      <workItem from="1701436501083" duration="163000" />
+      <workItem from="1701513767947" duration="29000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,108 @@
-INFO 2023-11-22 23:23:27,385 autoreload 17624 476 Watching for file changes with StatReloader
-ERROR 2023-11-22 23:23:37,023 exceptions 17624 12040 view是: <luffyapi.apps.home.views.TestView object at 0x0000028509892BB0> , 错误是 'age'
-INFO 2023-11-22 23:23:37,024 basehttp 17624 12040 "GET /home/home/ HTTP/1.1" 200 28
-ERROR 2023-11-22 23:23:42,916 exceptions 17624 12040 view是: <luffyapi.apps.home.views.TestView object at 0x00000285097979A0> , 错误是 'age'
-INFO 2023-11-22 23:23:42,917 basehttp 17624 12040 "GET /home/home/ HTTP/1.1" 200 28
-INFO 2023-11-22 23:25:17,923 autoreload 16816 6844 Watching for file changes with StatReloader
-ERROR 2023-11-22 23:25:20,472 exceptions 16816 13456 view是: <luffyapi.apps.home.views.TestView object at 0x00000251AD50DCD0> , 错误是 'age'
-INFO 2023-11-22 23:25:20,473 basehttp 16816 13456 "GET /home/home/ HTTP/1.1" 200 28
-INFO 2023-11-22 23:28:25,286 autoreload 18072 12220 Watching for file changes with StatReloader
-ERROR 2023-11-22 23:28:30,647 exceptions 18072 9956 view是: TestView , 错误是 'age'
-INFO 2023-11-22 23:28:30,648 basehttp 18072 9956 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 21:34:40,064 basehttp 1428 16824 "GET /home/home/ HTTP/1.1" 200 27
+INFO 2023-12-04 21:34:52,396 autoreload 8840 17380 Watching for file changes with StatReloader
+ERROR 2023-12-04 21:34:59,334 exceptions 8840 5076 view是: TestView , 错误是 'age'
+INFO 2023-12-04 21:34:59,335 basehttp 8840 5076 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:03:45,139 autoreload 8840 17380 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-04 22:03:45,805 autoreload 19192 12448 Watching for file changes with StatReloader
+INFO 2023-12-04 22:03:59,434 autoreload 19192 12448 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-04 22:04:00,114 autoreload 3880 19440 Watching for file changes with StatReloader
+INFO 2023-12-04 22:15:38,369 autoreload 13688 8876 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:15:42,606 exceptions 13688 17660 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:15:42,611 basehttp 13688 17660 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:19:41,322 autoreload 6688 20180 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:19:46,630 exceptions 6688 11200 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:19:46,630 basehttp 6688 11200 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:21:22,861 autoreload 9864 5116 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:21:24,026 exceptions 9864 2368 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:21:24,026 basehttp 9864 2368 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:23:53,397 autoreload 9864 5116 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:23:56,486 autoreload 14460 16448 Watching for file changes with StatReloader
+INFO 2023-12-04 22:24:00,508 autoreload 14460 16448 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:24:02,100 autoreload 18968 10728 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:24:04,345 exceptions 18968 6504 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:24:04,347 basehttp 18968 6504 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:25:12,311 autoreload 12888 7880 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:25:16,605 exceptions 12888 13776 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:25:16,606 basehttp 12888 13776 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:25:25,356 autoreload 12888 7880 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:25:26,151 autoreload 14828 13592 Watching for file changes with StatReloader
+INFO 2023-12-04 22:25:30,346 basehttp 14828 17004 "GET /home/home/ HTTP/1.1" 200 27
+INFO 2023-12-04 22:25:49,503 autoreload 11276 5148 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:25:55,971 exceptions 11276 11160 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:25:55,983 basehttp 11276 11160 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:26:15,900 autoreload 10756 17804 Watching for file changes with StatReloader
+INFO 2023-12-04 22:26:22,463 autoreload 18860 12688 Watching for file changes with StatReloader
+INFO 2023-12-04 22:26:26,222 basehttp 18860 2712 "GET /home/home/ HTTP/1.1" 200 27
+INFO 2023-12-04 22:26:45,824 basehttp 18860 14272 "GET /home/home/ HTTP/1.1" 200 27
+INFO 2023-12-04 22:27:06,271 autoreload 15088 14396 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:27:09,405 exceptions 15088 5988 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:27:09,407 basehttp 15088 5988 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:27:20,123 autoreload 19368 11756 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:27:36,494 exceptions 19368 11848 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:27:36,496 basehttp 19368 11848 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:27:45,905 autoreload 14384 6444 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:27:47,879 exceptions 14384 11360 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:27:47,881 basehttp 14384 11360 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:27:54,242 autoreload 17828 12680 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:27:55,492 exceptions 17828 14444 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:27:55,492 basehttp 17828 14444 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:28:06,916 autoreload 20128 14640 Watching for file changes with StatReloader
+ERROR 2023-12-04 22:28:09,996 exceptions 20128 16784 view是: TestView , 错误是 'age'
+INFO 2023-12-04 22:28:09,996 basehttp 20128 16784 "GET /home/home/ HTTP/1.1" 200 28
+INFO 2023-12-04 22:28:18,182 autoreload 17032 19228 Watching for file changes with StatReloader
+INFO 2023-12-04 22:28:21,496 basehttp 17032 19908 "GET /home/home/ HTTP/1.1" 200 27
+INFO 2023-12-04 22:30:59,087 basehttp 17032 19908 "OPTIONS /home/home/ HTTP/1.1" 200 163
+INFO 2023-12-04 22:31:14,712 autoreload 19440 14324 Watching for file changes with StatReloader
+INFO 2023-12-04 22:31:17,839 autoreload 19672 13060 Watching for file changes with StatReloader
+INFO 2023-12-04 22:31:20,410 basehttp 19672 19424 "OPTIONS /home/home/ HTTP/1.1" 200 163
+INFO 2023-12-04 22:32:29,652 autoreload 19672 13060 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:32:31,370 autoreload 13484 16532 Watching for file changes with StatReloader
+INFO 2023-12-04 22:32:57,202 autoreload 13484 16532 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:32:58,788 autoreload 1728 6928 Watching for file changes with StatReloader
+INFO 2023-12-04 22:33:09,924 autoreload 1728 6928 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:33:11,300 autoreload 3228 13944 Watching for file changes with StatReloader
+INFO 2023-12-04 22:33:17,555 autoreload 3228 13944 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:33:18,925 autoreload 3612 7960 Watching for file changes with StatReloader
+INFO 2023-12-04 22:33:33,496 autoreload 3612 7960 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:33:34,850 autoreload 17812 7496 Watching for file changes with StatReloader
+INFO 2023-12-04 22:33:49,168 autoreload 17812 7496 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2023-12-04 22:33:50,273 autoreload 17056 4396 Watching for file changes with StatReloader
+INFO 2023-12-04 22:34:40,118 autoreload 13980 7304 Watching for file changes with StatReloader
+INFO 2023-12-04 22:34:45,237 basehttp 13980 8592 "OPTIONS /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:36:29,641 autoreload 6824 4352 Watching for file changes with StatReloader
+INFO 2023-12-04 22:36:32,523 basehttp 6824 12396 "OPTIONS /home/home/ HTTP/1.1" 200 2
+WARNING 2023-12-04 22:36:32,531 log 6824 12396 Forbidden (CSRF cookie not set.): /home/home/
+WARNING 2023-12-04 22:36:32,532 basehttp 6824 12396 "POST /home/home/ HTTP/1.1" 403 2801
+INFO 2023-12-04 22:37:37,996 autoreload 344 19572 Watching for file changes with StatReloader
+INFO 2023-12-04 22:37:40,006 basehttp 344 6176 "OPTIONS /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:37:40,006 basehttp 344 6176 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:37:45,745 autoreload 5320 6680 Watching for file changes with StatReloader
+INFO 2023-12-04 22:37:47,477 basehttp 5320 17332 "OPTIONS /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:37:47,480 basehttp 5320 17332 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:38:26,211 basehttp 5320 17332 "OPTIONS /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:38:26,213 basehttp 5320 12284 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:39:42,762 autoreload 15244 9776 Watching for file changes with StatReloader
+INFO 2023-12-04 22:39:45,812 basehttp 15244 2224 "OPTIONS /home/home/ HTTP/1.1" 200 2
+WARNING 2023-12-04 22:39:45,812 log 15244 2224 Forbidden (CSRF cookie not set.): /home/home/
+WARNING 2023-12-04 22:39:45,812 basehttp 15244 2224 "POST /home/home/ HTTP/1.1" 403 2801
+INFO 2023-12-04 22:40:05,222 autoreload 17864 6588 Watching for file changes with StatReloader
+INFO 2023-12-04 22:40:08,132 basehttp 17864 12220 "OPTIONS /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:40:08,135 basehttp 17864 12220 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:40:09,142 basehttp 17864 12220 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:40:09,377 basehttp 17864 12220 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:40:09,559 basehttp 17864 12220 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:40:09,765 basehttp 17864 12220 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:41:40,449 autoreload 17864 6588 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-04 22:41:41,220 autoreload 17448 4580 Watching for file changes with StatReloader
+INFO 2023-12-04 22:42:54,088 autoreload 2540 15104 Watching for file changes with StatReloader
+INFO 2023-12-04 22:43:01,696 basehttp 2540 16624 "OPTIONS /home/home/ HTTP/1.1" 200 0
+INFO 2023-12-04 22:43:20,666 autoreload 15716 9256 Watching for file changes with StatReloader
+INFO 2023-12-04 22:44:28,804 autoreload 15716 9256 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\utils\middle.py changed, reloading.
+INFO 2023-12-04 22:44:29,433 autoreload 7588 12724 Watching for file changes with StatReloader
+INFO 2023-12-04 22:45:01,936 autoreload 7588 12724 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-04 22:45:02,557 autoreload 5896 9964 Watching for file changes with StatReloader
+INFO 2023-12-04 22:54:37,079 autoreload 5896 9964 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-04 22:55:42,125 autoreload 14208 4704 Watching for file changes with StatReloader
+INFO 2023-12-04 22:55:49,267 basehttp 14208 11388 "OPTIONS /home/home/ HTTP/1.1" 200 0
+INFO 2023-12-04 22:55:49,273 basehttp 14208 11388 "POST /home/home/ HTTP/1.1" 200 2
+INFO 2023-12-04 22:57:55,011 autoreload 9684 12724 Watching for file changes with StatReloader
