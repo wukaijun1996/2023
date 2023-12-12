@@ -4,9 +4,9 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
-// import axios from 'axios'
-//
-// Vue.prototype.$axios = axios
+
+import axios from 'axios'
+Vue.prototype.$axios = axios
 
 new Vue({
   router,

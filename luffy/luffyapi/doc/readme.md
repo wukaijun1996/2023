@@ -1,3 +1,5 @@
+
+django3.2.18
 创建虚拟环境：
 pip install virtualenv
 pip install virtualenvwrapper-win
@@ -52,4 +54,13 @@ cd luffycity
 npm run serve
 
 
-cnpm install axios
+cnpm install axios //要在项目下执行，会安装在node_modules下
+在main.js下配置
+import axios from 'axios'
+Vue.prototype.$axios = axios
+
+
+
+xadmin配置：
+python manage.py createsuperuser
+pip install https://codeload.github.com/sshwsfc/xadmin/zip/django2
