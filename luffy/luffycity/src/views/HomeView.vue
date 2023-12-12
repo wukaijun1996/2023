@@ -9,7 +9,8 @@
 export default {
   name: 'HomeView',
   data: function () {
-    return {'a': 123}
+
+    return {a: 123}
   },
   components: {}
 }
