@@ -59,7 +59,10 @@ cnpm install axios //要在项目下执行，会安装在node_modules下
 import axios from 'axios'
 Vue.prototype.$axios = axios
 
-
+cnpm install vue-cookies
+cnpm install element-ui
+cnpm install jquery
+cnpm install bootstrap@3
 
 xadmin配置：
 python manage.py createsuperuser
