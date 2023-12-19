@@ -25,13 +25,13 @@
       //   console.log(error)
       // }),
       //es6的箭头函数
-      this.$axios.get('http://127.0.0.1:8081/home/home/').then(
-          response => {
-            console.log(response.data)
-          }
-      ).catch(error => {
-        console.log(error.date)
-      })
+      // this.$axios.get('http://127.0.0.1:8081/home/home/').then(
+      //     response => {
+      //       console.log(response.data)
+      //     }
+      // ).catch(error => {
+      //   console.log(error.date)
+      // })
     },
 
     components: {

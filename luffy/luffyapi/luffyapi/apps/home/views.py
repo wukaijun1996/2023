@@ -4,23 +4,20 @@ from django.shortcuts import render, HttpResponse
 
 from rest_framework.views import APIView
 from luffyapi.utils.response import APIResponse
+from luffyapi.utils.logger import log
+
+from rest_framework.mixins import ListModelMixin
+from rest_framework.generics import GenericAPIView
+from rest_framework.viewsets import GenericViewSet
+from home import models
+from home import serializaer
+
+from django.conf import settings
 
 
-# from luffyapi.utils.exceptions import
-
-
-class TestView(APIView):
-    def get(self, request, *args, **kwargs):
-        dic = {'name': 'wkj'}
-        # print(dic['age'])
-        print('xxxxxxxxxxxxx')
-        return APIResponse(headers={'Access-Control-Allow-Origin': '*'})
-
-
-def test(request):
-    print(request.method)
-    res = HttpResponse('ok')
-    # res['Access-Control-Allow-Origin'] = '*'
-    # if request.method == "OPTIONS":
-    #     res["Access-Control-Allow-Headers"] = "Content-Type"
-    return res
+# class BannerView(GenericAPIView, ListModelMixin): 路由配置 path('banner/', views.BannerView.as_view())
+class BannerView(GenericViewSet, ListModelMixin):  # 路由配置
+    # 无论有多少待展示的数据，最多就展示3条
+    queryset = models.Banner.objects.filter(is_delete=False, is_show=True).order_by('display_order')[
+               :settings.BANNER_COUNTER]
+    serializer_class = serializaer.BannerModelSerializer

@@ -2,6 +2,7 @@
 import os.path
 from pathlib import Path
 import sys
+from luffyapi.settings.const import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import corsheaders.middleware
@@ -39,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'user',  # apps目录已经加到环境变量
+    'home',
+
 ]
 
 MIDDLEWARE = [
