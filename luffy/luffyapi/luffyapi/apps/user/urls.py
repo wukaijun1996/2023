@@ -1,6 +1,12 @@
 from django.urls import path, re_path, include
 
-urlpatterns = {
-    # path('admin/', admin.site.urls),
+from rest_framework.routers import SimpleRouter
+from user import views
 
-}
+router = SimpleRouter()
+router.register('', views.LoginView, 'login')
+
+urlpatterns = [
+    path('', include(router.urls)),
+
+]

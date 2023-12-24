@@ -22,18 +22,27 @@
       </ul>
 
       <div class="right-part">
-        <div>
-          <span>登录</span>
+        <div v-if="!username">
+          <span @click="put_login">登录</span>
           <span class="line">|</span>
-          <span>注册</span>
+          <span @click="put_register">注册</span>
+        </div>
+        <div v-else>
+          <span>{{ username }}</span>
+          <span class="line">|</span>
+          <span @click="logout">注销</span>
         </div>
       </div>
+      <Login v-if="is_login" @close="close_login" @go="put_register" @loginsuccess="login_success"/>
+      <Register v-if="is_register" @close="close_register" @go="put_login"/>
     </div>
   </div>
 
 </template>
 
 <script>
+import Login from "@/components/Login";
+import Register from "@/components/Register";
 
 export default {
   name: "Header",
@@ -41,6 +50,10 @@ export default {
     return {
       // 当前所在路径，去sessionStorage取的，如果取不到，就是 /
       url_path: sessionStorage.url_path || '/',
+      is_login: false,
+      is_register: false,
+      token: '',
+      username: '',
     }
   },
   methods: {
@@ -51,13 +64,45 @@ export default {
       }
       sessionStorage.url_path = url_path;
     },
+    close_login() {
+      this.is_login = false
+    },
+    close_register() {
+      this.is_register = false
+    },
+    put_register() {
+      this.is_register = true
+      this.is_login = false
+    },
+    put_login() {
+      this.is_register = false
+      this.is_login = true
+    },
+    login_success() {
+      this.username = this.$cookies.get('username')
+      this.token = this.$cookies.get('token')
+    },
+    logout() {
+      this.$cookies.remove('username')
+      this.$cookies.remove('token')
+      this.username = ""
+      this.token = ""
+    },
   },
   created() {
     // 组件加载万成，就取出当前的路径，存到sessionStorage  this.$route.path
     sessionStorage.url_path = this.$route.path;
     // 把url_path = 当前路径
     this.url_path = this.$route.path;
-  }
+
+    this.username = this.$cookies.get('username')
+    this.token = this.$cookies.get('token')
+  },
+  components: {
+    Login,
+    Register
+  },
+
 }
 </script>
 
