@@ -1410,3 +1410,249 @@ INFO 2023-12-24 23:21:58,199 basehttp 8588 7704 "GET /home/banner/ HTTP/1.1" 200
 INFO 2023-12-24 23:21:58,259 basehttp 8588 4772 "GET /media/banner/banner2.png HTTP/1.1" 304 0
 INFO 2023-12-24 23:21:58,259 basehttp 8588 8684 "GET /media/banner/banner1.png HTTP/1.1" 304 0
 INFO 2023-12-24 23:21:58,262 basehttp 8588 9412 "GET /media/banner/banner3.png HTTP/1.1" 304 0
+INFO 2023-12-25 21:27:18,796 autoreload 8824 5944 Watching for file changes with StatReloader
+INFO 2023-12-25 21:27:34,461 basehttp 8824 5812 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 25
+INFO 2023-12-25 21:27:40,754 basehttp 8824 5812 "GET /user/check_telephone/?telephone=17398375674 HTTP/1.1" 200 37
+INFO 2023-12-25 21:46:01,121 autoreload 8824 5944 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:46:01,848 autoreload 11424 12996 Watching for file changes with StatReloader
+INFO 2023-12-25 21:46:18,502 autoreload 11424 12996 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:46:19,148 autoreload 12756 9524 Watching for file changes with StatReloader
+INFO 2023-12-25 21:46:51,105 autoreload 12756 9524 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:46:51,868 autoreload 1588 12944 Watching for file changes with StatReloader
+INFO 2023-12-25 21:47:45,218 autoreload 1588 12944 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:47:45,992 autoreload 6808 8308 Watching for file changes with StatReloader
+INFO 2023-12-25 21:50:50,092 autoreload 6808 8308 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:50:50,740 autoreload 12988 12472 Watching for file changes with StatReloader
+INFO 2023-12-25 21:51:11,731 autoreload 12988 12472 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:51:12,319 autoreload 13192 12536 Watching for file changes with StatReloader
+INFO 2023-12-25 21:52:05,965 autoreload 13192 12536 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:52:06,541 autoreload 11276 12932 Watching for file changes with StatReloader
+INFO 2023-12-25 21:52:32,025 autoreload 11276 12932 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:52:32,628 autoreload 12936 12320 Watching for file changes with StatReloader
+INFO 2023-12-25 21:53:04,579 autoreload 12936 12320 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 21:53:05,215 autoreload 4708 12384 Watching for file changes with StatReloader
+INFO 2023-12-25 21:54:33,065 autoreload 4708 12384 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\const.py changed, reloading.
+INFO 2023-12-25 21:57:57,198 autoreload 11524 9696 Watching for file changes with StatReloader
+INFO 2023-12-25 21:59:04,551 autoreload 8468 10808 Watching for file changes with StatReloader
+ERROR 2023-12-25 21:59:18,618 exceptions 8468 10432 view是: LoginView , 错误是 No module named 'send'
+INFO 2023-12-25 21:59:18,619 basehttp 8468 10432 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 58
+INFO 2023-12-25 22:01:14,346 autoreload 11900 13240 Watching for file changes with StatReloader
+INFO 2023-12-25 22:01:37,036 autoreload 8308 4884 Watching for file changes with StatReloader
+ERROR 2023-12-25 22:01:38,914 exceptions 8308 148 view是: LoginView , 错误是 No module named 'settings'
+INFO 2023-12-25 22:01:38,915 basehttp 8308 148 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 62
+INFO 2023-12-25 22:02:47,204 autoreload 11816 13148 Watching for file changes with StatReloader
+ERROR 2023-12-25 22:02:51,161 send 11816 10484 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:02:51,163 basehttp 11816 10484 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:02:54,160 send 11816 10484 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:02:54,161 basehttp 11816 10484 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+INFO 2023-12-25 22:03:19,400 autoreload 11580 11836 Watching for file changes with StatReloader
+ERROR 2023-12-25 22:03:21,150 send 11580 4468 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:03:21,155 basehttp 11580 4468 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+INFO 2023-12-25 22:03:49,130 autoreload 8376 1608 Watching for file changes with StatReloader
+ERROR 2023-12-25 22:03:51,142 send 8376 8844 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:03:51,144 basehttp 8376 8844 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+INFO 2023-12-25 22:04:33,056 autoreload 5652 2084 Watching for file changes with StatReloader
+ERROR 2023-12-25 22:04:34,663 send 5652 3172 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:04:34,664 basehttp 5652 3172 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:04:38,787 send 5652 3172 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:04:38,788 basehttp 5652 3172 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+INFO 2023-12-25 22:04:56,672 autoreload 5652 2084 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\lib\tx_sms\send.py changed, reloading.
+INFO 2023-12-25 22:04:57,263 autoreload 3496 8428 Watching for file changes with StatReloader
+INFO 2023-12-25 22:05:01,187 basehttp 3496 10832 "GET /user/send/?telephone=12398375674 HTTP/1.1" 200 37
+ERROR 2023-12-25 22:05:43,128 send 3496 10832 手机号: 173983756745,短信发送失败
+INFO 2023-12-25 22:05:43,128 basehttp 3496 10832 "GET /user/send/?telephone=173983756745 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:05:45,591 send 3496 10832 手机号: 173983756745,短信发送失败
+INFO 2023-12-25 22:05:45,594 basehttp 3496 10832 "GET /user/send/?telephone=173983756745 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:06:06,193 send 3496 10832 手机号: 173983756745,短信发送失败
+INFO 2023-12-25 22:06:06,195 basehttp 3496 10832 "GET /user/send/?telephone=173983756745 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:06:30,853 send 3496 10832 手机号: 173983756745222,短信发送失败
+INFO 2023-12-25 22:06:30,856 basehttp 3496 10832 "GET /user/send/?telephone=173983756745222 HTTP/1.1" 200 40
+INFO 2023-12-25 22:06:52,502 autoreload 11924 8772 Watching for file changes with StatReloader
+INFO 2023-12-25 22:06:54,162 basehttp 11924 9116 "GET /user/send/?telephone=173983756745222 HTTP/1.1" 200 37
+INFO 2023-12-25 22:07:01,243 basehttp 11924 9116 "GET /user/send/?telephone=173983756745 HTTP/1.1" 200 37
+ERROR 2023-12-25 22:07:04,725 send 11924 9116 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:07:04,730 basehttp 11924 9116 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+INFO 2023-12-25 22:07:07,837 basehttp 11924 9116 "GET /user/send/?telephone=173983756745 HTTP/1.1" 200 37
+INFO 2023-12-25 22:07:17,200 autoreload 11924 8772 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:07:17,859 autoreload 9148 6328 Watching for file changes with StatReloader
+INFO 2023-12-25 22:20:02,012 autoreload 9148 6328 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-25 22:20:02,657 autoreload 5904 10600 Watching for file changes with StatReloader
+INFO 2023-12-25 22:22:19,316 autoreload 5904 10600 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-25 22:22:20,010 autoreload 6468 6156 Watching for file changes with StatReloader
+INFO 2023-12-25 22:22:40,254 autoreload 6468 6156 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2023-12-25 22:22:40,850 autoreload 11356 4440 Watching for file changes with StatReloader
+INFO 2023-12-25 22:23:20,821 autoreload 11356 4440 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:23:21,420 autoreload 10252 10028 Watching for file changes with StatReloader
+INFO 2023-12-25 22:23:44,878 autoreload 10252 10028 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\urls.py changed, reloading.
+INFO 2023-12-25 22:23:45,513 autoreload 6984 8824 Watching for file changes with StatReloader
+INFO 2023-12-25 22:24:10,274 autoreload 6984 8824 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:24:10,967 autoreload 864 2724 Watching for file changes with StatReloader
+INFO 2023-12-25 22:24:38,849 autoreload 864 2724 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:24:39,478 autoreload 1168 11428 Watching for file changes with StatReloader
+INFO 2023-12-25 22:25:05,251 autoreload 11292 5160 Watching for file changes with StatReloader
+INFO 2023-12-25 22:25:13,530 autoreload 60 11356 Watching for file changes with StatReloader
+INFO 2023-12-25 22:25:32,361 autoreload 11420 9776 Watching for file changes with StatReloader
+INFO 2023-12-25 22:25:38,479 autoreload 10128 8636 Watching for file changes with StatReloader
+INFO 2023-12-25 22:25:48,193 autoreload 11732 8276 Watching for file changes with StatReloader
+INFO 2023-12-25 22:25:50,791 autoreload 11732 8276 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:25:51,646 autoreload 5824 13220 Watching for file changes with StatReloader
+ERROR 2023-12-25 22:26:39,915 send 5824 12536 手机号: 17398375674,短信发送失败
+INFO 2023-12-25 22:26:39,916 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:26:41,036 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 59 seconds.
+INFO 2023-12-25 22:26:41,037 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:42,995 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 57 seconds.
+INFO 2023-12-25 22:26:42,995 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:43,941 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 56 seconds.
+INFO 2023-12-25 22:26:43,941 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:44,627 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 56 seconds.
+INFO 2023-12-25 22:26:44,628 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:45,298 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 55 seconds.
+INFO 2023-12-25 22:26:45,299 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:45,964 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 54 seconds.
+INFO 2023-12-25 22:26:45,964 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:51,446 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 49 seconds.
+INFO 2023-12-25 22:26:51,446 basehttp 5824 12536 "GET /user/send/?telephone=17398375674 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:26:59,486 send 5824 12536 手机号: 17398375679,短信发送失败
+INFO 2023-12-25 22:26:59,488 basehttp 5824 12536 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 40
+ERROR 2023-12-25 22:27:01,147 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 59 seconds.
+INFO 2023-12-25 22:27:01,149 basehttp 5824 12536 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 105
+ERROR 2023-12-25 22:27:31,406 exceptions 5824 12536 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 28 seconds.
+INFO 2023-12-25 22:27:31,408 basehttp 5824 12536 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 105
+INFO 2023-12-25 22:38:00,227 autoreload 5824 13220 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:38:00,836 autoreload 5628 12764 Watching for file changes with StatReloader
+INFO 2023-12-25 22:38:05,689 autoreload 5628 12764 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:38:06,279 autoreload 2840 424 Watching for file changes with StatReloader
+INFO 2023-12-25 22:38:58,267 autoreload 2840 424 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:38:58,890 autoreload 9892 6512 Watching for file changes with StatReloader
+INFO 2023-12-25 22:39:26,340 autoreload 9892 6512 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 22:39:27,034 autoreload 5256 10144 Watching for file changes with StatReloader
+INFO 2023-12-25 22:40:59,436 autoreload 5256 10144 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:41:00,071 autoreload 1584 12308 Watching for file changes with StatReloader
+INFO 2023-12-25 22:41:22,230 autoreload 1584 12308 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:41:22,855 autoreload 12956 12996 Watching for file changes with StatReloader
+INFO 2023-12-25 22:41:32,120 autoreload 12956 12996 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:41:32,825 autoreload 6808 11800 Watching for file changes with StatReloader
+INFO 2023-12-25 22:41:48,650 autoreload 6808 11800 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:41:49,275 autoreload 13092 3836 Watching for file changes with StatReloader
+INFO 2023-12-25 22:42:28,005 autoreload 13092 3836 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:42:28,635 autoreload 13260 5204 Watching for file changes with StatReloader
+INFO 2023-12-25 22:42:53,176 autoreload 13260 5204 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:42:53,755 autoreload 2252 12080 Watching for file changes with StatReloader
+INFO 2023-12-25 22:43:12,849 autoreload 2252 12080 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:43:13,480 autoreload 3128 12308 Watching for file changes with StatReloader
+INFO 2023-12-25 22:43:18,064 autoreload 3128 12308 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:43:18,705 autoreload 2512 8900 Watching for file changes with StatReloader
+INFO 2023-12-25 22:44:25,336 autoreload 2512 8900 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:44:25,903 autoreload 9776 1996 Watching for file changes with StatReloader
+INFO 2023-12-25 22:45:03,692 autoreload 9776 1996 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:45:04,367 autoreload 4308 12520 Watching for file changes with StatReloader
+INFO 2023-12-25 22:45:19,060 autoreload 4308 12520 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:45:19,755 autoreload 3664 2232 Watching for file changes with StatReloader
+INFO 2023-12-25 22:45:25,714 autoreload 3664 2232 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:45:26,323 autoreload 304 12544 Watching for file changes with StatReloader
+INFO 2023-12-25 22:45:34,401 autoreload 304 12544 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:45:34,987 autoreload 2968 6752 Watching for file changes with StatReloader
+INFO 2023-12-25 22:45:52,955 autoreload 2968 6752 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:45:53,619 autoreload 5448 3716 Watching for file changes with StatReloader
+INFO 2023-12-25 22:46:11,616 autoreload 5448 3716 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:46:12,204 autoreload 12692 1608 Watching for file changes with StatReloader
+INFO 2023-12-25 22:46:34,602 autoreload 12692 1608 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:46:35,203 autoreload 608 9772 Watching for file changes with StatReloader
+INFO 2023-12-25 22:48:20,918 autoreload 608 9772 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:48:21,653 autoreload 8748 4932 Watching for file changes with StatReloader
+INFO 2023-12-25 22:48:39,568 autoreload 8748 4932 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:48:40,139 autoreload 11364 4784 Watching for file changes with StatReloader
+INFO 2023-12-25 22:49:15,608 autoreload 11364 4784 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:49:16,321 autoreload 10864 9476 Watching for file changes with StatReloader
+INFO 2023-12-25 22:50:32,736 autoreload 10864 9476 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:50:33,439 autoreload 13176 10056 Watching for file changes with StatReloader
+INFO 2023-12-25 22:50:39,147 autoreload 13176 10056 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:50:39,767 autoreload 2608 1344 Watching for file changes with StatReloader
+INFO 2023-12-25 22:50:59,878 autoreload 2608 1344 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:51:00,559 autoreload 11344 10444 Watching for file changes with StatReloader
+INFO 2023-12-25 22:51:31,696 autoreload 11344 10444 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:51:32,315 autoreload 7968 7552 Watching for file changes with StatReloader
+INFO 2023-12-25 22:51:44,797 autoreload 7968 7552 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:51:45,456 autoreload 8256 9192 Watching for file changes with StatReloader
+INFO 2023-12-25 22:52:40,719 autoreload 8256 9192 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:52:41,375 autoreload 5928 6364 Watching for file changes with StatReloader
+INFO 2023-12-25 22:52:57,283 autoreload 5928 6364 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:52:57,923 autoreload 8620 12920 Watching for file changes with StatReloader
+INFO 2023-12-25 22:53:25,671 autoreload 8620 12920 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:53:26,317 autoreload 11160 8260 Watching for file changes with StatReloader
+INFO 2023-12-25 22:53:33,056 autoreload 11160 8260 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:53:33,651 autoreload 13172 10780 Watching for file changes with StatReloader
+INFO 2023-12-25 22:53:52,717 autoreload 13172 10780 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:53:53,327 autoreload 10056 3616 Watching for file changes with StatReloader
+INFO 2023-12-25 22:56:14,568 autoreload 10056 3616 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:56:15,154 autoreload 12936 7312 Watching for file changes with StatReloader
+INFO 2023-12-25 22:56:40,737 autoreload 12936 7312 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:56:41,327 autoreload 11592 6820 Watching for file changes with StatReloader
+INFO 2023-12-25 22:57:33,211 autoreload 11592 6820 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:57:33,830 autoreload 10448 11500 Watching for file changes with StatReloader
+INFO 2023-12-25 22:58:08,257 autoreload 10448 11500 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 22:58:08,939 autoreload 1232 11228 Watching for file changes with StatReloader
+INFO 2023-12-25 23:00:00,606 autoreload 1232 11228 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 23:00:01,210 autoreload 9132 11776 Watching for file changes with StatReloader
+INFO 2023-12-25 23:00:29,086 autoreload 9132 11776 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 23:00:29,688 autoreload 6184 13084 Watching for file changes with StatReloader
+INFO 2023-12-25 23:01:45,230 autoreload 12728 11700 Watching for file changes with StatReloader
+INFO 2023-12-25 23:05:51,256 autoreload 12728 11700 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 23:05:51,844 autoreload 5756 6188 Watching for file changes with StatReloader
+INFO 2023-12-25 23:07:46,221 autoreload 5756 6188 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 23:07:46,871 autoreload 12768 12712 Watching for file changes with StatReloader
+INFO 2023-12-25 23:09:11,633 autoreload 12768 12712 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 23:09:12,231 autoreload 5100 4640 Watching for file changes with StatReloader
+INFO 2023-12-25 23:12:11,702 autoreload 6344 6940 Watching for file changes with StatReloader
+INFO 2023-12-25 23:13:33,360 autoreload 11976 3784 Watching for file changes with StatReloader
+ERROR 2023-12-25 23:13:42,596 send 11976 6864 手机号: 17398375679,短信发送失败
+INFO 2023-12-25 23:13:42,598 basehttp 11976 6864 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 40
+ERROR 2023-12-25 23:13:43,583 exceptions 11976 6864 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 59 seconds.
+INFO 2023-12-25 23:13:43,584 basehttp 11976 6864 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 105
+ERROR 2023-12-25 23:13:44,631 exceptions 11976 6864 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 58 seconds.
+INFO 2023-12-25 23:13:44,631 basehttp 11976 6864 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 105
+ERROR 2023-12-25 23:13:45,390 exceptions 11976 6864 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 58 seconds.
+INFO 2023-12-25 23:13:45,391 basehttp 11976 6864 "GET /user/send/?telephone=17398375679 HTTP/1.1" 200 105
+INFO 2023-12-25 23:14:45,257 basehttp 11976 6864 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 78
+ERROR 2023-12-25 23:14:53,917 exceptions 11976 6864 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2023-12-25 23:14:53,918 basehttp 11976 6864 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 81
+INFO 2023-12-25 23:15:48,400 autoreload 6984 6516 Watching for file changes with StatReloader
+ERROR 2023-12-25 23:15:50,183 exceptions 6984 11740 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2023-12-25 23:15:50,184 basehttp 6984 11740 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 81
+INFO 2023-12-25 23:16:01,060 autoreload 11636 10380 Watching for file changes with StatReloader
+INFO 2023-12-25 23:17:15,458 basehttp 11636 7580 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 230
+INFO 2023-12-25 23:17:53,301 autoreload 11636 10380 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 23:17:53,875 autoreload 9492 11364 Watching for file changes with StatReloader
+INFO 2023-12-25 23:18:19,536 basehttp 9492 1332 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 57
+INFO 2023-12-25 23:20:36,361 autoreload 9492 11364 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2023-12-25 23:20:36,982 autoreload 2836 8420 Watching for file changes with StatReloader
+INFO 2023-12-25 23:24:05,924 autoreload 2836 8420 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2023-12-25 23:24:06,595 autoreload 1524 6136 Watching for file changes with StatReloader
+INFO 2023-12-25 23:24:35,443 autoreload 13072 6756 Watching for file changes with StatReloader
+INFO 2023-12-25 23:44:25,058 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2023-12-25 23:44:25,099 basehttp 13072 11980 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2023-12-25 23:44:25,101 basehttp 13072 9052 "GET /media/banner/banner3.png HTTP/1.1" 304 0
+INFO 2023-12-25 23:44:25,333 basehttp 13072 5808 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2023-12-25 23:46:53,868 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2023-12-25 23:50:47,620 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+ERROR 2023-12-25 23:50:57,957 exceptions 13072 8808 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2023-12-25 23:50:57,957 basehttp 13072 8808 "GET /user/send/?phone=14411112222 HTTP/1.1" 200 72
+INFO 2023-12-25 23:52:07,952 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2023-12-25 23:52:09,844 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+ERROR 2023-12-25 23:52:55,659 exceptions 13072 8808 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2023-12-25 23:52:55,660 basehttp 13072 8808 "GET /user/send/?phone=13233332222 HTTP/1.1" 200 72
+INFO 2023-12-25 23:55:18,507 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2023-12-25 23:55:20,368 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2023-12-25 23:55:33,722 basehttp 13072 8808 "OPTIONS /user/code_login/ HTTP/1.1" 200 0
+INFO 2023-12-25 23:55:33,725 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
+ERROR 2023-12-25 23:55:42,371 exceptions 13072 8808 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2023-12-25 23:55:42,371 basehttp 13072 8808 "GET /user/send/?phone=14433334444 HTTP/1.1" 200 72
+ERROR 2023-12-25 23:58:34,108 exceptions 13072 8808 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2023-12-25 23:58:34,109 basehttp 13072 8808 "GET /user/send/?phone=15555554444 HTTP/1.1" 200 72
+INFO 2023-12-25 23:58:34,878 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2023-12-25 23:58:36,081 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2023-12-25 23:58:36,630 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2023-12-25 23:59:00,381 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2023-12-25 23:59:02,745 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2023-12-25 23:59:59,480 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 119
+INFO 2023-12-26 00:02:39,851 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304

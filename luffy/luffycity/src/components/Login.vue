@@ -90,6 +90,7 @@ export default {
         return false;
       }
       this.is_send = true;
+      console.log(this.mobile)
     },
     send_sms() {
       if (!this.is_send) return;
@@ -107,7 +108,7 @@ export default {
         }
       }, 1000);
       // 发送短信 验证码
-      this.$axios.get(this.$settings.base_url + 'user/send/send_message/?phone=' + this.mobile).then(res => {
+      this.$axios.get(this.$settings.base_url + '/user/send/?phone=' + this.mobile).then(res => {
         if (res.data.status == 100) {
           this.$message({
             message: '恭喜你，验证码发送成功',
@@ -149,7 +150,7 @@ export default {
     },
     handleMobileLogin() {
       if (this.mobile && this.sms) {
-        this.$axios.post(this.$settings.base_url + 'user/login/sms_login/',
+        this.$axios.post(this.$settings.base_url + '/user/code_login/',
             {
               mobile: this.mobile,
               code: this.sms

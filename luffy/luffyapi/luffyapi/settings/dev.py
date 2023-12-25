@@ -144,6 +144,9 @@ AUTH_USER_MODEL = 'user.user'
 
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'luffyapi.utils.exceptions.common_exception_handler',
+    'DEFAULT_THROTTLE_RATES': {
+        'sms': '1/m'  # key要跟类中的scope对应
+    }
 }
 
 # 日志的配置

@@ -5,6 +5,7 @@ from user import views
 
 router = SimpleRouter()
 router.register('', views.LoginView, 'login')
+router.register('', views.SendSmsView, 'send')
 
 urlpatterns = [
     path('', include(router.urls)),

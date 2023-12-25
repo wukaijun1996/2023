@@ -50,3 +50,42 @@ class UserSerializer(serializers.ModelSerializer):
         payload = jwt_payload_handler(user)  # 通过user对象获得payload
         token = jwt_encode_handler(payload)  # 通过payload获得token
         return token
+
+
+class CodeUserSerializer(serializers.ModelSerializer):
+    code = serializers.CharField(max_length=4)
+
+    class Meta:
+        model = models.User
+        fields = ['telephone', 'code']
+
+    def validate(self, attrs):
+        user = self._get_user(attrs)
+        # 用户存在，签发token
+        token = self._get_token(user)
+        self.context['token'] = token
+        self.context['user'] = user
+        return attrs
+
+    def _get_user(self, attrs):
+        from django.core.cache import cache
+        from django.conf import settings
+        import re
+        telephone = attrs.get('telephone')
+        code = attrs.get('code')
+        print(f'code: {code}')
+        # 取出原来的cache
+        cache_code = cache.get(settings.PHONE_CACHE_KEY % telephone)
+        print(f'cache_code:  {cache_code}')
+        if code == cache_code:
+            cache.set(settings.PHONE_CACHE_KEY % telephone, '')
+            user = models.User.objects.filter(telephone=telephone).first()
+            return user
+        else:
+            raise ValidationError('验证码错误')
+
+    def _get_token(self, user):
+        from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handler
+        payload = jwt_payload_handler(user)  # 通过user对象获得payload
+        token = jwt_encode_handler(payload)  # 通过payload获得token
+        return token
