@@ -1656,3 +1656,463 @@ INFO 2023-12-25 23:59:00,381 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.
 INFO 2023-12-25 23:59:02,745 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 59
 INFO 2023-12-25 23:59:59,480 basehttp 13072 8808 "POST /user/code_login/ HTTP/1.1" 200 119
 INFO 2023-12-26 00:02:39,851 basehttp 13072 8808 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 21:03:39,035 autoreload 6368 8024 Watching for file changes with StatReloader
+INFO 2024-01-03 21:06:26,013 basehttp 6368 9556 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 21:08:27,322 basehttp 6368 9408 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 57
+INFO 2024-01-03 21:08:41,558 basehttp 6368 9408 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 57
+ERROR 2024-01-03 21:13:14,108 log 6368 9408 Internal Server Error: /user/check_telephone
+Traceback (most recent call last):
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.31.130:8081/user/check_telephone/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-01-03 21:13:14,110 basehttp 6368 9408 "POST /user/check_telephone HTTP/1.1" 500 71495
+ERROR 2024-01-03 21:13:15,111 log 6368 10448 Internal Server Error: /user/check_telephone
+Traceback (most recent call last):
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.31.130:8081/user/check_telephone/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-01-03 21:13:15,112 basehttp 6368 10448 "POST /user/check_telephone HTTP/1.1" 500 71495
+INFO 2024-01-03 21:13:23,215 basehttp 6368 6780 "GET /user/check_telephone HTTP/1.1" 301 0
+ERROR 2024-01-03 21:13:23,221 exceptions 6368 6780 view是: LoginView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 21:13:23,221 basehttp 6368 6780 "GET /user/check_telephone/ HTTP/1.1" 200 72
+INFO 2024-01-03 21:13:39,512 basehttp 6368 6780 "GET /user/check_telephone HTTP/1.1" 301 0
+ERROR 2024-01-03 21:13:39,515 exceptions 6368 6780 view是: LoginView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 21:13:39,516 basehttp 6368 6780 "GET /user/check_telephone/ HTTP/1.1" 200 72
+INFO 2024-01-03 21:17:28,345 basehttp 6368 6780 "GET /user/check_telephone?telephone=17398375788 HTTP/1.1" 301 0
+INFO 2024-01-03 21:17:28,383 basehttp 6368 6780 "GET /user/check_telephone/?telephone=17398375788 HTTP/1.1" 200 37
+INFO 2024-01-03 21:17:55,464 basehttp 6368 6780 "GET /user/check_telephone?telephone=17398375678 HTTP/1.1" 301 0
+INFO 2024-01-03 21:17:55,483 basehttp 6368 6780 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 25
+INFO 2024-01-03 21:22:55,116 autoreload 6368 8024 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\utils\response.py changed, reloading.
+INFO 2024-01-03 21:22:56,135 autoreload 2652 8480 Watching for file changes with StatReloader
+INFO 2024-01-03 21:23:34,934 basehttp 2652 8880 "GET /user/login HTTP/1.1" 301 0
+ERROR 2024-01-03 21:23:34,942 exceptions 2652 8880 view是: LoginView , 错误是 方法 “GET” 不被允许。
+INFO 2024-01-03 21:23:34,943 basehttp 2652 8880 "GET /user/login/ HTTP/1.1" 200 79
+ERROR 2024-01-03 21:23:40,673 log 2652 8880 Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.31.130:8081/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-01-03 21:23:40,675 basehttp 2652 8880 "POST /user/login HTTP/1.1" 500 71328
+ERROR 2024-01-03 21:23:50,520 log 2652 8964 Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.31.130:8081/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-01-03 21:23:50,521 basehttp 2652 8964 "POST /user/login HTTP/1.1" 500 71335
+INFO 2024-01-03 21:24:27,445 basehttp 2652 6608 "POST /user/login/ HTTP/1.1" 200 98
+INFO 2024-01-03 21:24:32,242 autoreload 7280 10256 Watching for file changes with StatReloader
+INFO 2024-01-03 21:24:34,868 basehttp 7280 12308 "POST /user/login/ HTTP/1.1" 200 98
+INFO 2024-01-03 21:24:50,854 basehttp 7280 12308 "POST /user/login/ HTTP/1.1" 200 58
+INFO 2024-01-03 21:25:38,810 autoreload 7280 10256 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:25:39,388 autoreload 10472 1068 Watching for file changes with StatReloader
+INFO 2024-01-03 21:25:43,951 basehttp 10472 3360 "POST /user/login/ HTTP/1.1" 200 58
+INFO 2024-01-03 21:25:54,235 autoreload 10472 1068 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:25:54,817 autoreload 3420 980 Watching for file changes with StatReloader
+INFO 2024-01-03 21:25:57,867 basehttp 3420 7920 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:26:20,025 basehttp 3420 7920 "POST /user/login/ HTTP/1.1" 200 54
+INFO 2024-01-03 21:29:10,286 autoreload 3420 980 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:29:10,856 autoreload 11344 9300 Watching for file changes with StatReloader
+INFO 2024-01-03 21:29:12,700 basehttp 11344 12360 "POST /user/login/ HTTP/1.1" 200 58
+INFO 2024-01-03 21:29:25,312 basehttp 11344 12360 "POST /user/login/ HTTP/1.1" 200 54
+INFO 2024-01-03 21:29:30,646 basehttp 11344 12360 "POST /user/login/ HTTP/1.1" 200 227
+INFO 2024-01-03 21:31:12,144 autoreload 11344 9300 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\utils\response.py changed, reloading.
+INFO 2024-01-03 21:31:12,724 autoreload 2544 2852 Watching for file changes with StatReloader
+INFO 2024-01-03 21:31:14,516 basehttp 2544 1908 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 21:31:43,000 basehttp 2544 1908 "GET /user/check_telephone?telephone=17398375678 HTTP/1.1" 301 0
+INFO 2024-01-03 21:31:43,030 basehttp 2544 1908 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 21:32:05,384 basehttp 2544 1908 "GET /user/check_telephone?telephone=17398375679 HTTP/1.1" 301 0
+INFO 2024-01-03 21:32:05,408 basehttp 2544 1908 "GET /user/check_telephone/?telephone=17398375679 HTTP/1.1" 200 37
+INFO 2024-01-03 21:39:08,355 autoreload 2544 2852 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:39:08,980 autoreload 12360 1104 Watching for file changes with StatReloader
+INFO 2024-01-03 21:39:22,559 basehttp 12360 11604 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:40:30,931 basehttp 12360 11604 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:40:53,871 basehttp 12360 11604 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:41:00,053 basehttp 12360 11604 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:41:32,673 basehttp 12360 11604 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:41:38,665 autoreload 704 7280 Watching for file changes with StatReloader
+INFO 2024-01-03 21:41:50,993 basehttp 704 5152 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:42:59,972 basehttp 704 5152 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:43:05,093 basehttp 704 5152 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:43:29,879 autoreload 704 7280 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:43:30,443 autoreload 4048 3844 Watching for file changes with StatReloader
+INFO 2024-01-03 21:43:54,936 autoreload 4048 3844 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:43:55,502 autoreload 12584 7464 Watching for file changes with StatReloader
+INFO 2024-01-03 21:43:57,737 basehttp 12584 1396 "POST /user/code_login/ HTTP/1.1" 200 57
+INFO 2024-01-03 21:44:25,715 autoreload 12584 7464 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:44:26,294 autoreload 12108 11236 Watching for file changes with StatReloader
+INFO 2024-01-03 21:44:28,998 basehttp 12108 11924 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-03 21:44:44,512 autoreload 12108 11236 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 21:44:45,084 autoreload 11724 8812 Watching for file changes with StatReloader
+ERROR 2024-01-03 21:44:49,514 exceptions 11724 6796 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2024-01-03 21:44:49,514 basehttp 11724 6796 "POST /user/code_login/ HTTP/1.1" 200 81
+INFO 2024-01-03 21:45:26,938 basehttp 11724 6796 "POST /user/code_login/ HTTP/1.1" 200 228
+ERROR 2024-01-03 22:03:22,414 log 11724 6796 Internal Server Error: /home/banner
+Traceback (most recent call last):
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.31.130:8081/home/banner/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-01-03 22:03:22,415 basehttp 11724 6796 "POST /home/banner HTTP/1.1" 500 71351
+ERROR 2024-01-03 22:03:31,360 exceptions 11724 10660 view是: BannerView , 错误是 方法 “POST” 不被允许。
+INFO 2024-01-03 22:03:31,361 basehttp 11724 10660 "POST /home/banner/ HTTP/1.1" 200 80
+INFO 2024-01-03 22:03:35,383 basehttp 11724 10660 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:03:45,851 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:04:04,716 basehttp 11724 9512 "OPTIONS /user/code_login/ HTTP/1.1" 200 0
+INFO 2024-01-03 22:04:04,716 basehttp 11724 9512 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 22:04:08,518 basehttp 11724 9512 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-03 22:04:08,680 basehttp 11724 9512 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 22:04:12,071 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:04:25,785 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:04:28,909 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:04:30,655 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:04:32,198 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:04:35,489 basehttp 11724 9512 "GET /home/banner/ HTTP/1.1" 200 304
+ERROR 2024-01-03 22:08:08,216 exceptions 11724 9512 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:08:08,216 basehttp 11724 9512 "GET /user/send/?phone=17398678525 HTTP/1.1" 200 72
+ERROR 2024-01-03 22:13:10,009 exceptions 11724 11696 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:13:10,010 basehttp 11724 11696 "GET /user/send/?phone=17398678525 HTTP/1.1" 200 72
+ERROR 2024-01-03 22:15:55,540 exceptions 11724 11696 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:15:55,541 basehttp 11724 11696 "GET /user/send/?phone=17398678525 HTTP/1.1" 200 72
+INFO 2024-01-03 22:21:49,091 basehttp 11724 11472 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:21:49,193 basehttp 11724 11472 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:21:51,790 basehttp 11724 11472 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:22:05,228 basehttp 11724 11472 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+ERROR 2024-01-03 22:22:20,472 exceptions 11724 11472 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:22:20,473 basehttp 11724 11472 "GET /user/send/?phone=17398375782 HTTP/1.1" 200 72
+INFO 2024-01-03 22:22:39,739 basehttp 11724 11472 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:22:50,020 basehttp 11724 11472 "GET /user/check_telephone/?telephone=17398375785 HTTP/1.1" 200 37
+ERROR 2024-01-03 22:22:50,911 exceptions 11724 11472 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 30 seconds.
+INFO 2024-01-03 22:22:50,912 basehttp 11724 11472 "GET /user/send/?phone=17398375785 HTTP/1.1" 200 105
+INFO 2024-01-03 22:23:17,266 basehttp 11724 11472 "GET /user/check_telephone/?telephone=17398375786 HTTP/1.1" 200 37
+ERROR 2024-01-03 22:24:42,491 exceptions 11724 11472 view是: SendSmsView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:24:42,492 basehttp 11724 11472 "GET /user/send/?phone=17398375786 HTTP/1.1" 200 72
+INFO 2024-01-03 22:25:21,521 basehttp 11724 11472 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:25:30,220 basehttp 11724 11472 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+ERROR 2024-01-03 22:25:30,482 send 11724 11472 手机号: 17398375782,短信发送失败
+INFO 2024-01-03 22:25:30,482 basehttp 11724 11472 "GET /user/send/?telephone=17398375782 HTTP/1.1" 200 40
+INFO 2024-01-03 22:27:12,184 basehttp 11724 11472 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:27:23,001 basehttp 11724 11472 "GET /user/check_telephone/?telephone=17398375821 HTTP/1.1" 200 37
+ERROR 2024-01-03 22:27:24,161 send 11724 11472 手机号: 17398375821,短信发送失败
+INFO 2024-01-03 22:27:24,172 basehttp 11724 11472 "GET /user/send/?telephone=17398375821 HTTP/1.1" 200 40
+INFO 2024-01-03 22:28:11,846 autoreload 11724 8812 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 22:28:12,829 autoreload 1548 3164 Watching for file changes with StatReloader
+ERROR 2024-01-03 22:28:24,705 send 1548 13100 手机号: 17398375821,短信发送失败
+INFO 2024-01-03 22:28:24,705 basehttp 1548 13100 "GET /user/send/?telephone=17398375821 HTTP/1.1" 200 40
+INFO 2024-01-03 22:28:28,818 basehttp 1548 13100 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 22:30:04,902 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:30:17,710 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398735782 HTTP/1.1" 200 37
+INFO 2024-01-03 22:30:31,594 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 22:31:39,844 basehttp 1548 13100 "GET /user/check_telephone/?telephone=14343434343 HTTP/1.1" 200 37
+INFO 2024-01-03 22:32:12,698 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+INFO 2024-01-03 22:32:23,781 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+INFO 2024-01-03 22:32:29,808 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+INFO 2024-01-03 22:35:10,716 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:35:40,031 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+ERROR 2024-01-03 22:35:50,111 exceptions 1548 13100 view是: LoginView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:35:50,113 basehttp 1548 13100 "GET /user/check_telephone/ HTTP/1.1" 200 72
+ERROR 2024-01-03 22:35:59,284 exceptions 1548 13100 view是: LoginView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:35:59,285 basehttp 1548 13100 "GET /user/check_telephone/ HTTP/1.1" 200 72
+ERROR 2024-01-03 22:36:03,702 exceptions 1548 13100 view是: LoginView , 错误是 expected string or bytes-like object
+INFO 2024-01-03 22:36:03,703 basehttp 1548 13100 "GET /user/check_telephone/ HTTP/1.1" 200 72
+INFO 2024-01-03 22:36:37,524 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:36:47,028 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+INFO 2024-01-03 22:36:53,952 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 22:38:19,935 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:38:32,519 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+ERROR 2024-01-03 22:38:33,324 send 1548 13100 手机号: 17398375782,短信发送失败
+INFO 2024-01-03 22:38:33,324 basehttp 1548 13100 "GET /user/send/?telephone=17398375782 HTTP/1.1" 200 40
+INFO 2024-01-03 22:40:20,599 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:40:35,220 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+ERROR 2024-01-03 22:40:41,338 send 1548 13100 手机号: 17398375678,短信发送失败
+INFO 2024-01-03 22:40:41,338 basehttp 1548 13100 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 40
+INFO 2024-01-03 22:40:48,579 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:40:56,116 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+ERROR 2024-01-03 22:41:07,564 exceptions 1548 13100 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 34 seconds.
+INFO 2024-01-03 22:41:07,565 basehttp 1548 13100 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 105
+INFO 2024-01-03 22:41:25,024 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:41:33,716 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398978888 HTTP/1.1" 200 37
+INFO 2024-01-03 22:42:48,990 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:42:58,619 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+ERROR 2024-01-03 22:43:01,563 send 1548 13100 手机号: 17398375678,短信发送失败
+INFO 2024-01-03 22:43:01,563 basehttp 1548 13100 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 40
+INFO 2024-01-03 22:43:10,885 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:43:20,561 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398758965 HTTP/1.1" 200 37
+INFO 2024-01-03 22:44:41,955 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:44:50,297 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17877775555 HTTP/1.1" 200 37
+INFO 2024-01-03 22:47:49,373 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:47:59,022 basehttp 1548 13100 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+ERROR 2024-01-03 22:48:00,281 send 1548 13100 手机号: 17398375678,短信发送失败
+INFO 2024-01-03 22:48:00,281 basehttp 1548 13100 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 40
+INFO 2024-01-03 22:51:58,876 basehttp 1548 13100 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-03 22:55:22,283 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:55:25,868 basehttp 1548 13100 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-03 22:56:35,431 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:56:39,994 basehttp 1548 13100 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-03 22:56:50,053 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:56:53,539 basehttp 1548 13100 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-03 22:57:27,292 basehttp 1548 13100 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 22:57:31,474 basehttp 1548 13100 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-03 22:57:41,970 basehttp 1548 13100 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:03:08,010 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+INFO 2024-01-03 23:03:54,378 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+INFO 2024-01-03 23:03:58,459 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 23:05:13,733 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398735845 HTTP/1.1" 200 37
+INFO 2024-01-03 23:05:15,535 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 23:05:48,299 basehttp 1548 4168 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 23:06:16,366 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 23:06:20,398 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 23:06:24,313 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 23:06:52,095 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 23:06:53,894 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 59
+INFO 2024-01-03 23:08:01,910 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375647 HTTP/1.1" 200 37
+ERROR 2024-01-03 23:08:03,218 exceptions 1548 4168 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2024-01-03 23:08:03,219 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 81
+INFO 2024-01-03 23:08:10,819 basehttp 1548 4168 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 23:08:18,064 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375782 HTTP/1.1" 200 37
+ERROR 2024-01-03 23:08:20,319 exceptions 1548 4168 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2024-01-03 23:08:20,319 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 81
+ERROR 2024-01-03 23:08:37,154 exceptions 1548 4168 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2024-01-03 23:08:37,155 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 81
+INFO 2024-01-03 23:09:21,369 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 23:09:21,467 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:09:54,258 basehttp 1548 4168 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 23:09:57,678 basehttp 1548 4168 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 23:10:06,504 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375679 HTTP/1.1" 200 37
+ERROR 2024-01-03 23:10:08,264 exceptions 1548 4168 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2024-01-03 23:10:08,265 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 81
+INFO 2024-01-03 23:10:11,970 basehttp 1548 4168 "GET /user/check_telephone/?telephone=17398375678 HTTP/1.1" 200 26
+INFO 2024-01-03 23:10:12,057 basehttp 1548 4168 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:12:47,758 basehttp 1548 4168 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-03 23:13:00,464 basehttp 1548 4168 "POST /user/login/ HTTP/1.1" 200 54
+INFO 2024-01-03 23:13:13,802 basehttp 1548 4168 "POST /user/login/ HTTP/1.1" 200 231
+INFO 2024-01-03 23:13:33,614 basehttp 1548 4168 "POST /user/login/ HTTP/1.1" 200 54
+INFO 2024-01-03 23:13:39,654 basehttp 1548 4168 "POST /user/login/ HTTP/1.1" 200 226
+INFO 2024-01-03 23:13:59,288 basehttp 1548 4168 "POST /user/login/ HTTP/1.1" 200 54
+INFO 2024-01-03 23:14:09,254 basehttp 1548 4168 "POST /user/login/ HTTP/1.1" 200 231
+INFO 2024-01-03 23:15:31,297 autoreload 1548 3164 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:15:32,192 autoreload 6472 5748 Watching for file changes with StatReloader
+INFO 2024-01-03 23:16:30,587 autoreload 7796 7372 Watching for file changes with StatReloader
+INFO 2024-01-03 23:17:34,756 basehttp 7796 3996 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 78
+INFO 2024-01-03 23:17:48,764 basehttp 7796 3996 "POST /user/code_login/?telephone=17398375679 HTTP/1.1" 200 54
+INFO 2024-01-03 23:19:18,493 basehttp 7796 3996 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:19:31,591 autoreload 7796 7372 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:19:32,153 autoreload 9648 7764 Watching for file changes with StatReloader
+INFO 2024-01-03 23:19:34,014 basehttp 9648 10292 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:19:35,238 basehttp 9648 10292 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:19:48,030 autoreload 9648 7764 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:19:48,600 autoreload 148 5960 Watching for file changes with StatReloader
+INFO 2024-01-03 23:19:50,071 basehttp 148 8252 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:19:51,484 basehttp 148 8252 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-03 23:20:57,105 autoreload 148 5960 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:20:57,868 autoreload 12224 9272 Watching for file changes with StatReloader
+INFO 2024-01-03 23:21:08,227 autoreload 12224 9272 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:21:08,838 autoreload 7716 7384 Watching for file changes with StatReloader
+INFO 2024-01-03 23:21:25,657 autoreload 7716 7384 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:21:26,259 autoreload 10804 11772 Watching for file changes with StatReloader
+INFO 2024-01-03 23:21:37,697 autoreload 10804 11772 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:21:38,294 autoreload 10316 7680 Watching for file changes with StatReloader
+INFO 2024-01-03 23:22:14,855 autoreload 10316 7680 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:22:15,509 autoreload 12872 8072 Watching for file changes with StatReloader
+INFO 2024-01-03 23:22:58,957 autoreload 12872 8072 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:22:59,590 autoreload 12460 10592 Watching for file changes with StatReloader
+INFO 2024-01-03 23:23:13,214 autoreload 12460 10592 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:23:13,847 autoreload 7716 4612 Watching for file changes with StatReloader
+INFO 2024-01-03 23:23:19,658 autoreload 7716 4612 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:23:20,252 autoreload 8088 12544 Watching for file changes with StatReloader
+INFO 2024-01-03 23:24:03,496 autoreload 8088 12544 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:24:04,090 autoreload 5888 13192 Watching for file changes with StatReloader
+INFO 2024-01-03 23:24:15,222 autoreload 5888 13192 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:24:15,831 autoreload 9680 1200 Watching for file changes with StatReloader
+INFO 2024-01-03 23:24:58,549 autoreload 9680 1200 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:24:59,138 autoreload 9512 6624 Watching for file changes with StatReloader
+INFO 2024-01-03 23:26:16,529 autoreload 9512 6624 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:26:17,234 autoreload 4932 9392 Watching for file changes with StatReloader
+INFO 2024-01-03 23:28:11,942 autoreload 4932 9392 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:28:12,590 autoreload 6772 11252 Watching for file changes with StatReloader
+INFO 2024-01-03 23:28:18,519 autoreload 6772 11252 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:28:19,174 autoreload 9148 7868 Watching for file changes with StatReloader
+INFO 2024-01-03 23:28:33,829 autoreload 9148 7868 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:28:34,498 autoreload 304 8820 Watching for file changes with StatReloader
+INFO 2024-01-03 23:29:10,497 autoreload 304 8820 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:29:11,052 autoreload 7116 2864 Watching for file changes with StatReloader
+INFO 2024-01-03 23:29:35,500 autoreload 7116 2864 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:29:36,092 autoreload 8932 11040 Watching for file changes with StatReloader
+INFO 2024-01-03 23:30:29,273 autoreload 8932 11040 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:30:29,887 autoreload 3512 4588 Watching for file changes with StatReloader
+INFO 2024-01-03 23:31:04,328 autoreload 3512 4588 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:31:04,968 autoreload 7716 3836 Watching for file changes with StatReloader
+INFO 2024-01-03 23:31:12,060 autoreload 7716 3836 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:31:12,642 autoreload 4960 7384 Watching for file changes with StatReloader
+INFO 2024-01-03 23:31:25,233 autoreload 4960 7384 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:31:25,884 autoreload 2132 8068 Watching for file changes with StatReloader
+INFO 2024-01-03 23:31:42,939 autoreload 2132 8068 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:31:43,588 autoreload 1428 6456 Watching for file changes with StatReloader
+INFO 2024-01-03 23:36:15,373 autoreload 1428 6456 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:36:15,993 autoreload 10764 3520 Watching for file changes with StatReloader
+INFO 2024-01-03 23:36:46,220 autoreload 10764 3520 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:36:46,863 autoreload 2224 7784 Watching for file changes with StatReloader
+INFO 2024-01-03 23:37:42,005 autoreload 2224 7784 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:37:42,597 autoreload 8380 8500 Watching for file changes with StatReloader
+INFO 2024-01-03 23:38:08,937 autoreload 8380 8500 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:38:09,589 autoreload 9016 13164 Watching for file changes with StatReloader
+INFO 2024-01-03 23:38:27,394 autoreload 9016 13164 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:38:28,054 autoreload 5180 1388 Watching for file changes with StatReloader
+INFO 2024-01-03 23:38:51,377 autoreload 5180 1388 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:38:51,951 autoreload 3220 12156 Watching for file changes with StatReloader
+INFO 2024-01-03 23:39:08,957 autoreload 3220 12156 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:39:09,696 autoreload 2304 1104 Watching for file changes with StatReloader
+INFO 2024-01-03 23:40:23,803 autoreload 2304 1104 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:40:24,403 autoreload 12440 4260 Watching for file changes with StatReloader
+INFO 2024-01-03 23:40:43,642 autoreload 12440 4260 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:40:44,267 autoreload 6512 10204 Watching for file changes with StatReloader
+INFO 2024-01-03 23:40:54,331 autoreload 6512 10204 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:40:54,904 autoreload 7068 4456 Watching for file changes with StatReloader
+INFO 2024-01-03 23:41:54,060 autoreload 7068 4456 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:41:54,661 autoreload 6372 4868 Watching for file changes with StatReloader
+INFO 2024-01-03 23:42:00,392 autoreload 6372 4868 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:42:00,990 autoreload 12112 7768 Watching for file changes with StatReloader
+INFO 2024-01-03 23:43:09,025 autoreload 12112 7768 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:43:09,616 autoreload 2556 11652 Watching for file changes with StatReloader
+INFO 2024-01-03 23:43:32,174 autoreload 2556 11652 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:43:32,765 autoreload 2220 11016 Watching for file changes with StatReloader
+INFO 2024-01-03 23:44:00,629 autoreload 2220 11016 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:44:01,221 autoreload 8648 8252 Watching for file changes with StatReloader
+INFO 2024-01-03 23:46:02,550 autoreload 8648 8252 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-03 23:46:03,149 autoreload 9016 6096 Watching for file changes with StatReloader
+INFO 2024-01-03 23:46:15,694 autoreload 9016 6096 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\urls.py changed, reloading.
+INFO 2024-01-03 23:46:16,269 autoreload 12428 11848 Watching for file changes with StatReloader
+INFO 2024-01-03 23:46:29,936 autoreload 12428 11848 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\urls.py changed, reloading.
+INFO 2024-01-03 23:46:30,510 autoreload 13004 7964 Watching for file changes with StatReloader
+INFO 2024-01-03 23:46:52,845 autoreload 13004 7964 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\urls.py changed, reloading.
+INFO 2024-01-03 23:46:53,497 autoreload 7280 10800 Watching for file changes with StatReloader
+INFO 2024-01-03 23:46:57,229 autoreload 7280 10800 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\urls.py changed, reloading.
+INFO 2024-01-03 23:46:57,898 autoreload 9512 7752 Watching for file changes with StatReloader
+INFO 2024-01-03 23:47:35,670 autoreload 9512 7752 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\urls.py changed, reloading.
+INFO 2024-01-03 23:47:36,249 autoreload 728 6624 Watching for file changes with StatReloader
+ERROR 2024-01-03 23:47:49,888 log 728 11724 Internal Server Error: /user/register
+Traceback (most recent call last):
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.31.130:8081/user/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-01-03 23:47:49,890 basehttp 728 11724 "POST /user/register HTTP/1.1" 500 71383
+ERROR 2024-01-03 23:48:06,913 exceptions 728 9556 view是: RegisterView , 错误是 {'telephone': [ErrorDetail(string='该字段是必填项。', code='required')], 'code': [ErrorDetail(string='该字段是必填项。', code='required')], 'password': [ErrorDetail(string='请确保这个字段至少包含 8 个字符。', code='min_length')]}
+INFO 2024-01-03 23:48:06,914 basehttp 728 9556 "POST /user/register/ HTTP/1.1" 200 176
+ERROR 2024-01-03 23:48:35,733 exceptions 728 9556 view是: RegisterView , 错误是 {'code': [ErrorDetail(string='该字段是必填项。', code='required')], 'password': [ErrorDetail(string='请确保这个字段至少包含 8 个字符。', code='min_length')]}
+INFO 2024-01-03 23:48:35,734 basehttp 728 9556 "POST /user/register/ HTTP/1.1" 200 135
+INFO 2024-01-03 23:48:51,626 autoreload 728 6624 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:48:52,210 autoreload 300 4436 Watching for file changes with StatReloader
+ERROR 2024-01-03 23:48:52,764 exceptions 300 5940 view是: RegisterView , 错误是 {'code': [ErrorDetail(string='该字段是必填项。', code='required')]}
+INFO 2024-01-03 23:48:52,766 basehttp 300 5940 "POST /user/register/ HTTP/1.1" 200 71
+ERROR 2024-01-03 23:49:12,972 exceptions 300 5940 view是: RegisterView , 错误是 Got AttributeError when attempting to get a value for field `code` on serializer `UserRegisterSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `User` instance.
+Original exception text was: 'User' object has no attribute 'code'.
+INFO 2024-01-03 23:49:12,973 basehttp 300 5940 "POST /user/register/ HTTP/1.1" 200 319
+INFO 2024-01-03 23:49:47,641 autoreload 8496 12196 Watching for file changes with StatReloader
+ERROR 2024-01-03 23:49:49,917 exceptions 8496 6096 view是: RegisterView , 错误是 (1062, "Duplicate entry '17398376666' for key 'username'")
+INFO 2024-01-03 23:49:49,918 basehttp 8496 6096 "POST /user/register/ HTTP/1.1" 200 96
+INFO 2024-01-03 23:50:40,936 autoreload 8496 12196 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:50:41,500 autoreload 10416 5172 Watching for file changes with StatReloader
+ERROR 2024-01-03 23:50:43,302 exceptions 10416 840 view是: RegisterView , 错误是 (1062, "Duplicate entry '17398376666' for key 'username'")
+INFO 2024-01-03 23:50:43,303 basehttp 10416 840 "POST /user/register/ HTTP/1.1" 200 96
+INFO 2024-01-03 23:51:25,168 autoreload 10416 5172 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-03 23:51:25,794 autoreload 10708 10980 Watching for file changes with StatReloader
+ERROR 2024-01-03 23:54:24,740 exceptions 10708 11040 view是: RegisterView , 错误是 Got AttributeError when attempting to get a value for field `code` on serializer `UserRegisterSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `User` instance.
+Original exception text was: 'User' object has no attribute 'code'.
+INFO 2024-01-03 23:54:24,740 basehttp 10708 11040 "POST /user/register/ HTTP/1.1" 200 319
+ERROR 2024-01-03 23:56:24,949 exceptions 10708 11040 view是: RegisterView , 错误是 (1062, "Duplicate entry '17398376666' for key 'username'")
+INFO 2024-01-03 23:56:24,949 basehttp 10708 11040 "POST /user/register/ HTTP/1.1" 200 96
+INFO 2024-01-03 23:57:22,898 autoreload 10320 6688 Watching for file changes with StatReloader
+ERROR 2024-01-03 23:57:27,252 exceptions 10320 12028 view是: RegisterView , 错误是 (1062, "Duplicate entry '17398376666' for key 'username'")
+INFO 2024-01-03 23:57:27,253 basehttp 10320 12028 "POST /user/register/ HTTP/1.1" 200 96
+ERROR 2024-01-03 23:57:39,919 exceptions 10320 12028 view是: RegisterView , 错误是 Got AttributeError when attempting to get a value for field `code` on serializer `UserRegisterSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `User` instance.
+Original exception text was: 'User' object has no attribute 'code'.
+INFO 2024-01-03 23:57:39,922 basehttp 10320 12028 "POST /user/register/ HTTP/1.1" 200 319
+INFO 2024-01-04 00:01:36,543 autoreload 10320 6688 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-04 00:01:37,385 autoreload 6892 6064 Watching for file changes with StatReloader
+INFO 2024-01-04 00:01:39,343 basehttp 6892 6276 "POST /user/register/ HTTP/1.1" 201 129
+INFO 2024-01-04 00:01:52,314 autoreload 6892 6064 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-04 00:01:53,414 autoreload 12812 3172 Watching for file changes with StatReloader
+INFO 2024-01-04 00:02:02,546 basehttp 12812 4260 "POST /user/register/ HTTP/1.1" 201 129
+INFO 2024-01-04 00:04:30,211 autoreload 12812 3172 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\serializaer.py changed, reloading.
+INFO 2024-01-04 00:04:30,781 autoreload 6516 8232 Watching for file changes with StatReloader
+INFO 2024-01-04 00:04:37,906 basehttp 6516 10628 "POST /user/register/ HTTP/1.1" 201 27
+INFO 2024-01-04 00:05:26,390 autoreload 6516 8232 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 00:05:27,008 autoreload 8576 10472 Watching for file changes with StatReloader
+INFO 2024-01-04 00:06:07,613 autoreload 8576 10472 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 00:06:08,262 autoreload 4208 2616 Watching for file changes with StatReloader
+INFO 2024-01-04 00:07:40,167 autoreload 6884 1344 Watching for file changes with StatReloader
+INFO 2024-01-04 00:07:48,775 basehttp 6884 7856 "POST /user/register/ HTTP/1.1" 201 52
+INFO 2024-01-04 00:08:09,387 autoreload 6884 1344 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 00:08:09,984 autoreload 1748 4048 Watching for file changes with StatReloader
+INFO 2024-01-04 00:09:18,169 autoreload 1748 4048 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 00:09:18,787 autoreload 6280 8244 Watching for file changes with StatReloader
+INFO 2024-01-04 00:09:24,743 autoreload 6280 8244 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 00:09:25,334 autoreload 12508 12352 Watching for file changes with StatReloader
+INFO 2024-01-04 00:10:07,633 autoreload 12508 12352 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 00:10:08,205 autoreload 11376 1288 Watching for file changes with StatReloader
+INFO 2024-01-04 00:10:36,555 basehttp 11376 12824 "POST /user/register/ HTTP/1.1" 200 56
+INFO 2024-01-04 00:15:58,914 basehttp 11376 12444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:16:03,413 basehttp 11376 12444 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-04 00:16:03,573 basehttp 11376 12444 "POST /user/login/ HTTP/1.1" 200 233
+INFO 2024-01-04 00:16:10,343 autoreload 5292 6444 Watching for file changes with StatReloader
+INFO 2024-01-04 00:27:29,388 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:27:38,879 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398376666 HTTP/1.1" 200 26
+INFO 2024-01-04 00:27:57,370 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398758564 HTTP/1.1" 200 37
+ERROR 2024-01-04 00:28:01,492 send 5292 7444 手机号: 17398758564,短信发送失败
+INFO 2024-01-04 00:28:01,508 basehttp 5292 7444 "GET /user/send/?telephone=17398758564 HTTP/1.1" 200 40
+INFO 2024-01-04 00:28:18,895 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:28:27,200 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17388887777 HTTP/1.1" 200 37
+INFO 2024-01-04 00:28:56,796 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398377777 HTTP/1.1" 200 26
+INFO 2024-01-04 00:29:41,039 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:29:48,306 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398374444 HTTP/1.1" 200 37
+INFO 2024-01-04 00:31:33,895 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:31:41,177 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398785478 HTTP/1.1" 200 37
+INFO 2024-01-04 00:32:06,247 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:32:15,055 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398374165 HTTP/1.1" 200 37
+INFO 2024-01-04 00:32:21,791 basehttp 5292 7444 "OPTIONS /user/register/ HTTP/1.1" 200 0
+ERROR 2024-01-04 00:32:21,794 exceptions 5292 7444 view是: RegisterView , 错误是 {'telephone': [ErrorDetail(string='该字段是必填项。', code='required')]}
+INFO 2024-01-04 00:32:21,794 basehttp 5292 7444 "POST /user/register/ HTTP/1.1" 200 76
+INFO 2024-01-04 00:33:04,053 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398757852 HTTP/1.1" 200 37
+INFO 2024-01-04 00:33:09,600 basehttp 5292 7444 "POST /user/register/ HTTP/1.1" 200 56
+INFO 2024-01-04 00:33:27,625 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:33:28,703 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:37:35,411 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 00:37:42,506 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398758456 HTTP/1.1" 200 37
+INFO 2024-01-04 00:37:46,104 basehttp 5292 7444 "POST /user/register/ HTTP/1.1" 200 56

@@ -2,7 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from rest_framework.viewsets import ViewSet
+from rest_framework.viewsets import ViewSet, GenericViewSet
+from rest_framework.mixins import CreateModelMixin
 from user import serializaer
 from luffyapi.utils.response import APIResponse
 from rest_framework.decorators import action
@@ -50,7 +51,7 @@ class LoginView(ViewSet):
     @action(methods=['POST'], detail=False)
     def code_login(self, request, *args, **kwargs):
         """
-        验证码登录接口
+        手机号，验证码登录接口
         :param request:
         :param args:
         :param kwargs:
@@ -89,6 +90,17 @@ class SendSmsView(ViewSet):
         print(result)
         cache.set(settings.PHONE_CACHE_KEY % telephone, code, 180)
         if result:
-            return APIResponse(code=1, msg='验证号发送成功')
+            return APIResponse(code=1, msg='验证码发送成功')
         else:
-            return APIResponse(code=0, msg='验证号发送失败')
+            return APIResponse(code=0, msg='验证码发送失败')
+
+
+class RegisterView(GenericViewSet, CreateModelMixin):
+    queryset = models.User.objects.all()
+    serializer_class = serializaer.UserRegisterSerializer
+
+    def create(self, request, *args, **kwargs):
+        response = super().create(request, *args, **kwargs)
+        username = response.data.get('username')
+
+        return APIResponse(code=1, msg='注册成功', username=username)

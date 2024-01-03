@@ -89,7 +89,26 @@ export default {
         });
         return false;
       }
-      this.is_send = true;
+      // 发送axios 请求 检查手机号是否存在接口
+      this.$axios.get(this.$settings.base_url + '/user/check_telephone/', {params: {telephone: this.mobile}}).then(
+          res => {
+            if (res.data.code == 1) {
+              this.is_send = true;
+              this.$message({
+                message: res.data.msg,
+                type: 'success'
+              });
+            } else {
+              this.$message({
+                message: res.data.msg,
+                type: 'warning',
+                duration: 1000,
+              });
+            }
+          }
+      ).catch(error => {
+        console.log(error);
+      })
       console.log(this.mobile)
     },
     send_sms() {
@@ -101,22 +120,22 @@ export default {
         if (sms_interval_time <= 1) {
           clearInterval(timer);
           this.sms_interval = "获取验证码";
-          this.is_send = true; // 重新回复点击发送功能的条件
+          this.is_send = true; // 重新恢复点击发送功能的条件
         } else {
           sms_interval_time -= 1;
           this.sms_interval = `${sms_interval_time}秒后再发`;
         }
       }, 1000);
       // 发送短信 验证码
-      this.$axios.get(this.$settings.base_url + '/user/send/?phone=' + this.mobile).then(res => {
-        if (res.data.status == 100) {
+      this.$axios.get(this.$settings.base_url + '/user/send/',{params: {telephone: this.mobile}}).then(res => {
+        if (res.data.code == 1) {
           this.$message({
-            message: '恭喜你，验证码发送成功',
+            message: res.data.msg,
             type: 'success'
           });
         } else {
           this.$message({
-            message: '验证码发送失败，请稍后再试',
+            message: res.data.msg,
             type: 'warning'
           });
         }
@@ -131,13 +150,13 @@ export default {
               password: this.password
             }).then(res => {
           console.log(res)
-          if (res.status == 200) {
+          if (res.data.code == 1) {
             this.$cookies.set("token", res.data.token, '7d')
             this.$cookies.set("username", res.data.username, '7d')
             this.close_login()
             this.$emit('loginsuccess')
           } else {
-            this.$message.error(res.data.msg);
+            this.$message.error('用户名或者密码错误');
           }
         })
 
@@ -152,10 +171,10 @@ export default {
       if (this.mobile && this.sms) {
         this.$axios.post(this.$settings.base_url + '/user/code_login/',
             {
-              mobile: this.mobile,
+              telephone: this.mobile,
               code: this.sms
             }).then(res => {
-          if (res.data.status == 100) {
+          if (res.data.code == 1) {
             console.log(res.data)
             // 1 把token，和usernanme存到--cookie中
             // localStorage.setItem("name",'lqz')
@@ -165,13 +184,15 @@ export default {
             this.$cookies.set("icon", res.data.icon)
             //2 关闭登陆框
             this.close_login()
+            this.$emit('loginsuccess')
           } else {
+            console.log(res)
             this.$message.error(res.data.msg);
           }
         })
 
       } else {
-        this.$message.error('用户名密码必填');
+        this.$message.error('手机号和验证码必填');
       }
 
     }

@@ -2,7 +2,7 @@ from rest_framework.response import Response
 
 
 class APIResponse(Response):
-    def __init__(self, code=100, msg='成功', result=None,
+    def __init__(self, code=1, msg='Success', result=None,
                  status=None, headers=None, content_type=None, **kwargs):
         dic = {
             'code': code,
