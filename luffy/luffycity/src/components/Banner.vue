@@ -1,6 +1,13 @@
 <template>
   <div class="banner">
-
+    <el-carousel :interval="5000" arrow="always" height="400px">
+      <el-carousel-item v-for="item in banner_list">
+        <!-- 只跳自己的路径，不会跳第三方 百度，cnblogs，-->
+          <router-link :to="item.link">
+            <img :src="item.img" alt="">
+          </router-link>
+      </el-carousel-item>
+    </el-carousel>
   </div>
 </template>
 

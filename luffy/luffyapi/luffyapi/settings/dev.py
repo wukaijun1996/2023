@@ -215,3 +215,17 @@ JWT_AUTH = {
     # 过期时间
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
 }
+
+# redis的配置
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "CONNECTION_POOL_KWARGS": {"max_connections": 100}
+            # "PASSWORD": "123",
+        }
+    },
+}
+

@@ -13,6 +13,8 @@ from home import models
 from home import serializaer
 
 from django.conf import settings
+from django.core.cache import cache
+from rest_framework.response import Response
 
 
 # class BannerView(GenericAPIView, ListModelMixin): 路由配置 path('banner/', views.BannerView.as_view())
@@ -21,3 +23,14 @@ class BannerView(GenericViewSet, ListModelMixin):  # 路由配置
     queryset = models.Banner.objects.filter(is_delete=False, is_show=True).order_by('display_order')[
                :settings.BANNER_COUNTER]
     serializer_class = serializaer.BannerModelSerializer
+
+    def list(self, request, *args, **kwargs):
+        # 把data的数据加缓存
+        # 1.先去缓存拿数据
+        banner_list = cache.get('banner_list')
+        if not banner_list:
+            response = super().list(request, *args, **kwargs)
+            # 加到缓存
+            cache.set('banner_list', response.data)
+            return response
+        return Response(data=banner_list)

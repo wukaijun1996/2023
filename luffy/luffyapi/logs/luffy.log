@@ -2116,3 +2116,139 @@ INFO 2024-01-04 00:33:28,703 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200
 INFO 2024-01-04 00:37:35,411 basehttp 5292 7444 "GET /home/banner/ HTTP/1.1" 200 304
 INFO 2024-01-04 00:37:42,506 basehttp 5292 7444 "GET /user/check_telephone/?telephone=17398758456 HTTP/1.1" 200 37
 INFO 2024-01-04 00:37:46,104 basehttp 5292 7444 "POST /user/register/ HTTP/1.1" 200 56
+INFO 2024-01-04 22:03:28,616 autoreload 4196 1708 Watching for file changes with StatReloader
+INFO 2024-01-04 22:06:04,412 basehttp 4196 12756 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:08,327 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:09,834 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:12,473 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:15,978 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:18,660 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:21,328 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:22,962 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:24,648 basehttp 4196 9604 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:06:35,816 basehttp 4196 9604 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-04 22:06:35,845 basehttp 4196 9604 "POST /user/login/ HTTP/1.1" 200 57
+INFO 2024-01-04 22:07:04,707 basehttp 4196 9604 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:07:13,764 basehttp 4196 9604 "GET /user/check_telephone/?telephone=17398376666 HTTP/1.1" 200 26
+INFO 2024-01-04 22:07:15,804 basehttp 4196 9604 "OPTIONS /user/code_login/ HTTP/1.1" 200 0
+INFO 2024-01-04 22:07:15,834 basehttp 4196 9604 "POST /user/code_login/ HTTP/1.1" 200 233
+INFO 2024-01-04 22:07:26,454 basehttp 4196 9604 "GET /user/check_telephone/?telephone=17398375454 HTTP/1.1" 200 37
+INFO 2024-01-04 22:07:31,681 basehttp 4196 9604 "GET /user/check_telephone/?telephone=17398375454 HTTP/1.1" 200 37
+INFO 2024-01-04 22:07:42,842 basehttp 4196 11424 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 22:38:52,470 autoreload 4196 1708 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2024-01-04 22:38:53,519 autoreload 1572 9524 Watching for file changes with StatReloader
+INFO 2024-01-04 22:40:08,103 autoreload 1572 9524 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2024-01-04 22:40:08,674 autoreload 10408 2352 Watching for file changes with StatReloader
+INFO 2024-01-04 22:41:10,135 autoreload 10408 2352 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2024-01-04 22:41:10,714 autoreload 3524 7396 Watching for file changes with StatReloader
+INFO 2024-01-04 22:43:16,630 autoreload 5812 7124 Watching for file changes with StatReloader
+INFO 2024-01-04 22:44:17,556 autoreload 12708 8956 Watching for file changes with StatReloader
+ERROR 2024-01-04 22:46:36,401 exceptions 12708 3448 view是: SendSmsView , 错误是 方法 “POST” 不被允许。
+INFO 2024-01-04 22:46:36,403 basehttp 12708 3448 "POST /user/send/ HTTP/1.1" 200 80
+ERROR 2024-01-04 22:46:40,041 exceptions 12708 3448 view是: SendSmsView , 错误是 请求超过了限速。 Expected available in 57 seconds.
+INFO 2024-01-04 22:46:40,042 basehttp 12708 3448 "GET /user/send/ HTTP/1.1" 200 105
+INFO 2024-01-04 22:47:04,947 autoreload 12708 8956 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 22:47:05,513 autoreload 7544 11584 Watching for file changes with StatReloader
+INFO 2024-01-04 22:47:13,802 autoreload 7544 11584 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 22:47:14,373 autoreload 8200 12536 Watching for file changes with StatReloader
+ERROR 2024-01-04 22:47:38,854 send 8200 12692 手机号: 17398375782,短信发送失败
+INFO 2024-01-04 22:47:38,871 basehttp 8200 12692 "GET /user/send/?telephone=17398375782 HTTP/1.1" 200 40
+INFO 2024-01-04 22:48:15,494 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+ERROR 2024-01-04 22:48:48,883 exceptions 8200 12692 view是: LoginView , 错误是 'NoneType' object has no attribute 'username'
+INFO 2024-01-04 22:48:48,884 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 81
+ERROR 2024-01-04 22:49:25,271 send 8200 12692 手机号: 17398375678,短信发送失败
+INFO 2024-01-04 22:49:25,272 basehttp 8200 12692 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 40
+INFO 2024-01-04 22:49:52,019 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:49:57,877 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:50:04,923 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+ERROR 2024-01-04 22:50:17,163 send 8200 12692 手机号: 17398375678,短信发送失败
+INFO 2024-01-04 22:50:17,165 basehttp 8200 12692 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 40
+INFO 2024-01-04 22:50:21,546 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:50:25,919 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:50:26,878 basehttp 8200 12692 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:52:29,842 autoreload 4264 11836 Watching for file changes with StatReloader
+ERROR 2024-01-04 22:52:37,412 send 4264 4516 手机号: 17398375678,短信发送失败
+INFO 2024-01-04 22:52:37,418 basehttp 4264 4516 "GET /user/send/?telephone=17398375678 HTTP/1.1" 200 40
+INFO 2024-01-04 22:53:11,288 basehttp 4264 4516 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:53:41,473 basehttp 4264 4516 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-04 22:55:23,532 autoreload 4264 11836 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-04 22:55:24,169 autoreload 8132 4608 Watching for file changes with StatReloader
+INFO 2024-01-04 23:06:15,687 autoreload 8132 4608 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:06:16,378 autoreload 7868 1380 Watching for file changes with StatReloader
+INFO 2024-01-04 23:07:06,424 autoreload 7868 1380 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:07:07,179 autoreload 7460 9300 Watching for file changes with StatReloader
+INFO 2024-01-04 23:07:31,794 autoreload 7460 9300 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:07:32,404 autoreload 6232 10980 Watching for file changes with StatReloader
+INFO 2024-01-04 23:08:21,266 autoreload 6232 10980 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:08:21,861 autoreload 8196 3996 Watching for file changes with StatReloader
+INFO 2024-01-04 23:08:42,236 autoreload 8196 3996 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:08:42,856 autoreload 1504 1584 Watching for file changes with StatReloader
+INFO 2024-01-04 23:09:08,570 autoreload 1504 1584 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:09:09,238 autoreload 1000 7432 Watching for file changes with StatReloader
+INFO 2024-01-04 23:09:19,243 autoreload 1000 7432 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:09:19,840 autoreload 11516 8524 Watching for file changes with StatReloader
+INFO 2024-01-04 23:10:07,953 autoreload 11516 8524 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:10:08,538 autoreload 8484 8072 Watching for file changes with StatReloader
+INFO 2024-01-04 23:10:40,859 autoreload 8484 8072 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:10:41,524 autoreload 12748 5756 Watching for file changes with StatReloader
+INFO 2024-01-04 23:11:01,719 autoreload 12748 5756 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:11:02,396 autoreload 9036 12228 Watching for file changes with StatReloader
+INFO 2024-01-04 23:11:13,883 autoreload 9036 12228 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:11:14,493 autoreload 8656 3108 Watching for file changes with StatReloader
+INFO 2024-01-04 23:11:35,819 autoreload 8656 3108 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:11:36,438 autoreload 8920 9476 Watching for file changes with StatReloader
+INFO 2024-01-04 23:11:48,565 autoreload 8920 9476 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:11:49,203 autoreload 7088 12284 Watching for file changes with StatReloader
+INFO 2024-01-04 23:12:10,540 autoreload 7088 12284 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:12:11,111 autoreload 10324 6996 Watching for file changes with StatReloader
+INFO 2024-01-04 23:12:29,010 autoreload 10324 6996 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:12:29,823 autoreload 8920 11920 Watching for file changes with StatReloader
+INFO 2024-01-04 23:12:47,856 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:14:41,441 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+ERROR 2024-01-04 23:15:17,136 exceptions 8920 6980 view是: BannerView , 错误是 方法 “POST” 不被允许。
+INFO 2024-01-04 23:15:17,137 basehttp 8920 6980 "POST /home/banner/ HTTP/1.1" 200 80
+INFO 2024-01-04 23:15:19,504 basehttp 8920 6980 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:15:28,060 basehttp 8920 6980 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:15:32,123 basehttp 8920 4240 "GET /home/banner/ HTTP/1.1" 200 6030
+INFO 2024-01-04 23:15:32,947 basehttp 8920 11560 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2024-01-04 23:15:32,947 basehttp 8920 8364 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-01-04 23:15:32,949 basehttp 8920 9500 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2024-01-04 23:15:32,950 basehttp 8920 4240 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-01-04 23:15:32,953 basehttp 8920 8988 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2024-01-04 23:15:32,954 basehttp 8920 11560 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-01-04 23:15:32,954 basehttp 8920 6572 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-01-04 23:15:32,955 basehttp 8920 9500 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-01-04 23:15:32,960 basehttp 8920 8364 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2024-01-04 23:15:32,960 basehttp 8920 4240 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-01-04 23:15:32,961 basehttp 8920 9500 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2024-01-04 23:15:33,105 log 8920 9500 Not Found: /favicon.ico
+WARNING 2024-01-04 23:15:33,106 basehttp 8920 9500 "GET /favicon.ico HTTP/1.1" 404 2451
+INFO 2024-01-04 23:15:34,557 basehttp 8920 9500 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-04 23:15:41,627 basehttp 8920 9500 "GET /media/banner/banner2.png HTTP/1.1" 304 0
+INFO 2024-01-04 23:15:46,753 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:16:33,116 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:20:40,249 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:02,797 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:02,808 basehttp 8920 13272 "GET /media/banner/banner3.png HTTP/1.1" 304 0
+INFO 2024-01-04 23:21:08,898 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:12,080 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:16,052 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:23,625 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:37,422 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:21:43,892 basehttp 8920 3448 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:22:47,982 autoreload 9996 4388 Watching for file changes with StatReloader
+INFO 2024-01-04 23:22:50,722 basehttp 9996 12140 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:23:18,146 autoreload 9996 4388 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:23:18,702 autoreload 5656 10800 Watching for file changes with StatReloader
+INFO 2024-01-04 23:23:21,534 basehttp 5656 7528 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:24:04,501 autoreload 8852 12980 Watching for file changes with StatReloader
+INFO 2024-01-04 23:24:09,615 basehttp 8852 12208 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:25:01,038 autoreload 8852 12980 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-04 23:25:01,649 autoreload 5260 8652 Watching for file changes with StatReloader
+INFO 2024-01-04 23:25:02,013 basehttp 5260 8792 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:28:50,626 autoreload 10152 11560 Watching for file changes with StatReloader
+INFO 2024-01-04 23:29:14,509 autoreload 2468 2556 Watching for file changes with StatReloader
+INFO 2024-01-04 23:30:07,395 basehttp 2468 10416 "GET /home/banner/ HTTP/1.1" 200 304
+INFO 2024-01-04 23:30:17,208 autoreload 6868 4928 Watching for file changes with StatReloader
+INFO 2024-01-04 23:30:44,431 autoreload 4720 13036 Watching for file changes with StatReloader
+INFO 2024-01-04 23:30:48,710 basehttp 4720 10800 "GET /home/banner/ HTTP/1.1" 200 304

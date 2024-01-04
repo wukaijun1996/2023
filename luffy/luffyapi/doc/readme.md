@@ -28,6 +28,11 @@ xss: 跨站请求攻击
 pip install django-cors-headers
 
 
+Redis:
+https://c.biancheng.net/redis/windows-installer.html
+Redis-x64-5.0.14.1.msi 安装包，将服务加到环境变量  执行 redis-cli 进入服务
+pip install django-redis 
+
 
 
 
