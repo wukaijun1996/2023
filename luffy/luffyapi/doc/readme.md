@@ -33,7 +33,11 @@ https://c.biancheng.net/redis/windows-installer.html
 Redis-x64-5.0.14.1.msi 安装包，将服务加到环境变量  执行 redis-cli 进入服务
 pip install django-redis 
 
-
+celery:
+pip install celery
+pip install eventlet
+celery  -A celery_task  worker  -l info -P eventlet
+celery  -A celery_task  beat  -l info
 
 
 vue环境搭建:

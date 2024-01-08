@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'user',  # apps目录已经加到环境变量
     'home',
+    'course',
 
 ]
 

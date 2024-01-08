@@ -11,6 +11,7 @@ urlpatterns = [
 
     path('home/', include('home.urls')),
     path('user/', include('user.urls')),
+    path('course/', include('course.urls')),
 
     # media文件夹路径开放
     re_path('media/(?P<path>.*)', serve, {'document_root': settings.MEDIA_ROOT})
