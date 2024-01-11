@@ -83,9 +83,11 @@ class Course(BaseModel):
     def course_type_name(self):
         return self.get_course_type_display()
 
+    @property
     def level_name(self):
         return self.get_level_display()
 
+    @property
     def status_name(self):
         return self.get_status_display()
 

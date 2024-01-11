@@ -15,7 +15,7 @@ deactivate 退出当前虚拟环境
 rmvirtualenv xxx 删除xxx虚拟环境
 
 数据库配置：
-create  databases  luffyapi;
+create  database  luffyapi;
 select user,host from mysql.user;
 grant all privileges on luffyapi.* to 'luffyapi'@'%' identified by '123456';
 

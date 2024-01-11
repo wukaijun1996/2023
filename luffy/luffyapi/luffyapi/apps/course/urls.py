@@ -1,14 +1,14 @@
 from django.urls import path, re_path, include
 
 from rest_framework.routers import SimpleRouter
-from user import views
+from course import views
 
-# router = SimpleRouter()
-# router.register('', views.LoginView, 'login')
-# router.register('', views.SendSmsView, 'send')
-# router.register('register', views.RegisterView, 'register')  # /user/register post就是新增
+router = SimpleRouter()
+router.register('categories', views.CourseCategoryView, 'categories')
+router.register('free', views.CourseView, 'free')
+
 
 urlpatterns = [
-    # path('', include(router.urls)),
+    path('', include(router.urls)),
 
 ]

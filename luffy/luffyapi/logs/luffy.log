@@ -2372,3 +2372,512 @@ INFO 2024-01-08 23:59:20,410 basehttp 11020 9968 "GET /admin/course/teacher/add/
 INFO 2024-01-08 23:59:20,419 basehttp 11020 9968 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 INFO 2024-01-08 23:59:25,242 basehttp 11020 9968 "GET /admin/course/teacher/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6841
 INFO 2024-01-08 23:59:25,251 basehttp 11020 9968 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-10 23:08:43,813 autoreload 9716 14228 Watching for file changes with StatReloader
+WARNING 2024-01-10 23:08:50,700 log 9716 7596 Not Found: /
+WARNING 2024-01-10 23:08:50,701 basehttp 9716 7596 "GET / HTTP/1.1" 404 2507
+WARNING 2024-01-10 23:08:50,740 log 9716 7596 Not Found: /favicon.ico
+WARNING 2024-01-10 23:08:50,740 basehttp 9716 7596 "GET /favicon.ico HTTP/1.1" 404 2558
+WARNING 2024-01-10 23:08:56,723 log 9716 7596 Not Found: /
+WARNING 2024-01-10 23:08:56,723 basehttp 9716 7596 "GET / HTTP/1.1" 404 2507
+INFO 2024-01-10 23:08:59,945 basehttp 9716 7596 "GET /admin HTTP/1.1" 301 0
+INFO 2024-01-10 23:08:59,962 basehttp 9716 7596 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-01-10 23:09:00,090 basehttp 9716 7596 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+INFO 2024-01-10 23:09:00,690 basehttp 9716 7456 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2024-01-10 23:09:00,690 basehttp 9716 13332 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2024-01-10 23:09:00,691 basehttp 9716 7068 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2024-01-10 23:09:00,691 basehttp 9716 8224 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2024-01-10 23:09:00,708 basehttp 9716 7596 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2024-01-10 23:09:00,710 basehttp 9716 7596 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2024-01-10 23:09:00,734 basehttp 9716 8224 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2024-01-10 23:09:00,735 basehttp 9716 7596 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2024-01-10 23:09:05,739 basehttp 9716 8224 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-01-10 23:09:05,782 basehttp 9716 8224 "GET /admin/ HTTP/1.1" 200 6581
+INFO 2024-01-10 23:09:05,789 basehttp 9716 8224 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2024-01-10 23:09:05,794 basehttp 9716 8224 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-01-10 23:09:05,794 basehttp 9716 7596 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-01-10 23:09:05,795 basehttp 9716 7068 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2024-01-10 23:09:35,755 basehttp 9716 7068 "GET /admin/user/user/ HTTP/1.1" 200 8419
+INFO 2024-01-10 23:09:35,766 basehttp 9716 7456 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-01-10 23:09:35,771 basehttp 9716 7596 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-10 23:09:35,774 basehttp 9716 7068 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+INFO 2024-01-10 23:09:35,777 basehttp 9716 7456 "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+INFO 2024-01-10 23:09:35,778 basehttp 9716 13332 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2024-01-10 23:09:35,779 basehttp 9716 10488 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2024-01-10 23:09:35,788 basehttp 9716 7068 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-01-10 23:09:35,788 basehttp 9716 7596 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2024-01-10 23:09:35,794 basehttp 9716 7456 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-01-10 23:09:35,805 basehttp 9716 8224 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2024-01-10 23:09:35,835 basehttp 9716 8224 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-01-10 23:09:40,042 basehttp 9716 8224 "GET /admin/user/user/1/change/ HTTP/1.1" 200 19274
+INFO 2024-01-10 23:09:40,051 basehttp 9716 10488 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-01-10 23:09:40,056 basehttp 9716 7068 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-10 23:09:40,061 basehttp 9716 7456 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2024-01-10 23:09:40,061 basehttp 9716 7596 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2024-01-10 23:09:40,064 basehttp 9716 7596 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-01-10 23:09:40,066 basehttp 9716 8224 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-01-10 23:09:40,069 basehttp 9716 8224 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-01-10 23:09:40,116 basehttp 9716 8224 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-01-10 23:09:40,116 basehttp 9716 7596 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-01-10 23:09:42,081 basehttp 9716 7596 "GET /admin/user/user/ HTTP/1.1" 200 8419
+INFO 2024-01-10 23:09:43,843 basehttp 9716 7596 "GET /admin/home/banner/ HTTP/1.1" 200 6881
+INFO 2024-01-10 23:09:43,854 basehttp 9716 7596 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-10 23:09:45,658 basehttp 9716 7596 "GET /admin/user/user/ HTTP/1.1" 200 8419
+INFO 2024-01-10 23:09:47,027 basehttp 9716 7596 "GET /admin/course/coursecategory/ HTTP/1.1" 200 6903
+INFO 2024-01-10 23:09:47,038 basehttp 9716 7596 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-10 23:09:47,875 basehttp 9716 7596 "GET /admin/user/user/ HTTP/1.1" 200 8419
+INFO 2024-01-10 23:09:53,811 basehttp 9716 2320 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:10:03,113 basehttp 9716 2320 "POST /user/login/ HTTP/1.1" 200 226
+INFO 2024-01-10 23:10:18,249 basehttp 9716 2320 "POST /user/login/ HTTP/1.1" 200 226
+INFO 2024-01-10 23:17:24,594 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:19:55,888 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-10 23:20:01,176 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398375556 HTTP/1.1" 200 37
+INFO 2024-01-10 23:20:09,897 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-10 23:20:09,984 basehttp 9716 13560 "OPTIONS /user/code_login/ HTTP/1.1" 200 0
+INFO 2024-01-10 23:20:10,011 basehttp 9716 13560 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-10 23:20:19,913 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398376666 HTTP/1.1" 200 26
+ERROR 2024-01-10 23:20:20,507 send 9716 13560 手机号: 17398376666,短信发送失败
+INFO 2024-01-10 23:20:20,508 basehttp 9716 13560 "GET /user/send/?telephone=17398376666 HTTP/1.1" 200 40
+INFO 2024-01-10 23:20:23,760 basehttp 9716 13560 "POST /user/code_login/ HTTP/1.1" 200 226
+INFO 2024-01-10 23:20:30,968 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398378888 HTTP/1.1" 200 37
+INFO 2024-01-10 23:20:36,198 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-10 23:21:44,739 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-10 23:21:53,127 basehttp 9716 13560 "GET /user/check_telephone/?telephone=17398379999 HTTP/1.1" 200 37
+ERROR 2024-01-10 23:22:02,902 send 9716 13560 手机号: 17398379999,短信发送失败
+INFO 2024-01-10 23:22:02,904 basehttp 9716 13560 "GET /user/send/?telephone=17398379999 HTTP/1.1" 200 40
+INFO 2024-01-10 23:22:04,181 basehttp 9716 13560 "POST /user/register/ HTTP/1.1" 200 56
+INFO 2024-01-10 23:22:14,692 basehttp 9716 13560 "POST /user/login/ HTTP/1.1" 200 231
+INFO 2024-01-10 23:22:31,304 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:31,666 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:31,854 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:32,027 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:32,199 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:32,356 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:32,529 basehttp 9716 13560 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:22:55,621 autoreload 5976 10260 Watching for file changes with StatReloader
+INFO 2024-01-10 23:22:58,691 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:00,010 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:00,496 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:00,685 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:00,857 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:11,995 basehttp 5976 5752 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-10 23:23:16,577 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:17,101 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:17,319 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:17,490 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:17,672 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:35,139 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:45,436 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:48,816 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:23:52,164 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:24:20,616 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:24:27,940 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:24:30,045 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:24:31,975 basehttp 5976 5752 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:25:02,285 autoreload 4904 14136 Watching for file changes with StatReloader
+INFO 2024-01-10 23:25:09,521 basehttp 4904 14192 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:25:13,710 basehttp 4904 14192 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-10 23:26:06,915 autoreload 13508 1612 Watching for file changes with StatReloader
+INFO 2024-01-10 23:26:10,417 basehttp 13508 13804 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:26:29,328 basehttp 13508 13804 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:26:31,956 basehttp 13508 13804 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-10 23:26:50,648 basehttp 13508 13804 "POST /user/login/ HTTP/1.1" 200 226
+INFO 2024-01-10 23:27:00,894 basehttp 13508 13804 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:27:13,924 autoreload 13508 1612 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2024-01-10 23:27:14,629 autoreload 9128 14264 Watching for file changes with StatReloader
+INFO 2024-01-10 23:27:22,746 basehttp 9128 14028 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:27:36,351 basehttp 9128 14028 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-10 23:27:49,328 basehttp 9128 5444 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-10 23:28:00,623 basehttp 9128 15000 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-10 23:28:00,772 basehttp 9128 15000 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-10 23:28:51,878 basehttp 9128 11584 "GET /admin/user/user/ HTTP/1.1" 302 0
+INFO 2024-01-10 23:28:52,064 basehttp 9128 11584 "GET /admin/login/?next=/admin/user/user/ HTTP/1.1" 200 2236
+INFO 2024-01-10 23:28:58,191 basehttp 9128 11584 "POST /admin/login/?next=/admin/user/user/ HTTP/1.1" 302 0
+INFO 2024-01-10 23:28:58,273 basehttp 9128 11584 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-10 23:28:58,297 basehttp 9128 11584 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-10 23:29:15,491 autoreload 9128 14264 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2024-01-10 23:29:16,178 autoreload 13948 13624 Watching for file changes with StatReloader
+INFO 2024-01-11 00:08:49,529 autoreload 13948 13624 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-11 00:08:50,937 autoreload 13516 12268 Watching for file changes with StatReloader
+INFO 2024-01-11 00:09:40,707 autoreload 13516 12268 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-11 00:09:41,634 autoreload 13260 14492 Watching for file changes with StatReloader
+INFO 2024-01-11 00:09:53,945 autoreload 1068 13400 Watching for file changes with StatReloader
+INFO 2024-01-11 00:09:58,893 basehttp 1068 12412 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-11 00:10:30,459 basehttp 1068 12412 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-11 00:11:15,877 basehttp 1068 12412 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-11 00:12:56,711 basehttp 1068 12412 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-11 00:13:15,815 basehttp 1068 12412 "GET /home/banner/ HTTP/1.1" 200 342
+INFO 2024-01-11 00:13:27,899 basehttp 1068 9836 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-11 00:13:27,923 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:28,487 basehttp 1068 9836 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-11 00:13:28,500 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:28,791 basehttp 1068 9836 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-11 00:13:28,805 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:29,018 basehttp 1068 9836 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-11 00:13:29,031 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:29,199 basehttp 1068 9836 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-11 00:13:29,212 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:29,486 basehttp 1068 9836 "GET /admin/user/user/ HTTP/1.1" 200 8626
+INFO 2024-01-11 00:13:29,498 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:31,806 basehttp 1068 9836 "GET /admin/home/banner/ HTTP/1.1" 200 6881
+INFO 2024-01-11 00:13:31,818 basehttp 1068 9836 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:13:39,965 basehttp 1068 9836 "GET /home/banner/ HTTP/1.1" 200 6213
+INFO 2024-01-11 00:13:40,743 basehttp 1068 13676 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-01-11 00:13:40,743 basehttp 1068 13404 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2024-01-11 00:13:40,744 basehttp 1068 13316 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-01-11 00:13:40,744 basehttp 1068 9340 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2024-01-11 00:13:40,749 basehttp 1068 13316 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-01-11 00:13:40,750 basehttp 1068 9836 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-01-11 00:13:40,758 basehttp 1068 9836 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-01-11 00:13:40,758 basehttp 1068 6068 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2024-01-11 00:13:40,767 basehttp 1068 13676 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2024-01-11 00:13:40,768 basehttp 1068 9340 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-01-11 00:13:40,769 basehttp 1068 13404 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-01-11 00:15:44,922 autoreload 1068 13400 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-11 00:15:45,596 autoreload 13784 6928 Watching for file changes with StatReloader
+INFO 2024-01-11 00:15:58,487 basehttp 13784 10416 "GET /home/banner/ HTTP/1.1" 200 2
+INFO 2024-01-11 00:16:00,070 basehttp 13784 10416 "GET /home/banner/ HTTP/1.1" 200 2
+INFO 2024-01-11 00:16:04,758 autoreload 13784 6928 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-11 00:16:05,417 autoreload 9452 1908 Watching for file changes with StatReloader
+INFO 2024-01-11 00:16:07,784 basehttp 9452 4504 "GET /home/banner/ HTTP/1.1" 200 2
+INFO 2024-01-11 00:16:08,788 basehttp 9452 4504 "GET /home/banner/ HTTP/1.1" 200 2
+INFO 2024-01-11 00:16:17,505 basehttp 9452 2700 "GET /home/banner/ HTTP/1.1" 200 5217
+WARNING 2024-01-11 00:16:32,935 log 9452 4504 Not Found: /course/categroies
+WARNING 2024-01-11 00:16:32,936 basehttp 9452 4504 "GET /course/categroies HTTP/1.1" 404 3234
+WARNING 2024-01-11 00:16:35,660 log 9452 4504 Not Found: /course/categroies/
+WARNING 2024-01-11 00:16:35,661 basehttp 9452 4504 "GET /course/categroies/ HTTP/1.1" 404 3237
+WARNING 2024-01-11 00:16:42,196 log 9452 4504 Not Found: /course/categories/
+WARNING 2024-01-11 00:16:42,197 basehttp 9452 4504 "GET /course/categories/ HTTP/1.1" 404 3237
+WARNING 2024-01-11 00:18:09,181 log 9452 4504 Not Found: /course/categories/
+WARNING 2024-01-11 00:18:09,181 basehttp 9452 4504 "GET /course/categories/ HTTP/1.1" 404 3237
+INFO 2024-01-11 00:18:45,645 autoreload 9452 1908 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-11 00:18:46,429 autoreload 13804 14592 Watching for file changes with StatReloader
+INFO 2024-01-11 00:19:01,540 autoreload 13804 14592 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 00:19:02,615 autoreload 8288 6724 Watching for file changes with StatReloader
+INFO 2024-01-11 00:19:17,705 autoreload 8288 6724 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-11 00:19:18,295 autoreload 8112 9232 Watching for file changes with StatReloader
+INFO 2024-01-11 00:19:22,495 basehttp 8112 9432 "GET /course/categories/ HTTP/1.1" 200 77
+WARNING 2024-01-11 00:26:01,227 log 8112 14004 Not Found: /
+WARNING 2024-01-11 00:26:01,228 basehttp 8112 14004 "GET / HTTP/1.1" 404 2507
+INFO 2024-01-11 00:26:06,935 basehttp 8112 14004 "GET /admin HTTP/1.1" 301 0
+INFO 2024-01-11 00:26:07,159 basehttp 8112 14004 "GET /admin/ HTTP/1.1" 200 6581
+INFO 2024-01-11 00:26:07,976 basehttp 8112 13320 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2024-01-11 00:26:07,979 basehttp 8112 15088 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2024-01-11 00:26:07,988 basehttp 8112 14004 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2024-01-11 00:26:07,988 basehttp 8112 13368 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2024-01-11 00:26:07,991 basehttp 8112 13708 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2024-01-11 00:26:07,997 basehttp 8112 14004 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-01-11 00:26:07,997 basehttp 8112 13708 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-01-11 00:26:08,014 basehttp 8112 14004 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2024-01-11 00:26:08,015 basehttp 8112 13708 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2024-01-11 00:26:08,016 basehttp 8112 13368 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2024-01-11 00:26:13,312 basehttp 8112 13368 "GET /admin/course/coursecategory/ HTTP/1.1" 200 8492
+INFO 2024-01-11 00:26:13,336 basehttp 8112 14004 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-01-11 00:26:13,349 basehttp 8112 13708 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2024-01-11 00:26:13,355 basehttp 8112 15088 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:13,356 basehttp 8112 13368 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+INFO 2024-01-11 00:26:13,358 basehttp 8112 14004 "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+INFO 2024-01-11 00:26:13,367 basehttp 8112 13368 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-01-11 00:26:13,367 basehttp 8112 13708 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2024-01-11 00:26:13,367 basehttp 8112 13320 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2024-01-11 00:26:13,368 basehttp 8112 14148 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2024-01-11 00:26:13,374 basehttp 8112 15088 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-01-11 00:26:13,401 basehttp 8112 15088 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-01-11 00:26:16,825 basehttp 8112 15088 "GET /admin/course/coursecategory/1/change/ HTTP/1.1" 200 9156
+INFO 2024-01-11 00:26:16,835 basehttp 8112 14148 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-01-11 00:26:16,845 basehttp 8112 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:16,846 basehttp 8112 15088 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-01-11 00:26:16,851 basehttp 8112 15088 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-01-11 00:26:16,852 basehttp 8112 13320 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-01-11 00:26:19,652 basehttp 8112 15088 "GET /admin/course/coursecategory/ HTTP/1.1" 200 8492
+INFO 2024-01-11 00:26:21,722 basehttp 8112 15088 "GET /admin/ HTTP/1.1" 200 6581
+INFO 2024-01-11 00:26:24,601 basehttp 8112 1208 "GET /admin/course/coursechapter/ HTTP/1.1" 200 12177
+INFO 2024-01-11 00:26:24,615 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:26,181 basehttp 8112 1208 "GET /admin/ HTTP/1.1" 200 6581
+INFO 2024-01-11 00:26:28,290 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:26:28,308 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:29,750 basehttp 8112 1208 "GET /admin/course/course/5/change/ HTTP/1.1" 200 18268
+INFO 2024-01-11 00:26:29,762 basehttp 8112 11644 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-01-11 00:26:29,767 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:36,332 basehttp 8112 1208 "GET /admin/course/coursecategory/3/change/?_to_field=id&_popup=1 HTTP/1.1" 200 4244
+INFO 2024-01-11 00:26:36,344 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:45,983 basehttp 8112 1208 "GET /admin/course/coursesection/ HTTP/1.1" 200 15404
+INFO 2024-01-11 00:26:45,996 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:26:47,393 basehttp 8112 1208 "GET /admin/course/coursesection/27/change/ HTTP/1.1" 200 13916
+INFO 2024-01-11 00:26:47,405 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:27:06,537 basehttp 8112 1208 "GET /admin/course/coursechapter/ HTTP/1.1" 200 12177
+INFO 2024-01-11 00:27:06,554 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:27:10,318 basehttp 8112 1208 "GET /admin/course/coursechapter/16/change/ HTTP/1.1" 200 11687
+INFO 2024-01-11 00:27:10,335 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:27:48,248 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:27:48,261 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:27:53,054 basehttp 8112 1208 "GET /admin/course/course/6/change/ HTTP/1.1" 200 18197
+INFO 2024-01-11 00:27:53,071 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:28:33,331 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:28:33,349 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:28:35,413 basehttp 8112 1208 "GET /admin/course/coursesection/ HTTP/1.1" 200 15404
+INFO 2024-01-11 00:28:35,424 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:28:44,680 basehttp 8112 1208 "GET /admin/course/coursesection/27/change/ HTTP/1.1" 200 13916
+INFO 2024-01-11 00:28:44,693 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:28:54,357 basehttp 8112 1208 "GET /admin/course/coursesection/ HTTP/1.1" 200 15404
+INFO 2024-01-11 00:28:57,087 basehttp 8112 1208 "GET /admin/course/coursechapter/ HTTP/1.1" 200 12177
+INFO 2024-01-11 00:28:57,099 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:29:00,657 basehttp 8112 1208 "GET /admin/course/coursechapter/9/change/ HTTP/1.1" 200 11696
+INFO 2024-01-11 00:29:00,669 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:29:30,827 basehttp 8112 1208 "GET /admin/course/coursesection/ HTTP/1.1" 200 15404
+INFO 2024-01-11 00:29:30,841 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:29:56,468 basehttp 8112 1208 "GET /admin/course/teacher/ HTTP/1.1" 200 8448
+INFO 2024-01-11 00:29:56,500 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:29:57,172 basehttp 8112 1208 "GET /admin/course/coursecategory/ HTTP/1.1" 200 8492
+INFO 2024-01-11 00:29:57,184 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:29:58,930 basehttp 8112 1208 "GET /admin/course/coursecategory/2/change/ HTTP/1.1" 200 9152
+INFO 2024-01-11 00:29:58,946 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:09,184 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:30:09,197 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:11,401 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:30:11,414 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:12,141 basehttp 8112 1208 "GET /admin/course/course/2/change/ HTTP/1.1" 200 18145
+INFO 2024-01-11 00:30:12,153 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:43,986 basehttp 8112 1208 "GET /admin/course/coursesection/ HTTP/1.1" 200 15404
+INFO 2024-01-11 00:30:44,003 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:45,626 basehttp 8112 1208 "GET /admin/course/coursesection/13/change/ HTTP/1.1" 200 13820
+INFO 2024-01-11 00:30:45,642 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:50,834 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:30:50,871 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:30:52,163 basehttp 8112 1208 "GET /admin/course/course/2/change/ HTTP/1.1" 200 18145
+INFO 2024-01-11 00:30:52,177 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:34:36,271 basehttp 8112 1208 "GET /admin/course/coursesection/ HTTP/1.1" 200 15404
+INFO 2024-01-11 00:34:36,294 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:34:37,788 basehttp 8112 1208 "GET /admin/course/coursesection/12/change/ HTTP/1.1" 200 13808
+INFO 2024-01-11 00:34:37,802 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:34:51,199 basehttp 8112 1208 "GET /admin/course/coursechapter/ HTTP/1.1" 200 12177
+INFO 2024-01-11 00:34:51,214 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:34:52,246 basehttp 8112 1208 "GET /admin/course/coursechapter/16/change/ HTTP/1.1" 200 11687
+INFO 2024-01-11 00:34:52,260 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:35:00,460 basehttp 8112 1208 "GET /admin/course/course/ HTTP/1.1" 200 9171
+INFO 2024-01-11 00:35:00,472 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-01-11 00:35:01,807 basehttp 8112 1208 "GET /admin/course/course/5/change/ HTTP/1.1" 200 18268
+INFO 2024-01-11 00:35:01,819 basehttp 8112 1208 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2024-01-11 00:35:08,574 log 8112 1208 Not Found: /media/courses/msbd.png
+WARNING 2024-01-11 00:35:08,575 basehttp 8112 1208 "GET /media/courses/msbd.png HTTP/1.1" 404 2825
+INFO 2024-01-11 00:35:13,448 basehttp 8112 1208 "GET /admin/course/course/5/change/ HTTP/1.1" 200 18268
+INFO 2024-01-11 21:25:10,734 autoreload 13860 14516 Watching for file changes with StatReloader
+WARNING 2024-01-11 21:26:43,972 log 13860 13672 Not Found: /course
+WARNING 2024-01-11 21:26:43,973 basehttp 13860 13672 "GET /course HTTP/1.1" 404 2538
+WARNING 2024-01-11 21:26:44,024 log 13860 13672 Not Found: /favicon.ico
+WARNING 2024-01-11 21:26:44,025 basehttp 13860 13672 "GET /favicon.ico HTTP/1.1" 404 2553
+WARNING 2024-01-11 21:26:48,027 log 13860 13672 Not Found: /course/
+WARNING 2024-01-11 21:26:48,028 basehttp 13860 13672 "GET /course/ HTTP/1.1" 404 2672
+INFO 2024-01-11 21:26:54,581 basehttp 13860 13672 "GET /course/categories HTTP/1.1" 301 0
+INFO 2024-01-11 21:26:54,643 basehttp 13860 13672 "GET /course/categories/ HTTP/1.1" 200 5539
+INFO 2024-01-11 21:26:55,558 basehttp 13860 8840 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2024-01-11 21:26:55,558 basehttp 13860 5788 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-01-11 21:26:55,566 basehttp 13860 13672 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-01-11 21:26:55,570 basehttp 13860 8840 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-01-11 21:26:55,574 basehttp 13860 8840 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-01-11 21:26:55,574 basehttp 13860 13672 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-01-11 21:26:55,575 basehttp 13860 5788 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2024-01-11 21:26:55,591 basehttp 13860 12020 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-01-11 21:26:55,598 basehttp 13860 2108 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2024-01-11 21:26:55,607 basehttp 13860 12020 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-01-11 21:26:55,608 basehttp 13860 8032 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2024-01-11 21:28:11,748 autoreload 13860 14516 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:28:12,701 autoreload 3832 12152 Watching for file changes with StatReloader
+INFO 2024-01-11 21:29:36,951 autoreload 3832 12152 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:29:37,736 autoreload 2236 11492 Watching for file changes with StatReloader
+INFO 2024-01-11 21:29:48,236 autoreload 2236 11492 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:29:48,817 autoreload 12640 15076 Watching for file changes with StatReloader
+INFO 2024-01-11 21:30:03,890 autoreload 12640 15076 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:30:04,513 autoreload 14048 15336 Watching for file changes with StatReloader
+INFO 2024-01-11 21:30:52,424 autoreload 14048 15336 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:30:53,023 autoreload 7936 12544 Watching for file changes with StatReloader
+INFO 2024-01-11 21:31:49,756 autoreload 7936 12544 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:31:50,368 autoreload 8484 11388 Watching for file changes with StatReloader
+INFO 2024-01-11 21:32:51,788 autoreload 8484 11388 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:32:52,437 autoreload 8108 12912 Watching for file changes with StatReloader
+INFO 2024-01-11 21:33:42,914 autoreload 8108 12912 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:33:43,489 autoreload 140 1212 Watching for file changes with StatReloader
+WARNING 2024-01-11 21:33:49,821 log 140 12020 Not Found: /course/
+WARNING 2024-01-11 21:33:49,822 basehttp 140 12020 "GET /course/ HTTP/1.1" 404 2672
+INFO 2024-01-11 21:34:15,046 autoreload 140 1212 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-11 21:34:15,611 autoreload 10848 9024 Watching for file changes with StatReloader
+WARNING 2024-01-11 21:34:20,598 log 10848 14972 Not Found: /course/
+WARNING 2024-01-11 21:34:20,598 basehttp 10848 14972 "GET /course/ HTTP/1.1" 404 2902
+INFO 2024-01-11 21:34:24,742 basehttp 10848 14972 "GET /course/course HTTP/1.1" 301 0
+INFO 2024-01-11 21:34:24,797 basehttp 10848 14972 "GET /course/course/ HTTP/1.1" 200 7713
+WARNING 2024-01-11 21:34:29,198 log 10848 14972 Not Found: /media/courses/alex_python.png
+WARNING 2024-01-11 21:34:29,198 basehttp 10848 14972 "GET /media/courses/alex_python.png HTTP/1.1" 404 2848
+INFO 2024-01-11 21:35:02,708 autoreload 10848 9024 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:35:03,355 autoreload 5440 4408 Watching for file changes with StatReloader
+INFO 2024-01-11 21:35:04,165 basehttp 5440 15288 "GET /course/course/ HTTP/1.1" 200 11934
+INFO 2024-01-11 21:36:25,489 autoreload 5440 4408 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:36:26,133 autoreload 6044 10532 Watching for file changes with StatReloader
+INFO 2024-01-11 21:37:58,324 autoreload 6044 10532 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:37:58,916 autoreload 12864 10872 Watching for file changes with StatReloader
+INFO 2024-01-11 21:42:38,256 autoreload 12864 10872 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:42:39,083 autoreload 7908 13680 Watching for file changes with StatReloader
+INFO 2024-01-11 21:42:51,321 autoreload 7908 13680 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:42:52,300 autoreload 7180 14324 Watching for file changes with StatReloader
+INFO 2024-01-11 21:42:55,806 basehttp 7180 14724 "GET /course/course/ HTTP/1.1" 200 8085
+INFO 2024-01-11 21:43:36,257 autoreload 7180 14324 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:43:37,044 autoreload 10896 11540 Watching for file changes with StatReloader
+INFO 2024-01-11 21:44:42,641 autoreload 10896 11540 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:44:43,230 autoreload 6820 13756 Watching for file changes with StatReloader
+INFO 2024-01-11 21:45:37,689 basehttp 6820 14980 "GET /course/course/ HTTP/1.1" 200 8085
+INFO 2024-01-11 21:45:38,854 basehttp 6820 14980 "GET /course/course/ HTTP/1.1" 200 8085
+INFO 2024-01-11 21:45:39,654 basehttp 6820 14980 "GET /course/course/ HTTP/1.1" 200 8085
+INFO 2024-01-11 21:46:22,087 autoreload 6820 13756 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:46:22,670 autoreload 684 3664 Watching for file changes with StatReloader
+INFO 2024-01-11 21:46:26,476 basehttp 684 13880 "GET /course/course/ HTTP/1.1" 200 9200
+INFO 2024-01-11 21:48:34,081 autoreload 684 3664 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:48:34,964 autoreload 10024 8484 Watching for file changes with StatReloader
+INFO 2024-01-11 21:49:24,610 autoreload 10024 8484 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:49:25,244 autoreload 10084 8108 Watching for file changes with StatReloader
+INFO 2024-01-11 21:49:57,791 autoreload 10084 8108 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:49:58,373 autoreload 988 10456 Watching for file changes with StatReloader
+INFO 2024-01-11 21:50:05,272 basehttp 988 14048 "GET /course/course/ HTTP/1.1" 200 10178
+INFO 2024-01-11 21:51:15,053 autoreload 988 10456 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-11 21:51:15,620 autoreload 9420 13888 Watching for file changes with StatReloader
+INFO 2024-01-11 21:51:17,253 basehttp 9420 12368 "GET /course/free HTTP/1.1" 301 0
+INFO 2024-01-11 21:51:17,313 basehttp 9420 12368 "GET /course/free/ HTTP/1.1" 200 10166
+INFO 2024-01-11 21:53:56,244 basehttp 9420 12368 "GET /course/free/ HTTP/1.1" 200 10166
+INFO 2024-01-11 21:53:58,412 basehttp 9420 12368 "GET /media/courses/alex_python.png HTTP/1.1" 200 87343
+INFO 2024-01-11 21:54:01,741 basehttp 9420 12368 "GET /media/courses/lyy_linux.png HTTP/1.1" 200 90593
+INFO 2024-01-11 21:54:06,432 basehttp 9420 12368 "GET /media/courses/celery.png HTTP/1.1" 200 52490
+INFO 2024-01-11 21:54:26,987 autoreload 9420 13888 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 21:54:27,577 autoreload 8164 5136 Watching for file changes with StatReloader
+INFO 2024-01-11 21:55:07,840 autoreload 8164 5136 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:55:08,449 autoreload 9776 1592 Watching for file changes with StatReloader
+INFO 2024-01-11 21:55:26,733 autoreload 9776 1592 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:55:27,484 autoreload 8332 7172 Watching for file changes with StatReloader
+INFO 2024-01-11 21:57:30,691 autoreload 8332 7172 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:57:31,278 autoreload 5376 10000 Watching for file changes with StatReloader
+INFO 2024-01-11 21:57:42,459 autoreload 5376 10000 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 21:57:43,044 autoreload 6416 15196 Watching for file changes with StatReloader
+INFO 2024-01-11 21:57:51,964 autoreload 6416 15196 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 21:57:52,519 autoreload 9468 6756 Watching for file changes with StatReloader
+INFO 2024-01-11 21:58:30,668 autoreload 9468 6756 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 21:58:31,318 autoreload 14648 13384 Watching for file changes with StatReloader
+INFO 2024-01-11 21:59:07,521 autoreload 14648 13384 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 21:59:08,104 autoreload 13824 2604 Watching for file changes with StatReloader
+INFO 2024-01-11 21:59:41,621 autoreload 13824 2604 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 21:59:42,273 autoreload 14628 11836 Watching for file changes with StatReloader
+INFO 2024-01-11 22:00:01,612 autoreload 14628 11836 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:00:02,331 autoreload 10376 4048 Watching for file changes with StatReloader
+INFO 2024-01-11 22:00:47,135 autoreload 10376 4048 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:00:47,786 autoreload 5864 4420 Watching for file changes with StatReloader
+INFO 2024-01-11 22:01:03,685 basehttp 5864 13220 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:01:14,808 autoreload 5864 4420 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:01:15,381 autoreload 2688 3380 Watching for file changes with StatReloader
+INFO 2024-01-11 22:01:18,021 autoreload 2244 14760 Watching for file changes with StatReloader
+INFO 2024-01-11 22:01:19,195 basehttp 2244 9720 "GET /course/free/ HTTP/1.1" 200 7719
+INFO 2024-01-11 22:01:31,622 autoreload 2244 14760 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:01:32,198 autoreload 13536 13480 Watching for file changes with StatReloader
+INFO 2024-01-11 22:01:33,171 basehttp 13536 4560 "GET /course/free/ HTTP/1.1" 200 10441
+INFO 2024-01-11 22:01:44,334 basehttp 13536 4560 "GET /course/free/ HTTP/1.1" 200 10441
+INFO 2024-01-11 22:01:44,698 autoreload 13536 13480 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:01:45,249 autoreload 13272 3360 Watching for file changes with StatReloader
+INFO 2024-01-11 22:01:46,544 basehttp 13272 6348 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:01:56,689 autoreload 13272 3360 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:01:57,252 autoreload 7308 6516 Watching for file changes with StatReloader
+INFO 2024-01-11 22:01:59,036 basehttp 7308 11412 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:01:59,500 basehttp 7308 11412 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:01:59,687 basehttp 7308 11412 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:01:59,856 basehttp 7308 11412 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:01:59,980 basehttp 7308 11412 "GET /course/free/ HTTP/1.1" 200 7713
+INFO 2024-01-11 22:02:00,872 basehttp 7308 11412 "GET /course/free/?page=2 HTTP/1.1" 200 7423
+INFO 2024-01-11 22:02:05,295 basehttp 7308 11412 "GET /course/free/?page=3 HTTP/1.1" 200 7579
+INFO 2024-01-11 22:02:05,683 basehttp 7308 11412 "GET /course/free/?page=4 HTTP/1.1" 200 7566
+INFO 2024-01-11 22:02:07,880 basehttp 7308 11412 "GET /course/free/?page=5 HTTP/1.1" 200 7539
+INFO 2024-01-11 22:02:08,929 basehttp 7308 11412 "GET /course/free/?page=6 HTTP/1.1" 200 7360
+INFO 2024-01-11 22:02:18,812 autoreload 7308 6516 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-11 22:02:19,406 autoreload 5240 14516 Watching for file changes with StatReloader
+INFO 2024-01-11 22:05:57,327 autoreload 5240 14516 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\models.py changed, reloading.
+INFO 2024-01-11 22:05:57,991 autoreload 15088 1184 Watching for file changes with StatReloader
+INFO 2024-01-11 22:08:06,802 autoreload 15088 1184 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-11 22:08:07,360 autoreload 10028 3140 Watching for file changes with StatReloader
+INFO 2024-01-11 22:08:07,879 basehttp 10028 11688 "GET /course/free/?page=6 HTTP/1.1" 200 8489
+INFO 2024-01-11 22:15:39,220 basehttp 10028 11412 "GET /course/free/?page=6 HTTP/1.1" 200 8489
+INFO 2024-01-11 22:15:45,241 basehttp 10028 11412 "GET /course/free/ HTTP/1.1" 200 8795
+INFO 2024-01-11 22:17:37,393 basehttp 10028 11412 "GET /course/free/?page=2 HTTP/1.1" 200 7733
+INFO 2024-01-11 22:18:32,890 autoreload 10028 3140 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:18:33,467 autoreload 5340 5256 Watching for file changes with StatReloader
+INFO 2024-01-11 22:18:36,685 basehttp 5340 9832 "GET /course/free/?page=2 HTTP/1.1" 200 14947
+INFO 2024-01-11 22:18:42,180 basehttp 5340 9832 "GET /course/free/ HTTP/1.1" 200 14904
+INFO 2024-01-11 22:36:09,796 basehttp 5340 7500 "GET /course/free/ HTTP/1.1" 200 14904
+INFO 2024-01-11 22:36:22,951 autoreload 5340 5256 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:36:23,506 autoreload 11128 10464 Watching for file changes with StatReloader
+INFO 2024-01-11 22:36:32,739 autoreload 11128 10464 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:36:33,302 autoreload 8248 2572 Watching for file changes with StatReloader
+INFO 2024-01-11 22:37:31,305 autoreload 8248 2572 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:37:31,910 autoreload 14128 6368 Watching for file changes with StatReloader
+INFO 2024-01-11 22:38:39,912 autoreload 14128 6368 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:38:40,593 autoreload 11828 6256 Watching for file changes with StatReloader
+INFO 2024-01-11 22:39:01,202 autoreload 11828 6256 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:39:01,834 autoreload 1304 11780 Watching for file changes with StatReloader
+INFO 2024-01-11 22:39:18,496 autoreload 1304 11780 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:39:19,081 autoreload 5240 6772 Watching for file changes with StatReloader
+INFO 2024-01-11 22:39:33,516 autoreload 5240 6772 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:39:34,109 autoreload 4560 10088 Watching for file changes with StatReloader
+INFO 2024-01-11 22:40:26,605 autoreload 4560 10088 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:40:27,219 autoreload 5436 8732 Watching for file changes with StatReloader
+INFO 2024-01-11 22:40:43,908 autoreload 5436 8732 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:40:44,509 autoreload 6680 12752 Watching for file changes with StatReloader
+INFO 2024-01-11 22:40:55,815 autoreload 6680 12752 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:40:56,414 autoreload 2020 11148 Watching for file changes with StatReloader
+INFO 2024-01-11 22:40:58,069 autoreload 2020 11148 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:40:58,670 autoreload 4128 13948 Watching for file changes with StatReloader
+INFO 2024-01-11 22:55:49,642 autoreload 8296 13456 Watching for file changes with StatReloader
+INFO 2024-01-11 22:55:52,991 basehttp 8296 11768 "GET /course/free/ HTTP/1.1" 200 10170
+INFO 2024-01-11 22:55:53,194 basehttp 8296 11768 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2024-01-11 22:56:09,583 basehttp 8296 11768 "GET /course/free/ HTTP/1.1" 200 10170
+INFO 2024-01-11 22:56:10,016 autoreload 8296 13456 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:56:10,573 autoreload 13984 15332 Watching for file changes with StatReloader
+INFO 2024-01-11 22:56:11,077 basehttp 13984 9476 "GET /course/free/ HTTP/1.1" 200 16506
+INFO 2024-01-11 22:56:12,419 basehttp 13984 9476 "GET /course/free/ HTTP/1.1" 200 16506
+INFO 2024-01-11 22:56:29,700 autoreload 13984 15332 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:56:30,275 autoreload 8332 11188 Watching for file changes with StatReloader
+INFO 2024-01-11 22:56:34,606 basehttp 8332 8452 "GET /course/free/ HTTP/1.1" 200 16277
+INFO 2024-01-11 22:56:35,772 basehttp 8332 8452 "GET /course/free/ HTTP/1.1" 200 16277
+INFO 2024-01-11 22:57:26,831 basehttp 8332 8452 "GET /course/free/?ordering=price HTTP/1.1" 200 16482
+INFO 2024-01-11 22:57:57,961 autoreload 8332 11188 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:57:58,837 autoreload 5596 14832 Watching for file changes with StatReloader
+INFO 2024-01-11 22:58:07,194 basehttp 5596 11880 "GET /course/free/?ordering=price HTTP/1.1" 200 16711
+INFO 2024-01-11 22:58:07,454 autoreload 5596 14832 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:58:08,161 autoreload 12932 7988 Watching for file changes with StatReloader
+INFO 2024-01-11 22:58:08,699 basehttp 12932 12320 "GET /course/free/?ordering=price HTTP/1.1" 200 16711
+INFO 2024-01-11 22:58:19,042 basehttp 12932 12320 "GET /course/free/?ordering=id,price HTTP/1.1" 200 16730
+INFO 2024-01-11 22:58:31,429 basehttp 12932 12320 "GET /course/free/?ordering=-id HTTP/1.1" 200 16701
+INFO 2024-01-11 22:58:42,648 basehttp 12932 12320 "GET /course/free/?ordering=-id,price HTTP/1.1" 200 16735
+INFO 2024-01-11 22:59:00,301 autoreload 12932 7988 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 22:59:01,112 autoreload 10512 9308 Watching for file changes with StatReloader
+INFO 2024-01-11 23:04:35,122 autoreload 10512 9308 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:04:35,734 autoreload 12532 2648 Watching for file changes with StatReloader
+INFO 2024-01-11 23:05:34,733 autoreload 12532 2648 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:05:35,323 autoreload 7444 1516 Watching for file changes with StatReloader
+INFO 2024-01-11 23:06:13,854 autoreload 7444 1516 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:06:14,451 autoreload 2700 9980 Watching for file changes with StatReloader
+INFO 2024-01-11 23:06:34,810 autoreload 2700 9980 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:06:35,491 autoreload 1188 10892 Watching for file changes with StatReloader
+INFO 2024-01-11 23:06:47,464 basehttp 1188 12424 "GET /course/free/?search=2 HTTP/1.1" 200 8083
+INFO 2024-01-11 23:09:51,909 autoreload 1188 10892 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:09:52,505 autoreload 13592 7600 Watching for file changes with StatReloader
+INFO 2024-01-11 23:27:37,443 autoreload 13592 7600 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:27:38,029 autoreload 7388 11724 Watching for file changes with StatReloader
+INFO 2024-01-11 23:29:26,487 autoreload 7388 11724 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:29:27,107 autoreload 11412 1184 Watching for file changes with StatReloader
+INFO 2024-01-11 23:29:46,165 autoreload 11412 1184 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:29:46,903 autoreload 13728 14212 Watching for file changes with StatReloader
+INFO 2024-01-11 23:30:41,438 autoreload 13728 14212 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:30:42,347 autoreload 12932 7284 Watching for file changes with StatReloader
+INFO 2024-01-11 23:32:30,673 autoreload 12932 7284 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:32:31,345 autoreload 15260 13608 Watching for file changes with StatReloader
+INFO 2024-01-11 23:36:32,755 autoreload 15260 13608 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:36:33,345 autoreload 11136 2684 Watching for file changes with StatReloader
+INFO 2024-01-11 23:41:49,916 basehttp 11136 3840 "GET /course/free/?search=2 HTTP/1.1" 200 15235
+INFO 2024-01-11 23:42:22,450 basehttp 11136 3840 "GET /course/free/?course_category=2 HTTP/1.1" 200 15280
+INFO 2024-01-11 23:43:05,172 autoreload 11136 2684 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:43:05,791 autoreload 1864 140 Watching for file changes with StatReloader
+INFO 2024-01-11 23:43:09,994 basehttp 1864 9020 "GET /course/free/?course_category=2 HTTP/1.1" 200 8000
+INFO 2024-01-11 23:44:58,736 basehttp 1864 9020 "GET /course/free/?course_category=3 HTTP/1.1" 200 10136
+INFO 2024-01-11 23:46:18,087 autoreload 1864 140 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-11 23:46:18,755 autoreload 10096 4656 Watching for file changes with StatReloader
