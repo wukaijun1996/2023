@@ -5,7 +5,7 @@ from course import views
 
 router = SimpleRouter()
 router.register('categories', views.CourseCategoryView, 'categories')
-router.register('free', views.CourseView, 'free')
+router.register('actual', views.CourseView, 'actual')
 
 
 urlpatterns = [

@@ -17,18 +17,27 @@ class CourseCategoryView(GenericViewSet, ListModelMixin):
 
 from rest_framework.filters import OrderingFilter, SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
+from course.filters import MyFilter, CourseFilterSet
 
 
 class CourseView(GenericViewSet, ListModelMixin):
     queryset = models.Course.objects.filter(is_delete=False, is_show=True).order_by('orders')
     serializer_class = serializaer.CourseModelSerializaer
-    # pagination_class = PageNumberPagination
+    pagination_class = PageNumberPagination
     """
     drf自带过滤和排序，存在缺陷，对于关联字段不能过滤，故使用django-filter
     filter_backends = [OrderingFilter, SearchFilter]
     ordering_fields = ['id', 'price']  # 排序 /course/free/?ordering=price  , /course/free/?ordering=-id
     search_fields = ['id'] # 过滤 /course/free/?search=2
     """
-    filter_backends = [DjangoFilterBackend, OrderingFilter]
-    ordering_fields = ['id', 'price']
-    filterset_fields = ['course_category']  # 过滤/course/free/?course_category=3
+    filter_backends = [SearchFilter, OrderingFilter, DjangoFilterBackend]
+    # 参与搜索的字段
+    search_fields = ['name', 'id', 'brief']  # 过滤 /course/free/?search=2
+    # 允许排序的字段
+    ordering_fields = ['id', 'price', 'students']
+    #  过滤
+    filterset_fields = ['course_category', 'id']  # 过滤/course/free/?course_category=3
+
+    # django_filters 过滤用filterset_class 使用自定义类进行过滤，功能进行扩展，区间过滤
+    # filter_backends = [DjangoFilterBackend]
+    # filterset_class = CourseFilterSet
