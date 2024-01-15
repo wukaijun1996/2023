@@ -35,6 +35,15 @@
       </div>
       <Login v-if="is_login" @close="close_login" @go="put_register" @loginsuccess="login_success"/>
       <Register v-if="is_register" @close="close_register" @go="put_login"/>
+      <form class="search">
+        <div class="tips" v-if="is_search_tip">
+          <span @click="search_action('Python')">Python</span>
+          <span @click="search_action('Linux')">Linux</span>
+        </div>
+        <input type="text" :placeholder="search_placeholder" @focus="on_search" @blur="off_search"
+               v-model="search_word">
+        <button type="button" class="glyphicon glyphicon-search" @click="search_action(search_word)"></button>
+      </form>
     </div>
   </div>
 
@@ -45,7 +54,7 @@ import Login from "@/components/Login";
 import Register from "@/components/Register";
 
 export default {
-  name: "Header",
+  name: "Head",
   data() {
     return {
       // 当前所在路径，去sessionStorage取的，如果取不到，就是 /
@@ -54,6 +63,10 @@ export default {
       is_register: false,
       token: '',
       username: '',
+      // 搜索相关数据
+      is_search_tip: true,
+      search_placeholder: '',
+      search_word: ''
     }
   },
   methods: {
@@ -87,6 +100,26 @@ export default {
       this.$cookies.remove('token')
       this.username = ""
       this.token = ""
+    },
+
+    search_action(search_word) {
+      if (!search_word) {
+        this.$message('请输入要搜索的内容');
+        return
+      }
+      // this.$route当前路径，query ?name=lqz  -->this.$route.query.name 拿到lqz
+      if (search_word !== this.$route.query.word) {
+        this.$router.push(`/search?word=${search_word}`);
+      }
+      this.search_word = '';
+    },
+    on_search() {
+      this.search_placeholder = '请输入想搜索的课程';
+      this.is_search_tip = false;
+    },
+    off_search() {
+      this.search_placeholder = '';
+      this.is_search_tip = true;
     },
   },
   created() {
@@ -189,5 +222,53 @@ export default {
 .right-part span {
   line-height: 68px;
   cursor: pointer;
+}
+
+.search {
+  float: right;
+  position: relative;
+  margin-top: 22px;
+  margin-right: 10px;
+}
+
+.search input, .search button {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.search input {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.search input:focus {
+  border-bottom-color: orange;
+}
+
+.search input:focus + button {
+  color: orange;
+}
+
+.search .tips {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+}
+
+.search .tips span {
+  border-radius: 11px;
+  background-color: #eee;
+  line-height: 22px;
+  display: inline-block;
+  padding: 0 7px;
+  margin-right: 3px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 14px;
+
+}
+
+.search .tips span:hover {
+  color: orange;
 }
 </style>

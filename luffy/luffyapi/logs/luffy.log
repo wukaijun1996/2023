@@ -3391,3 +3391,320 @@ INFO 2024-01-15 00:39:21,224 basehttp 7076 11928 "GET /course/categories/ HTTP/1
 INFO 2024-01-15 00:39:21,243 basehttp 7076 13964 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
 INFO 2024-01-15 00:40:07,910 basehttp 7076 13964 "GET /course/actual/?ordering=-id&page_size=5&page=1 HTTP/1.1" 200 5673
 INFO 2024-01-15 00:40:10,669 basehttp 7076 13964 "GET /course/actual/?ordering=-id&page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 21:51:55,551 autoreload 12848 4264 Watching for file changes with StatReloader
+INFO 2024-01-15 21:52:14,824 basehttp 12848 6020 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-15 21:52:15,276 basehttp 12848 15348 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-15 21:52:15,281 basehttp 12848 992 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-15 21:52:15,291 basehttp 12848 11288 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-15 21:58:39,500 basehttp 12848 13208 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-15 21:58:42,001 basehttp 12848 13208 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-15 21:58:45,085 basehttp 12848 13208 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 21:58:45,102 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 21:58:47,718 basehttp 12848 9560 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 21:58:47,733 basehttp 12848 13208 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 21:58:50,375 basehttp 12848 13208 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-15 21:58:50,844 basehttp 12848 13208 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-15 21:58:51,257 basehttp 12848 13208 "GET /course/actual/?ordering=-id&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:52,088 basehttp 12848 13208 "GET /course/actual/?ordering=-price&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:52,425 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:52,825 basehttp 12848 13208 "GET /course/actual/?ordering=-id&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:53,874 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:54,366 basehttp 12848 13208 "GET /course/actual/?ordering=-price&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:54,809 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:55,467 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:55,826 basehttp 12848 13208 "GET /course/actual/?ordering=-price&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:56,687 basehttp 12848 13208 "GET /course/actual/?ordering=price&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:57,017 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:57,649 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:58,082 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:58,328 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:58,549 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:58,743 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:58,954 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:59,138 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:59,521 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:58:59,746 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:59:00,220 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:59:00,397 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 21:59:03,127 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2598
+INFO 2024-01-15 21:59:03,558 basehttp 12848 13208 "GET /course/actual/?ordering=students&page_size=2&page=1 HTTP/1.1" 200 2706
+INFO 2024-01-15 21:59:03,897 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2598
+INFO 2024-01-15 21:59:04,159 basehttp 12848 13208 "GET /course/actual/?ordering=students&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-15 21:59:04,849 basehttp 12848 13208 "GET /course/actual/?ordering=-students&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-15 21:59:05,675 basehttp 12848 13208 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-15 21:59:07,679 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 21:59:07,682 basehttp 12848 13208 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:02:56,359 basehttp 12848 13208 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:02:56,379 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:02:59,919 basehttp 12848 9560 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:02:59,936 basehttp 12848 13208 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:07:08,835 basehttp 12848 13208 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:07:08,858 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:07:53,255 basehttp 12848 9560 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:07:53,290 basehttp 12848 13208 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:08:50,632 basehttp 12848 13208 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:08:50,648 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:08:54,620 basehttp 12848 9560 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:08:54,635 basehttp 12848 13208 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:11:58,688 basehttp 12848 13208 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:11:58,703 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:12:00,552 basehttp 12848 9560 "GET /course/actual/?ordering=-id&page_size=2&page=3 HTTP/1.1" 200 2575
+INFO 2024-01-15 22:23:58,196 basehttp 12848 8604 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:23:58,212 basehttp 12848 9988 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:25:46,358 basehttp 12848 9988 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:25:46,375 basehttp 12848 8604 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:25:48,336 basehttp 12848 8604 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:25:48,350 basehttp 12848 9988 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:34:46,502 autoreload 12848 4264 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:34:47,450 autoreload 4416 2612 Watching for file changes with StatReloader
+INFO 2024-01-15 22:34:55,718 autoreload 4416 2612 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:34:56,325 autoreload 8932 11392 Watching for file changes with StatReloader
+INFO 2024-01-15 22:34:59,511 basehttp 8932 13624 "GET /admin/ HTTP/1.1" 200 6581
+WARNING 2024-01-15 22:35:10,468 log 8932 13624 Not Found: /course
+WARNING 2024-01-15 22:35:10,468 basehttp 8932 13624 "GET /course HTTP/1.1" 404 2538
+WARNING 2024-01-15 22:35:10,507 log 8932 13624 Not Found: /favicon.ico
+WARNING 2024-01-15 22:35:10,507 basehttp 8932 13624 "GET /favicon.ico HTTP/1.1" 404 2553
+WARNING 2024-01-15 22:35:16,610 log 8932 13624 Not Found: /course/free/
+WARNING 2024-01-15 22:35:16,610 basehttp 8932 13624 "GET /course/free/?ordering=price&id=2 HTTP/1.1" 404 3194
+WARNING 2024-01-15 22:35:19,964 log 8932 13624 Not Found: /course/free
+WARNING 2024-01-15 22:35:19,965 basehttp 8932 13624 "GET /course/free HTTP/1.1" 404 3167
+INFO 2024-01-15 22:35:31,635 basehttp 8932 13624 "GET /course/actual/ HTTP/1.1" 200 22522
+INFO 2024-01-15 22:35:34,244 basehttp 8932 13624 "GET /course/actual/1 HTTP/1.1" 301 0
+INFO 2024-01-15 22:35:34,267 basehttp 8932 13624 "GET /course/actual/1/ HTTP/1.1" 200 8119
+INFO 2024-01-15 22:35:52,950 basehttp 8932 13624 "GET /course/actual/1/?ordering=-id HTTP/1.1" 200 8192
+INFO 2024-01-15 22:36:01,045 basehttp 8932 13624 "GET /course/actual/3 HTTP/1.1" 301 0
+INFO 2024-01-15 22:36:01,067 basehttp 8932 13624 "GET /course/actual/3/ HTTP/1.1" 200 7270
+INFO 2024-01-15 22:36:10,261 autoreload 8932 11392 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:36:11,394 autoreload 11200 856 Watching for file changes with StatReloader
+INFO 2024-01-15 22:36:48,536 autoreload 11200 856 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:36:49,269 autoreload 6764 11960 Watching for file changes with StatReloader
+INFO 2024-01-15 22:37:03,030 autoreload 6764 11960 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:37:03,710 autoreload 4496 9980 Watching for file changes with StatReloader
+INFO 2024-01-15 22:37:15,155 autoreload 4496 9980 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:37:15,890 autoreload 11532 10504 Watching for file changes with StatReloader
+INFO 2024-01-15 22:37:42,723 autoreload 11532 10504 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:37:43,459 autoreload 11104 8048 Watching for file changes with StatReloader
+INFO 2024-01-15 22:37:46,220 autoreload 11104 8048 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:37:46,833 autoreload 8076 5900 Watching for file changes with StatReloader
+INFO 2024-01-15 22:38:04,098 autoreload 8076 5900 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:38:04,768 autoreload 14532 1800 Watching for file changes with StatReloader
+INFO 2024-01-15 22:38:33,199 autoreload 14532 1800 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:38:33,956 autoreload 7876 476 Watching for file changes with StatReloader
+INFO 2024-01-15 22:39:09,117 autoreload 7876 476 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:39:09,786 autoreload 1908 9572 Watching for file changes with StatReloader
+INFO 2024-01-15 22:39:20,356 autoreload 1908 9572 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:39:21,009 autoreload 2272 12272 Watching for file changes with StatReloader
+INFO 2024-01-15 22:39:53,099 autoreload 2272 12272 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:39:53,829 autoreload 14400 4368 Watching for file changes with StatReloader
+INFO 2024-01-15 22:40:11,185 autoreload 14400 4368 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:40:11,823 autoreload 11744 2252 Watching for file changes with StatReloader
+INFO 2024-01-15 22:41:05,042 autoreload 11744 2252 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:41:05,948 autoreload 5604 7900 Watching for file changes with StatReloader
+INFO 2024-01-15 22:42:04,595 autoreload 5604 7900 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:42:05,365 autoreload 2072 6056 Watching for file changes with StatReloader
+INFO 2024-01-15 22:42:49,992 autoreload 2072 6056 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:42:50,619 autoreload 14244 10496 Watching for file changes with StatReloader
+INFO 2024-01-15 22:43:19,792 autoreload 14244 10496 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:43:20,530 autoreload 13332 10840 Watching for file changes with StatReloader
+INFO 2024-01-15 22:43:43,286 autoreload 13332 10840 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:43:43,901 autoreload 13340 1436 Watching for file changes with StatReloader
+INFO 2024-01-15 22:43:52,172 autoreload 13340 1436 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:43:52,797 autoreload 14256 12456 Watching for file changes with StatReloader
+INFO 2024-01-15 22:47:03,109 autoreload 14256 12456 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:47:03,730 autoreload 1156 14532 Watching for file changes with StatReloader
+INFO 2024-01-15 22:47:56,439 autoreload 1156 14532 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:47:57,108 autoreload 11712 4364 Watching for file changes with StatReloader
+INFO 2024-01-15 22:48:25,636 autoreload 11712 4364 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\serializaer.py changed, reloading.
+INFO 2024-01-15 22:48:26,313 autoreload 3240 8896 Watching for file changes with StatReloader
+INFO 2024-01-15 22:52:04,534 autoreload 3240 8896 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-15 22:52:05,127 autoreload 6256 15132 Watching for file changes with StatReloader
+INFO 2024-01-15 22:52:10,962 basehttp 6256 11852 "GET /course/chapters HTTP/1.1" 301 0
+INFO 2024-01-15 22:52:11,058 basehttp 6256 11852 "GET /course/chapters/ HTTP/1.1" 200 22564
+INFO 2024-01-15 22:52:39,024 autoreload 6256 15132 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-15 22:52:39,624 autoreload 14556 6096 Watching for file changes with StatReloader
+INFO 2024-01-15 22:52:41,298 basehttp 14556 12660 "GET /course/chapters/ HTTP/1.1" 200 17108
+ERROR 2024-01-15 22:53:52,580 exceptions 14556 12000 view是: CourseView , 错误是 
+INFO 2024-01-15 22:53:52,581 basehttp 14556 12000 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+ERROR 2024-01-15 22:53:56,749 exceptions 14556 12000 view是: CourseView , 错误是 
+INFO 2024-01-15 22:53:56,750 basehttp 14556 12000 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+ERROR 2024-01-15 22:54:11,575 exceptions 14556 12000 view是: CourseView , 错误是 
+INFO 2024-01-15 22:54:11,576 basehttp 14556 12000 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+ERROR 2024-01-15 22:55:14,336 exceptions 14556 12000 view是: CourseView , 错误是 
+INFO 2024-01-15 22:55:14,341 basehttp 14556 12000 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+WARNING 2024-01-15 22:55:14,347 log 14556 9784 Not Found: /course/chapter/
+WARNING 2024-01-15 22:55:14,348 basehttp 14556 9784 "GET /course/chapter/ HTTP/1.1" 404 3418
+INFO 2024-01-15 22:55:42,628 basehttp 14556 9784 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:55:42,643 basehttp 14556 12000 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 22:55:44,988 basehttp 14556 12000 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:55:45,000 basehttp 14556 9784 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+ERROR 2024-01-15 22:55:47,015 exceptions 14556 9784 view是: CourseView , 错误是 
+INFO 2024-01-15 22:55:47,020 basehttp 14556 9784 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+WARNING 2024-01-15 22:55:47,022 log 14556 12000 Not Found: /course/chapter/
+WARNING 2024-01-15 22:55:47,023 basehttp 14556 12000 "GET /course/chapter/ HTTP/1.1" 404 3418
+INFO 2024-01-15 22:55:48,676 basehttp 14556 12000 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 22:55:48,691 basehttp 14556 9784 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+ERROR 2024-01-15 22:55:49,782 exceptions 14556 9784 view是: CourseView , 错误是 
+INFO 2024-01-15 22:55:49,787 basehttp 14556 9784 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+WARNING 2024-01-15 22:55:49,789 log 14556 12000 Not Found: /course/chapter/
+WARNING 2024-01-15 22:55:49,790 basehttp 14556 12000 "GET /course/chapter/ HTTP/1.1" 404 3418
+INFO 2024-01-15 22:57:33,510 basehttp 14556 12660 "GET /course/chapters/ HTTP/1.1" 200 17108
+INFO 2024-01-15 22:59:44,018 autoreload 14556 6096 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:59:44,693 autoreload 7688 10840 Watching for file changes with StatReloader
+INFO 2024-01-15 22:59:48,241 autoreload 7688 10840 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:59:48,868 autoreload 8992 15284 Watching for file changes with StatReloader
+INFO 2024-01-15 22:59:55,741 autoreload 8992 15284 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 22:59:56,432 autoreload 14304 8916 Watching for file changes with StatReloader
+INFO 2024-01-15 23:00:13,702 autoreload 14304 8916 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:00:14,381 autoreload 4068 9076 Watching for file changes with StatReloader
+INFO 2024-01-15 23:00:21,552 autoreload 4068 9076 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:00:22,180 autoreload 14180 6908 Watching for file changes with StatReloader
+ERROR 2024-01-15 23:01:35,257 exceptions 14180 13912 view是: CourseView , 错误是 
+INFO 2024-01-15 23:01:35,264 basehttp 14180 13912 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+WARNING 2024-01-15 23:01:35,270 log 14180 12036 Not Found: /course/chapter/
+WARNING 2024-01-15 23:01:35,271 basehttp 14180 12036 "GET /course/chapter/ HTTP/1.1" 404 3418
+ERROR 2024-01-15 23:02:11,500 exceptions 14180 12036 view是: CourseView , 错误是 
+INFO 2024-01-15 23:02:11,503 basehttp 14180 12036 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+WARNING 2024-01-15 23:02:11,506 log 14180 13912 Not Found: /course/chapter/
+WARNING 2024-01-15 23:02:11,507 basehttp 14180 13912 "GET /course/chapter/ HTTP/1.1" 404 3418
+ERROR 2024-01-15 23:03:47,606 exceptions 14180 13912 view是: CourseView , 错误是 
+INFO 2024-01-15 23:03:47,609 basehttp 14180 13912 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+INFO 2024-01-15 23:03:47,640 basehttp 14180 12036 "GET /course/chapters/ HTTP/1.1" 200 4529
+ERROR 2024-01-15 23:03:51,131 exceptions 14180 12036 view是: CourseView , 错误是 
+INFO 2024-01-15 23:03:51,135 basehttp 14180 12036 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+INFO 2024-01-15 23:03:51,187 basehttp 14180 13912 "GET /course/chapters/ HTTP/1.1" 200 4529
+INFO 2024-01-15 23:04:52,528 basehttp 14180 6860 "GET /course/chapters/ HTTP/1.1" 200 18524
+INFO 2024-01-15 23:04:59,830 basehttp 14180 6860 "GET /course/chapters/?course=1 HTTP/1.1" 200 8285
+ERROR 2024-01-15 23:06:01,838 exceptions 14180 13912 view是: CourseView , 错误是 
+INFO 2024-01-15 23:06:01,842 basehttp 14180 13912 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+INFO 2024-01-15 23:06:01,886 basehttp 14180 12036 "GET /course/chapters/ HTTP/1.1" 200 4529
+ERROR 2024-01-15 23:06:09,060 exceptions 14180 12036 view是: CourseView , 错误是 
+INFO 2024-01-15 23:06:09,063 basehttp 14180 12036 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+INFO 2024-01-15 23:06:09,104 basehttp 14180 13912 "GET /course/chapters/ HTTP/1.1" 200 4529
+INFO 2024-01-15 23:07:14,538 basehttp 14180 6860 "GET /course/actual/1/ HTTP/1.1" 200 8137
+ERROR 2024-01-15 23:07:52,386 exceptions 14180 13912 view是: CourseView , 错误是 
+INFO 2024-01-15 23:07:52,389 basehttp 14180 13912 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+INFO 2024-01-15 23:07:52,430 basehttp 14180 12036 "GET /course/chapters/ HTTP/1.1" 200 4529
+INFO 2024-01-15 23:09:29,371 autoreload 580 8532 Watching for file changes with StatReloader
+INFO 2024-01-15 23:09:33,347 basehttp 580 13068 "GET /course/actual/1/ HTTP/1.1" 200 8137
+ERROR 2024-01-15 23:10:16,013 exceptions 580 13048 view是: CourseView , 错误是 
+INFO 2024-01-15 23:10:16,015 basehttp 580 13048 "GET /course/actual/undefined/ HTTP/1.1" 200 59
+INFO 2024-01-15 23:10:16,067 basehttp 580 7216 "GET /course/chapters/ HTTP/1.1" 200 4529
+INFO 2024-01-15 23:11:08,237 basehttp 580 7216 "GET /course/actual/5/ HTTP/1.1" 200 1193
+INFO 2024-01-15 23:11:08,271 basehttp 580 13048 "GET /course/chapters/?course_id=5 HTTP/1.1" 200 4529
+INFO 2024-01-15 23:11:08,503 basehttp 580 10656 "GET /media/teacher/alex_icon.png HTTP/1.1" 200 130317
+INFO 2024-01-15 23:12:47,815 autoreload 580 8532 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:12:48,462 autoreload 4612 9348 Watching for file changes with StatReloader
+INFO 2024-01-15 23:13:04,232 basehttp 4612 14616 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 18592
+INFO 2024-01-15 23:13:54,943 basehttp 4612 2512 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 23:13:54,958 basehttp 4612 1000 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 23:13:56,053 basehttp 4612 1000 "GET /course/actual/6/ HTTP/1.1" 200 1384
+INFO 2024-01-15 23:13:56,072 basehttp 4612 2512 "GET /course/chapters/?course_id=6 HTTP/1.1" 200 4529
+INFO 2024-01-15 23:13:56,244 basehttp 4612 12500 "GET /media/teacher/mjj_icon.png HTTP/1.1" 200 19881
+INFO 2024-01-15 23:14:19,184 autoreload 4612 9348 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:14:19,781 autoreload 12620 8956 Watching for file changes with StatReloader
+INFO 2024-01-15 23:14:23,590 basehttp 12620 6676 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 8309
+INFO 2024-01-15 23:14:30,139 basehttp 12620 10304 "GET /course/chapters/?course_id=6 HTTP/1.1" 200 668
+INFO 2024-01-15 23:14:30,140 basehttp 12620 9948 "GET /course/actual/6/ HTTP/1.1" 200 1384
+INFO 2024-01-15 23:14:39,437 basehttp 12620 10304 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:14:39,441 basehttp 12620 9948 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:14:45,676 basehttp 12620 10304 "GET /course/chapters/?course_id=2 HTTP/1.1" 200 506
+INFO 2024-01-15 23:14:45,678 basehttp 12620 9948 "GET /course/actual/2/ HTTP/1.1" 200 1022
+INFO 2024-01-15 23:14:55,557 basehttp 12620 9948 "GET /course/actual/3/ HTTP/1.1" 200 863
+INFO 2024-01-15 23:14:55,557 basehttp 12620 10304 "GET /course/chapters/?course_id=3 HTTP/1.1" 200 529
+INFO 2024-01-15 23:14:55,808 basehttp 12620 4212 "GET /media/teacher/lyy_icon.png HTTP/1.1" 200 114110
+INFO 2024-01-15 23:15:10,196 basehttp 12620 10304 "GET /course/actual/4/ HTTP/1.1" 200 1084
+INFO 2024-01-15 23:15:10,200 basehttp 12620 9948 "GET /course/chapters/?course_id=4 HTTP/1.1" 200 1464
+INFO 2024-01-15 23:17:52,577 basehttp 12620 10304 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:17:52,581 basehttp 12620 9948 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:18:32,697 basehttp 12620 6676 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 8309
+INFO 2024-01-15 23:28:48,646 autoreload 12620 8956 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:28:49,223 autoreload 9476 5812 Watching for file changes with StatReloader
+INFO 2024-01-15 23:30:04,015 autoreload 9476 5812 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:30:04,631 autoreload 4652 2696 Watching for file changes with StatReloader
+INFO 2024-01-15 23:30:13,996 autoreload 4652 2696 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:30:14,636 autoreload 14924 1908 Watching for file changes with StatReloader
+INFO 2024-01-15 23:30:19,569 autoreload 14924 1908 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:30:20,205 autoreload 13604 10700 Watching for file changes with StatReloader
+INFO 2024-01-15 23:30:30,675 autoreload 13604 10700 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:30:31,307 autoreload 4844 8916 Watching for file changes with StatReloader
+INFO 2024-01-15 23:30:48,560 autoreload 4844 8916 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:30:49,165 autoreload 9396 7436 Watching for file changes with StatReloader
+INFO 2024-01-15 23:31:01,878 autoreload 9396 7436 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:31:02,561 autoreload 9592 14788 Watching for file changes with StatReloader
+INFO 2024-01-15 23:31:21,965 autoreload 9592 14788 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:31:22,603 autoreload 11584 7800 Watching for file changes with StatReloader
+INFO 2024-01-15 23:31:39,860 autoreload 11584 7800 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\views.py changed, reloading.
+INFO 2024-01-15 23:31:40,559 autoreload 7100 6988 Watching for file changes with StatReloader
+INFO 2024-01-15 23:31:49,985 autoreload 7100 6988 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-15 23:31:50,665 autoreload 9796 10512 Watching for file changes with StatReloader
+INFO 2024-01-15 23:31:57,838 autoreload 9796 10512 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\urls.py changed, reloading.
+INFO 2024-01-15 23:31:58,495 autoreload 1424 10700 Watching for file changes with StatReloader
+INFO 2024-01-15 23:32:27,148 basehttp 1424 6456 "GET /course/search/?search=python HTTP/1.1" 200 11461
+INFO 2024-01-15 23:32:46,683 basehttp 1424 6456 "GET /course/search/? HTTP/1.1" 200 21193
+INFO 2024-01-15 23:32:50,816 basehttp 1424 6456 "GET /course/search/ HTTP/1.1" 200 21193
+INFO 2024-01-15 23:33:14,809 autoreload 1424 10700 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\course\paginations.py changed, reloading.
+INFO 2024-01-15 23:33:15,415 autoreload 11820 1324 Watching for file changes with StatReloader
+INFO 2024-01-15 23:33:16,655 basehttp 11820 1504 "GET /course/search/ HTTP/1.1" 200 12797
+INFO 2024-01-15 23:33:36,177 basehttp 11820 1504 "GET /course/search/?search=python HTTP/1.1" 200 11908
+INFO 2024-01-15 23:33:49,041 basehttp 11820 1504 "GET /course/search/?search=linux HTTP/1.1" 200 8942
+INFO 2024-01-15 23:33:55,082 basehttp 11820 1504 "GET /course/search/?search=drf HTTP/1.1" 200 9332
+INFO 2024-01-15 23:34:12,991 basehttp 11820 1504 "GET /course/search/?search=go HTTP/1.1" 200 12373
+INFO 2024-01-15 23:36:28,440 basehttp 11820 5212 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:36:28,440 basehttp 11820 1384 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:37:14,462 basehttp 11820 5212 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:37:14,465 basehttp 11820 1384 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:37:37,715 basehttp 11820 5212 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:37:37,721 basehttp 11820 1384 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:39:52,903 basehttp 11820 5212 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:39:52,906 basehttp 11820 1384 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:39:56,986 basehttp 11820 5212 "GET /course/chapters/?course_id=1 HTTP/1.1" 200 528
+INFO 2024-01-15 23:39:56,988 basehttp 11820 1384 "GET /course/actual/1/ HTTP/1.1" 200 1429
+INFO 2024-01-15 23:39:57,759 basehttp 11820 1384 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 23:39:57,774 basehttp 11820 5212 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 23:42:40,784 basehttp 11820 8576 "GET /course/search/? HTTP/1.1" 200 12797
+INFO 2024-01-15 23:42:45,329 basehttp 11820 8576 "GET /course/search/ HTTP/1.1" 200 12797
+INFO 2024-01-15 23:42:50,372 basehttp 11820 8576 "GET /course/search/?page=2 HTTP/1.1" 200 12657
+INFO 2024-01-15 23:43:06,153 basehttp 11820 5212 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:43:53,085 basehttp 11820 5212 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:53:22,431 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:55:11,451 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:55:12,691 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:55:17,870 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:55:23,025 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:24,712 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:25,775 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:26,319 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:26,645 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:27,033 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:27,491 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:27,876 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:28,271 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:28,621 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:28,996 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:29,365 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:29,811 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:55:30,734 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:55:34,225 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:55:42,118 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:55:47,736 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:57:21,007 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:57:39,587 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-15 23:57:40,226 basehttp 11820 13052 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 23:57:40,249 basehttp 11820 10592 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 23:57:41,712 basehttp 11820 10592 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-15 23:57:42,117 basehttp 11820 10592 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-15 23:57:42,569 basehttp 11820 10592 "GET /course/actual/?ordering=-id&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-15 23:57:45,124 basehttp 11820 10592 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-15 23:57:48,590 basehttp 11820 10592 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 23:57:48,642 basehttp 11820 13052 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-15 23:57:51,705 basehttp 11820 13052 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-15 23:57:53,457 basehttp 11820 13052 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-15 23:57:53,479 basehttp 11820 10592 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-16 00:04:06,769 basehttp 11820 748 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-16 00:04:06,784 basehttp 11820 15016 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-16 00:04:07,946 basehttp 11820 15016 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-16 00:04:12,544 basehttp 11820 15016 "GET /course/search/?page_size=10&page=1&search=21 HTTP/1.1" 200 1481
+INFO 2024-01-16 00:13:50,139 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1 HTTP/1.1" 200 7032
+INFO 2024-01-16 00:14:02,473 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1&search=%E9%97%A8 HTTP/1.1" 200 4624
+INFO 2024-01-16 00:14:11,627 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1&search=%E9%97%A8 HTTP/1.1" 200 4624
+INFO 2024-01-16 00:16:18,376 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
