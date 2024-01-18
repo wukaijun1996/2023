@@ -76,3 +76,41 @@ cnpm install bootstrap@3
 xadmin配置：
 python manage.py createsuperuser
 pip install https://codeload.github.com/sshwsfc/xadmin/zip/django2
+
+
+配置镜像源：
+vim /etc/yum.repos.d/aliyun.repo
+[appstream]
+name=appstream
+baseurl=https://mirrors.aliyun.com/rockylinux/9/AppStream/x86_64/os/
+gpgcheck=0
+[baseos]
+name=baseos
+baseurl=https://mirrors.aliyun.com/rockylinux/9/BaseOS/x86_64/os/
+gpgcheck=0
+必要
+yum install  openssl-devel bzip2-devel expat-devel  readline-devel sqlite-devel psmisc libffi-devel -y
+yum install gdbm-libs.i686
+下载开发工具包：
+ yum -y groupinstall "Development tools"
+ 
+nginx:
+./configure --prefix=/usr/local/nginx 
+./configure --with-cc-opt='-Wno-error -Wno-deprecated-declarations'    --with-http_ssl_module  # https 报错就这样，然后make生成objs/nginx
+
+
+
+
+#安装nginx所需要的依赖包
+yum install -y gcc-c++	zlib zlib-devel	openssl openssl-devel pcre pcre-devel
+
+#查看已放行的端口
+firewall-cmd --list-all
+#将80端口加入到防火墙放行白名单中，并重载防火墙
+firewall-cmd --add-port=80/tcp --permanent
+firewall-cmd --reload
+
+#临时关闭防火墙
+systemctl stop firewalld.service
+#永久关闭防火墙
+systemctl disable firewalld.service

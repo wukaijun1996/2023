@@ -3708,3 +3708,269 @@ INFO 2024-01-16 00:13:50,139 basehttp 11820 2684 "GET /course/search/?page_size=
 INFO 2024-01-16 00:14:02,473 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1&search=%E9%97%A8 HTTP/1.1" 200 4624
 INFO 2024-01-16 00:14:11,627 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1&search=%E9%97%A8 HTTP/1.1" 200 4624
 INFO 2024-01-16 00:16:18,376 basehttp 11820 2684 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-16 21:16:05,966 autoreload 14888 6272 Watching for file changes with StatReloader
+INFO 2024-01-16 21:16:31,635 basehttp 14888 6324 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:16:32,758 basehttp 14888 11440 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-16 21:16:32,822 basehttp 14888 7964 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-16 21:16:32,833 basehttp 14888 11924 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-16 21:16:45,790 basehttp 14888 6324 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:16:51,078 basehttp 14888 6324 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:16:56,952 basehttp 14888 6324 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:16:57,708 basehttp 14888 6324 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-16 21:16:57,732 basehttp 14888 13496 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-16 21:17:00,347 basehttp 14888 13496 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-16 21:17:00,749 basehttp 14888 13496 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-16 21:17:01,443 basehttp 14888 13496 "GET /course/actual/?ordering=-id&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-16 21:17:03,980 basehttp 14888 6324 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-16 21:17:03,983 basehttp 14888 13496 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-16 21:17:04,738 basehttp 14888 13496 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:56:25,340 autoreload 14888 6272 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 21:56:26,175 autoreload 15256 272 Watching for file changes with StatReloader
+INFO 2024-01-16 21:56:41,789 basehttp 15256 2564 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-16 21:57:13,766 basehttp 15256 2564 "OPTIONS /user/code_login/ HTTP/1.1" 200 0
+INFO 2024-01-16 21:57:13,899 basehttp 15256 2564 "POST /user/code_login/ HTTP/1.1" 200 228
+INFO 2024-01-16 21:57:40,583 autoreload 15256 272 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 21:57:41,223 autoreload 5448 10212 Watching for file changes with StatReloader
+INFO 2024-01-16 21:57:42,847 basehttp 5448 9992 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:57:48,500 basehttp 5448 9992 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:58:42,467 basehttp 5448 9992 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:58:54,322 autoreload 5448 10212 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-16 21:58:54,943 autoreload 6604 2456 Watching for file changes with StatReloader
+INFO 2024-01-16 21:59:00,050 basehttp 6604 13660 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:59:03,939 basehttp 6604 13660 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:59:16,781 autoreload 6604 2456 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-16 21:59:17,439 autoreload 10720 9908 Watching for file changes with StatReloader
+INFO 2024-01-16 21:59:20,137 basehttp 10720 9084 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-16 21:59:21,757 basehttp 10720 9084 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-16 21:59:23,470 basehttp 10720 9084 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-16 21:59:23,927 basehttp 10720 9084 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-16 21:59:33,387 basehttp 10720 9084 "GET /course/search/?page_size=10&page=1&search=qwq HTTP/1.1" 200 52
+INFO 2024-01-16 21:59:34,978 basehttp 10720 9084 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 21:59:38,588 basehttp 10720 9084 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 22:00:10,443 autoreload 10720 9908 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2024-01-16 22:00:11,078 autoreload 14312 6328 Watching for file changes with StatReloader
+INFO 2024-01-16 22:14:47,189 basehttp 14312 3484 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-16 22:14:59,556 basehttp 14312 3484 "GET /user/check_telephone/?telephone=17398371111 HTTP/1.1" 200 37
+INFO 2024-01-16 22:16:07,835 autoreload 14312 6328 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 22:16:08,528 autoreload 11796 11872 Watching for file changes with StatReloader
+INFO 2024-01-16 22:16:09,399 basehttp 11796 1732 "GET /user/check_telephone/?telephone=17398371111 HTTP/1.1" 200 37
+INFO 2024-01-16 22:16:23,337 basehttp 11796 1732 "OPTIONS /user/register/ HTTP/1.1" 200 0
+ERROR 2024-01-16 22:16:23,344 exceptions 11796 1732 view是: RegisterView , 错误是 {'password': [ErrorDetail(string='请确保这个字段至少包含 6 个字符。', code='min_length')]}
+INFO 2024-01-16 22:16:23,345 basehttp 11796 1732 "POST /user/register/ HTTP/1.1" 200 99
+ERROR 2024-01-16 22:16:33,248 exceptions 11796 1732 view是: RegisterView , 错误是 {'non_field_errors': [ErrorDetail(string='验证码错误', code='invalid')]}
+INFO 2024-01-16 22:16:33,249 basehttp 11796 1732 "POST /user/register/ HTTP/1.1" 200 74
+INFO 2024-01-16 22:17:28,120 basehttp 11796 1732 "POST /user/register/ HTTP/1.1" 200 56
+INFO 2024-01-16 22:18:33,209 autoreload 11796 11872 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 22:18:33,813 autoreload 7592 1164 Watching for file changes with StatReloader
+INFO 2024-01-16 22:19:29,969 autoreload 7592 1164 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 22:19:30,650 autoreload 7256 14100 Watching for file changes with StatReloader
+INFO 2024-01-16 22:22:05,227 autoreload 7256 14100 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 22:22:05,860 autoreload 2352 6172 Watching for file changes with StatReloader
+INFO 2024-01-16 22:22:07,675 basehttp 2352 5320 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-16 22:22:07,862 basehttp 2352 5320 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-16 22:22:35,497 autoreload 2352 6172 C:\Users\11729\Desktop\Personal\Bigapple\luffy\luffyapi\luffyapi\apps\user\views.py changed, reloading.
+INFO 2024-01-16 22:22:36,108 autoreload 10852 1572 Watching for file changes with StatReloader
+INFO 2024-01-16 22:40:38,183 basehttp 10852 1708 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 23:24:18,537 basehttp 10852 756 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-16 23:24:18,998 basehttp 10852 15312 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-16 23:24:19,001 basehttp 10852 9048 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-16 23:24:19,011 basehttp 10852 11744 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-17 21:43:01,976 autoreload 3216 1244 Watching for file changes with StatReloader
+INFO 2024-01-17 21:43:51,350 basehttp 3216 11168 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 21:43:51,784 basehttp 3216 5508 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-17 21:43:51,786 basehttp 3216 8060 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-17 21:43:51,794 basehttp 3216 5936 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-17 21:43:58,105 basehttp 3216 9112 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 21:44:13,241 basehttp 3216 9608 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 21:44:13,288 basehttp 3216 6384 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 21:44:13,303 basehttp 3216 4572 "GET /media/courses/celery.png HTTP/1.1" 200 52490
+INFO 2024-01-17 21:44:13,304 basehttp 3216 5248 "GET /media/courses/msbd.png HTTP/1.1" 200 67037
+INFO 2024-01-17 21:44:15,943 basehttp 3216 932 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 21:44:15,961 basehttp 3216 2240 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 21:44:17,796 basehttp 3216 2240 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 21:44:17,814 basehttp 3216 932 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 21:44:19,695 basehttp 3216 10968 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-17 21:44:19,709 basehttp 3216 6216 "GET /media/courses/drf.png HTTP/1.1" 200 206324
+INFO 2024-01-17 21:44:19,713 basehttp 3216 9368 "GET /media/courses/mjj_python.png HTTP/1.1" 200 444859
+INFO 2024-01-17 21:44:20,018 basehttp 3216 10968 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 21:44:20,026 basehttp 3216 9368 "GET /media/courses/lyy_linux.png HTTP/1.1" 200 90593
+INFO 2024-01-17 21:58:29,163 autoreload 12116 10628 Watching for file changes with StatReloader
+INFO 2024-01-17 21:58:34,226 basehttp 12116 7764 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 21:58:34,697 basehttp 12116 6872 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-17 21:58:34,759 basehttp 12116 10508 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-17 21:58:34,776 basehttp 12116 2132 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-17 21:58:43,959 basehttp 12116 6504 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 21:59:03,073 basehttp 12116 13152 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-17 21:59:03,354 basehttp 12116 13152 "POST /user/login/ HTTP/1.1" 200 228
+INFO 2024-01-17 21:59:14,532 basehttp 12116 12904 "GET /user/check_telephone/?telephone=17398375555 HTTP/1.1" 200 26
+INFO 2024-01-17 21:59:19,785 basehttp 12116 12496 "GET /user/check_telephone/?telephone=17398376666 HTTP/1.1" 200 26
+INFO 2024-01-17 21:59:21,837 basehttp 12116 12444 "OPTIONS /user/code_login/ HTTP/1.1" 200 0
+INFO 2024-01-17 21:59:21,841 basehttp 12116 12444 "POST /user/code_login/ HTTP/1.1" 200 78
+INFO 2024-01-17 21:59:25,043 basehttp 12116 12444 "POST /user/code_login/ HTTP/1.1" 200 226
+INFO 2024-01-17 21:59:28,445 basehttp 12116 12216 "GET /course/search/?page_size=10&page=1&search=Python HTTP/1.1" 200 2504
+INFO 2024-01-17 21:59:28,454 basehttp 12116 1152 "GET /media/courses/alex_python.png HTTP/1.1" 200 87343
+INFO 2024-01-17 21:59:28,458 basehttp 12116 11292 "GET /media/courses/mjj_python.png HTTP/1.1" 200 444859
+INFO 2024-01-17 21:59:30,866 basehttp 12116 9424 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 21:59:30,881 basehttp 12116 2900 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 21:59:30,891 basehttp 12116 10360 "GET /media/courses/celery.png HTTP/1.1" 200 52490
+INFO 2024-01-17 21:59:30,893 basehttp 12116 12276 "GET /media/courses/msbd.png HTTP/1.1" 200 67037
+INFO 2024-01-17 21:59:33,014 basehttp 12116 2900 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 21:59:33,032 basehttp 12116 9424 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 21:59:34,846 basehttp 12116 9424 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 21:59:34,863 basehttp 12116 2900 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 21:59:36,031 basehttp 12116 2900 "GET /course/actual/?ordering=-students&page_size=2&page=1 HTTP/1.1" 200 2236
+INFO 2024-01-17 21:59:36,056 basehttp 12116 12276 "GET /media/courses/drf.png HTTP/1.1" 200 206324
+INFO 2024-01-17 21:59:36,277 basehttp 12116 2900 "GET /course/actual/?ordering=students&page_size=2&page=1 HTTP/1.1" 200 2706
+INFO 2024-01-17 21:59:37,383 basehttp 12116 2900 "GET /course/search/?page_size=10&page=1&search=Linux HTTP/1.1" 200 915
+INFO 2024-01-17 21:59:37,391 basehttp 12116 12276 "GET /media/courses/lyy_linux.png HTTP/1.1" 200 90593
+INFO 2024-01-17 22:00:25,582 basehttp 12116 11172 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:00:27,769 basehttp 12116 11172 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:00:28,996 basehttp 12116 11172 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:00:29,437 basehttp 12116 11172 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:00:52,389 basehttp 12116 9280 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:00:59,192 basehttp 12116 9280 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:08:31,139 basehttp 12116 12816 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:08:31,264 basehttp 12116 12860 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-17 22:08:31,273 basehttp 12116 13064 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-17 22:08:31,284 basehttp 12116 13064 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-17 22:08:33,391 basehttp 12116 12816 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:08:33,405 basehttp 12116 11432 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:08:33,462 basehttp 12116 13064 "GET /media/courses/celery.png HTTP/1.1" 200 52490
+INFO 2024-01-17 22:08:33,465 basehttp 12116 12860 "GET /media/courses/msbd.png HTTP/1.1" 200 67037
+INFO 2024-01-17 22:08:36,316 basehttp 12116 12816 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:08:36,322 basehttp 12116 11432 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:08:38,599 basehttp 12116 12816 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:08:38,625 basehttp 12116 11432 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:08:43,628 basehttp 12116 12816 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:08:43,649 basehttp 12116 11432 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:08:44,966 basehttp 12116 12816 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-17 22:08:44,983 basehttp 12116 13064 "GET /media/courses/drf.png HTTP/1.1" 200 206324
+INFO 2024-01-17 22:08:44,990 basehttp 12116 12860 "GET /media/courses/mjj_python.png HTTP/1.1" 200 444859
+INFO 2024-01-17 22:08:57,387 basehttp 12116 11432 "OPTIONS /user/login/ HTTP/1.1" 200 0
+INFO 2024-01-17 22:08:57,536 basehttp 12116 12816 "POST /user/login/ HTTP/1.1" 200 226
+INFO 2024-01-17 22:09:01,125 basehttp 12116 11432 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:09:01,159 basehttp 12116 13064 "GET /media/courses/lyy_linux.png HTTP/1.1" 200 90593
+INFO 2024-01-17 22:10:13,785 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:14,485 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:14,700 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:14,888 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:15,065 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:15,234 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:15,415 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:15,589 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:15,759 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:15,930 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:16,101 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:16,261 basehttp 12116 2392 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:27,814 basehttp 12116 2800 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:28,388 basehttp 12116 2800 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:28,582 basehttp 12116 2800 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:28,755 basehttp 12116 2800 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:28,942 basehttp 12116 2800 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:54,827 basehttp 12116 10964 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:10:58,590 basehttp 12116 10964 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:11:23,938 basehttp 12116 12732 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:11:23,951 basehttp 12116 2084 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:11:23,960 basehttp 12116 11496 "GET /media/courses/celery.png HTTP/1.1" 200 52490
+INFO 2024-01-17 22:11:26,415 basehttp 12116 12732 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:11:26,429 basehttp 12116 2084 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:11:45,021 basehttp 12116 2084 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:11:45,042 basehttp 12116 12732 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:11:53,011 basehttp 12116 2084 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:11:53,026 basehttp 12116 12732 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:11:54,065 basehttp 12116 2084 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-17 22:11:55,225 basehttp 12116 12732 "GET /course/actual/?ordering=-students&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2254
+INFO 2024-01-17 22:11:55,795 basehttp 12116 2084 "GET /course/actual/?ordering=-price&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2596
+INFO 2024-01-17 22:11:55,832 basehttp 12116 9464 "GET /media/courses/alex_python.png HTTP/1.1" 200 87343
+INFO 2024-01-17 22:11:56,383 basehttp 12116 12732 "GET /course/actual/?ordering=-students&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2254
+INFO 2024-01-17 22:11:57,283 basehttp 12116 2084 "GET /course/actual/?ordering=-price&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2596
+INFO 2024-01-17 22:11:58,509 basehttp 12116 1808 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:11:58,544 basehttp 12116 1808 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-17 22:11:58,585 basehttp 12116 4532 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-17 22:11:58,589 basehttp 12116 1808 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-17 22:15:26,288 basehttp 12116 1952 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:15:26,352 basehttp 12116 1952 "GET /media/banner/banner1.png HTTP/1.1" 200 115271
+INFO 2024-01-17 22:15:26,377 basehttp 12116 4720 "GET /media/banner/banner3.png HTTP/1.1" 200 111031
+INFO 2024-01-17 22:15:26,410 basehttp 12116 11772 "GET /media/banner/banner2.png HTTP/1.1" 200 772079
+INFO 2024-01-17 22:15:37,386 basehttp 12116 1952 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:15:37,394 basehttp 12116 11772 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:15:37,420 basehttp 12116 11772 "GET /media/courses/celery.png HTTP/1.1" 200 52490
+INFO 2024-01-17 22:15:37,426 basehttp 12116 4720 "GET /media/courses/msbd.png HTTP/1.1" 200 67037
+INFO 2024-01-17 22:15:42,132 basehttp 12116 11772 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:15:42,135 basehttp 12116 1952 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:15:44,162 basehttp 12116 11772 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:15:44,166 basehttp 12116 1952 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:15:44,937 basehttp 12116 1952 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-17 22:15:44,971 basehttp 12116 11772 "GET /media/courses/mjj_python.png HTTP/1.1" 200 444859
+INFO 2024-01-17 22:15:44,981 basehttp 12116 1952 "GET /media/courses/drf.png HTTP/1.1" 200 206324
+INFO 2024-01-17 22:15:45,924 basehttp 12116 1952 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:15:45,974 basehttp 12116 1952 "GET /media/courses/lyy_linux.png HTTP/1.1" 200 90593
+INFO 2024-01-17 22:15:53,913 basehttp 12116 1952 "GET /course/actual/?ordering=-students&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:15:54,569 basehttp 12116 1952 "GET /course/actual/?ordering=students&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:15:55,334 basehttp 12116 1952 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:15:56,091 basehttp 12116 1952 "GET /course/actual/?ordering=-students&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:15:57,117 basehttp 12116 1952 "GET /course/actual/?ordering=-price&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:16:02,869 basehttp 12116 1952 "GET /course/actual/?ordering=-price&course_category=3&page_size=2&page=1 HTTP/1.1" 200 2630
+INFO 2024-01-17 22:16:04,477 basehttp 12116 1952 "GET /course/actual/?ordering=-price&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:16:05,979 basehttp 12116 1952 "GET /course/actual/?ordering=-students&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:16:07,917 basehttp 12116 1952 "GET /course/actual/?ordering=-id&course_category=2&page_size=2&page=1 HTTP/1.1" 200 915
+INFO 2024-01-17 22:16:09,145 basehttp 12116 1952 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:16:10,355 basehttp 12116 1952 "GET /course/actual/?ordering=-students&page_size=2&page=1 HTTP/1.1" 200 2236
+INFO 2024-01-17 22:16:11,634 basehttp 12116 1952 "GET /course/actual/?ordering=-price&page_size=2&page=1 HTTP/1.1" 200 2940
+INFO 2024-01-17 22:16:11,683 basehttp 12116 1952 "GET /media/courses/alex_python.png HTTP/1.1" 200 87343
+INFO 2024-01-17 22:16:13,960 basehttp 12116 1952 "GET /course/actual/?ordering=price&page_size=2&page=1 HTTP/1.1" 200 2182
+INFO 2024-01-17 22:16:17,883 basehttp 12116 1952 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-17 22:16:17,923 basehttp 12116 2284 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-17 22:16:21,097 basehttp 12116 1952 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-17 22:36:04,562 basehttp 12116 11048 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 17:33:02,585 autoreload 13248 11888 Watching for file changes with StatReloader
+INFO 2024-01-18 17:33:22,276 basehttp 13248 13320 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 17:33:23,828 basehttp 13248 13320 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 17:33:23,835 basehttp 13248 7628 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 17:33:27,599 basehttp 13248 7628 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 17:33:27,611 basehttp 13248 13320 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 17:33:29,510 basehttp 13248 8784 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 17:33:29,525 basehttp 13248 2312 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 17:33:30,774 basehttp 13248 2312 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-18 17:33:44,514 basehttp 13248 12036 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 17:33:53,530 basehttp 13248 8256 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 17:33:53,530 basehttp 13248 12036 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 17:33:57,707 basehttp 13248 8256 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 17:34:05,673 basehttp 13248 8256 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 17:44:25,292 basehttp 13248 3440 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:10:51,217 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:30,834 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:32,308 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:42,505 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:43,108 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:43,302 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:43,494 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:15:48,538 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:16:43,552 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:18:39,203 basehttp 13248 12760 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:19:15,429 autoreload 5004 13372 Watching for file changes with StatReloader
+INFO 2024-01-18 18:19:50,822 basehttp 5004 6196 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:19:57,387 basehttp 5004 7420 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 18:19:57,404 basehttp 5004 14580 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 18:20:16,600 basehttp 5004 11580 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:27:05,060 basehttp 5004 4764 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:28:03,329 basehttp 5004 4764 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:36:19,078 basehttp 5004 3432 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:36:31,672 basehttp 5004 3432 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 18:36:31,683 basehttp 5004 9484 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 18:37:00,070 basehttp 5004 9484 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:37:31,969 basehttp 5004 9484 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:40:09,047 basehttp 5004 12004 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:40:14,707 basehttp 5004 12004 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 18:40:14,718 basehttp 5004 13728 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 18:40:22,658 autoreload 2932 13852 Watching for file changes with StatReloader
+INFO 2024-01-18 18:40:38,355 basehttp 2932 12292 "GET /home/banner/ HTTP/1.1" 200 307
+INFO 2024-01-18 18:40:40,456 basehttp 2932 12292 "GET /course/categories/ HTTP/1.1" 200 77
+INFO 2024-01-18 18:40:40,477 basehttp 2932 15012 "GET /course/actual/?ordering=-id&page_size=2&page=1 HTTP/1.1" 200 2701
+INFO 2024-01-18 18:40:42,371 basehttp 2932 15012 "GET /course/actual/?ordering=-id&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2248
+INFO 2024-01-18 18:40:49,650 basehttp 2932 15012 "GET /course/actual/?ordering=-students&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2254
+INFO 2024-01-18 18:40:50,387 basehttp 2932 15012 "GET /course/actual/?ordering=students&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2598
+INFO 2024-01-18 18:40:50,586 basehttp 2932 4508 - Broken pipe from ('192.168.31.130', 63067)
+
+INFO 2024-01-18 18:40:50,992 basehttp 2932 15012 "GET /course/actual/?ordering=-price&course_category=1&page_size=2&page=1 HTTP/1.1" 200 2596
+INFO 2024-01-18 18:44:41,554 autoreload 15028 14488 Watching for file changes with StatReloader
