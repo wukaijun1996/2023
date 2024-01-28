@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="luffyapi@localhost" uuid="c877ab7b-7a29-4eb4-b793-2c4345a8b316">
+    <data-source source="LOCAL" name="luffyapi@192.168.27.128" uuid="9d7fee8e-a4fa-4f36-988a-cd32176a880a">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/luffyapi</jdbc-url>
+      <jdbc-url>jdbc:mysql://192.168.27.128:3306/luffyapi</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

@@ -6,6 +6,15 @@ pip install virtualenvwrapper-win
 添加环境变量 WORKON_ HOME:E:\Virtualenvs
 管理员执行 scripts下的virtualenvwrapper.bat
 
+linux下：
+pip install virtualenv
+pip install virtualenvwrappe
+vi  .bash_profile
+写入
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+source ~/.bash_profile
+
 
 workon xxx
 mkvirtualenv.bat -p python luffy  创建虚拟环境
@@ -21,6 +30,11 @@ grant all privileges on luffyapi.* to 'luffyapi'@'%' identified by '123456';
 
 flush privileges;
 
+mysql8:
+CREATE USER 'username'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
+FLUSH PRIVILEGES;
+
 跨域问题解决（同源策略）:
 CORS:跨域资源共享
 csrf: 跨站请求伪造
@@ -32,6 +46,11 @@ Redis:
 https://c.biancheng.net/redis/windows-installer.html
 Redis-x64-5.0.14.1.msi 安装包，将服务加到环境变量  执行 redis-cli 进入服务
 pip install django-redis 
+
+linux :
+yum install redis
+redis-server &  后台运行
+
 
 celery:
 pip install celery
@@ -114,3 +133,62 @@ firewall-cmd --reload
 systemctl stop firewalld.service
 #永久关闭防火墙
 systemctl disable firewalld.service
+
+pip  freeze > requirement.txt
+pip  install -r  requirement.txt
+
+uwsgi:
+在linux下 安装
+pip install uwsgi
+新建luffyapi.xml 文件
+<uwsgi>
+   <socket>0.0.0.0:8808</socket> <!-- 内部端口，自定义 -->
+   <chdir>/home/wu/wkj/luffyapi/</chdir> <!-- 项目路径 -->
+   <module>luffy_api.wsgi</module>  <!-- luffy_api为wsgi.py所在目录名-->
+   <processes>4</processes> <!-- 进程数 -->
+</uwsgi>
+
+uwsgi  -x luffyapi.xml  &  启动
+pkill -HUP uwsgi  关闭
+python ../manage.py collectstatic
+
+
+http {
+  include    mime.types;
+  default_type application/octet-stream;
+  sendfile    on;
+  keepalive_timeout 65;
+
+  server {
+    listen    80;
+    server_name localhost;
+
+    location / {
+      root  html;
+      index index.html index.htm;
+
+      }
+
+    location = /50x.html {
+      root  html;
+    }
+        }
+
+    server {
+        listen       8081;
+        server_name  localhost;
+        location / {
+           include uwsgi_params;
+           uwsgi_pass 127.0.0.1:8808;
+           uwsgi_param UWSGI_SCRIPT luffy_api.wsgi;
+           uwsgi_param UWSGI_CHDIR /home/wu/wkj/luffyapi/;
+
+        }
+
+   }
+}
+
+
+re_path('static/(?P<path>.*)', serve, {'document_root': settings.STATIC_ROOT})
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

@@ -2,5 +2,21 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/../../../../luffy.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_auth_group.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_auth_group_permissions.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_auth_permission.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_django_admin_log.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_django_content_type.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_django_migrations.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_django_session.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_home_banner.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_luffy_course.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_luffy_course_category.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_luffy_course_chapter.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_luffy_course_section.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_luffy_teacher.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_user_user.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_user_user_groups.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../../sq/luffyapi_user_user_user_permissions.sql" dialect="MySQL" />
   </component>
 </project>

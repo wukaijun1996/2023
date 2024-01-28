@@ -24,7 +24,7 @@ sys.path.insert(1, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = 'django-insecure-_cesw5_2n!o_e6b8oai*+#a%a12$fczmdfy5dw2-srq1x#8gk$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*', ]
 
@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'luffyapi',
         'USER': 'luffyapi',
         'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
+        'HOST': '192.168.27.128',
         'port': 3306
     }
 }
