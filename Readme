@@ -61,6 +61,6 @@ name=baseos
 baseurl=https://mirrors.aliyun.com/rockylinux/9/BaseOS/x86_64/os/
 gpgcheck=0
 
-
+111111
 
 
