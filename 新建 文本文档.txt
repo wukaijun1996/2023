@@ -1,0 +1,39 @@
+mysql> set global validate_password_policy=LOW;
+mysql> set global validate_password_length=9;
+
+
+update mysql.user set authentication_string=password("123456") where user="root";
+
+scp -r root@192.168.27.128:/home/wu/wkj/test .
+ssh  192.168.27.128
+openssl req -newkey rsa:2048 -nodes -sha256 -keyout server.key -x509 -days 365 -out server.crt
+配置yum镜像源
+https://mirrors.aliyun.com/rockylinux/9/AppStream/x86_64/os/
+https://mirrors.aliyun.com/rockylinux/9/BaseOS/x86_64/os/
+
+[appstream]
+name=appstream
+baseurl=https://mirrors.aliyun.com/rockylinux/9/AppStream/x86_64/os/
+gpgcheck=0
+[baseos]
+name=baseos
+baseurl=https://mirrors.aliyun.com/rockylinux/9/BaseOS/x86_64/os/
+gpgcheck=0
+
+
+nginx:
+./configure --prefix=/usr/local/nginx 
+
+#安装nginx所需要的依赖包
+yum install -y gcc-c++	zlib zlib-devel	openssl openssl-devel pcre pcre-devel
+
+#查看已放行的端口
+firewall-cmd --list-all
+#将80端口加入到防火墙放行白名单中，并重载防火墙
+firewall-cmd --add-port=80/tcp --permanent
+firewall-cmd --reload
+
+#临时关闭防火墙
+systemctl stop firewalld.service
+#永久关闭防火墙
+systemctl disable firewalld.service
