@@ -52,15 +52,4 @@ PrettyNum.objects.filter(**data_dict).order_by("-level").count() # 符合条件�
 
 createsuperuser 创建django后台管理员
 
-[appstream]
-name=appstream
-baseurl=https://mirrors.aliyun.com/rockylinux/9/AppStream/x86_64/os/
-gpgcheck=0
-[baseos]
-name=baseos
-baseurl=https://mirrors.aliyun.com/rockylinux/9/BaseOS/x86_64/os/
-gpgcheck=0
-
-111111
-
 
